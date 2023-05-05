@@ -50,7 +50,7 @@ setLoggingLevel(newLevel = 2L) #makes the logging a little more sophisticated
 logThis("################################################################################")
 
 args<-commandArgs(TRUE)
-#args<-("TI_STR")
+args<-c("TI_STR", "N130064", -1, -1, -1) #ATTENZIONE: usare solo per debug
 
 dataset_name = args[1]
 dataset_path = paste0(getwd(), "/", dataset_name, "/")
@@ -73,7 +73,8 @@ for ( col in 1:obj@raw@Dim[[2]]){
 }
 
 logThis("Cells count per patient: ")
-print(sort(table(clean_cellnames)))
+sorted_patiens <- sort(table(clean_cellnames))
+print(sorted_patiens[sorted_patiens > 1000])
 
 patientID = args[2]
 
@@ -159,6 +160,8 @@ logThis("Removing the mitocondrial genes altogether")
 genes_to_rem = getGenes(obj)[grep('^MT-', getGenes(obj))] 
 cells_to_rem = getCells(obj)[which(getCellsSize(obj) == 0)]
 obj = dropGenesCells(obj, genes_to_rem, cells_to_rem)
+
+logThis(paste0("FINAL LOG:"))
 
 logThis("################################################################################")
 logThis("Running clean")
