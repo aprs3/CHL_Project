@@ -11,27 +11,30 @@ library(Seurat)
 
 source("utils.R")
 ################################################################################
-#ottenuti dal paper
+logThis("################################################################################")
+setLoggingLevel(newLevel = 2L) #makes the logging a little more sophisticated
 
-knownCells = list(
-  "Activated fibroblasts CCL19+ ADAMADEC1+" 	= c('CCL19', 'ADAMDEC1'),
-  "Endothelial cells CD36+" 	= c('CD36', 'RBP7', 'TMEM88', 'PLVAP', 'COL15A1'),
-  "Endothelial cells DARC+" 	= c('DARC', 'SELE', 'C2CD4B', 'GPR126', 'CPE'),
-  "Endothelial cells LTC4S+ SEMA3G+" 	= c('SEMA3G', 'LTC4S', 'C10orf10'),
-  "Fibroblasts ADAMDEC1+" 	= c('CCL11', 'ADAMDEC1', 'CCL13', 'HAPLN1'),
-  "Fibroblasts KCNN3+ LY6H+" 	= c('KCNN3', 'LY6H', 'DPT', 'C7',  'SCN7A'),
-  "Fibroblasts NPY+ SLITRK6+" 	= c('NPY', 'SLITRK6', 'F3', 'EDNRB', 'NSG1'),
-  "Fibroblasts SFRP2+ SLPI+" 	= c('SLPI', 'SFRP2', 'IGFBP6', 'MFAP5'),
-  "Fibroblasts SMOC2+ PTGIS+" 	= c('SMOC2', 'PTGIS', 'F3', 'PCSK6', 'ADAMTSL3', 'PCSK6'),
-  "Glial cells" 	= c('GPM6B', 'S100B', 'PLP1', 'NRXN1', 'CDH19', 'SCN7A', 'LGI4', 'SPP1'),
-  "Inflammatory fibroblasts IL11+ CHI3L1+"	= c('CHI3L1', 'IL11', 'MMP3', 'MMP1', 'TNC'),
-  "Lymphatics" 	= c('CCL21', 'MMRN1', 'LYVE1', 'TFPI', 'PPFIBP1'),
-  "Myofibroblasts GREM1+ GREM2+"	= c('GREM1', 'GREM2', 'ACTG2', 'DES', 'TAGLN', 'MYH11'),
-  "Myofibroblasts HHIP+ NPNT+" 	= c('HHIP', 'NPNT', 'SOSTDC1', 'ACTG2', 'ACTA2', 'MYH11', 'TAGLN'),
-  "Pericytes HIGD1B+ STEAP4+" 	= c('NOTCH3', 'HIGD1B', 'STEAP4', 'COX4I2', 'FABP4'),
-  "Pericytes RERGL+ NTRK2+" 	= c('NTRK2', 'RERGL', 'PLN', 'NOTCH3'),
-  "Stromal Cycling cells"	= c('HMGB2', 'UBE2C', 'PTTG1', 'TOP2A', 'MKI67', 'CDC20', 'H2AFZ', 'CCNB1', 'BIRC5', 'NUSAP1')
-)
+args<-commandArgs(TRUE)
+#args<-c("CO_STR", "I130084", 10000, 3000, 12.5, 1, .5, 10) #ATTENZIONE: usare solo per debug
+#args<-c("CO_STR", "N124246", -1, -1, -1, -1, -1, -1) #ATTENZIONE: usare solo per debug
+args<-c("CO_STR", "N107306", -1, -1, -1, -1, -1, -1) #ATTENZIONE: usare solo per debug
+
+dataset_name = args[1]
+dataset_path = paste0(getwd(), "/", dataset_name, "/dataset/")
+
+print(paste0("Loading the matrix from path", dataset_path))
+
+mat <- Read10X(data.dir = dataset_path)
+
+logThis("Matrix loaded. Loading the COTANObject")
+
+obj = COTAN(raw = mat)
+obj = initializeMetaDataset(obj, GEO = "", sequencingMethod = "10X", sampleCondition = "")
+
+logThis("################################################################################")
+
+#ottenuti dal paper
+knownCells = read_csv_data(paste0(getwd(), "/", dataset_name, "/known_cells_genes.csv"))
 knownCellsClean <- knownCells
 
 logThis("Loading the gene enrichment data")
@@ -56,26 +59,6 @@ groupMarkers <- c(knownCells, groupMarkers) ##Genes family (from 1 to n_cells) +
 
 knownCells <- knownCellsTmp #Genes family (n_cells) + enrichment genes in one list (1 that contains 332 genes) 
 ################################################################################
-logThis("################################################################################")
-setLoggingLevel(newLevel = 2L) #makes the logging a little more sophisticated
-
-args<-commandArgs(TRUE)
-# args<-c("CO_STR", "I130084", 10000, 3000, 12.5, 1, .5) #ATTENZIONE: usare solo per debug
-args<-c("CO_STR", "N104152", -1, -1, -1, -1, -1) #ATTENZIONE: usare solo per debug
-
-dataset_name = args[1]
-dataset_path = paste0(getwd(), "/", dataset_name, "/dataset/")
-
-print(paste0("Loading the matrix from path", dataset_path))
-
-mat <- Read10X(data.dir = dataset_path)
-
-logThis("Matrix loaded. Loading the COTANObject")
-
-obj = COTAN(raw = mat)
-obj = initializeMetaDataset(obj, GEO = "", sequencingMethod = "10X", sampleCondition = "")
-
-logThis("################################################################################")
 #stampa il numero di cellule per ogni paziente
 clean_cellnames <- c()
 for ( col in 1:obj@raw@Dim[[2]]){
@@ -319,15 +302,7 @@ if(nu_threshold > 0)
   }
 }
 
-logThis(paste0("FINAL LOG:"))
-logThis(paste0("cells count: ", cells_count))
-logThis(paste0("gene count: ", gene_count))
-logThis(paste0("mitocondrial percentage: ", mitocondrial_count))
-logThis(paste0("Cluster B removed: ", remove_clusterB))
-logThis(paste0("nu_threshold: ", nu_threshold))
-
 logThis("Experiments setup done. The rest is fully automated, so enjoy")
-
 ################################################################################
 #COTAN ANALYSIS
 logThis("Estimating the dispersion bijection")
@@ -343,7 +318,7 @@ GDIPlot = GDIPlot(obj, cond = paste0("GDI plot for dataset ", dataset_name, ", p
 plotPDF(outDirPlot,dataset_name,patientID,"_16_GDIPlot",GDIPlot, width = 14, height = 14)
 ################################################################################
 # TODO: FIX ME
-saveRDS(obj, file = file.path(outDir, paste0(patientID, ".cotan.RDS")))
+# saveRDS(obj, file = file.path(outDir, paste0(patientID, ".cotan.RDS")))
 
 # c(gSpace, eigPlot, pcaClustersDF, treePlot) %<-% establishGenesClusters(obj, groupMarkers = knownCellsClean,
 #                                                                         numGenesPerMarker = 25, kCuts = 6)
@@ -439,12 +414,45 @@ plotPDF(outDirPlot,dataset_name,patientID,"_26_clustersMarkersHeatmapPlot",clust
 
 ################################################################################
 logThis("Plotting the gene enrichment heatmaps")
-c(enrichmentHm, enrichmentHmUnclustered, scoreDF) %<-% EnrichmentHeatmap(obj, row_km = 6L,  column_km = 11, groupMarkers = groupMarkers, clName = "MergedClusters")
+
+enrichment_cut <- as.integer(args[8])
+
+c(enrichmentHm, enrichmentHmUnclustered, scoreDF, enrichmentClusters) %<-% EnrichmentHeatmap(obj, row_km = 1L,  column_km = 18, groupMarkers = groupMarkers, clName = "MergedClusters")
+names(enrichmentClusters) = as.character(seq(1, length(enrichmentClusters), by=1))
+save_list_to_csv(enrichmentClusters, outDir, "EnrichmentGenesClusters.csv", header = "cluster_ID,genes")
 
 plotPDF(outDirPlot,dataset_name,patientID,"_27_enrichmentHm",enrichmentHm, width = 35, height = 7.5)
-plotPDF(outDirPlot,dataset_name,patientID,"_28_enrichmentHmUnclustered",enrichmentHmUnclustered, width = 35, height = 3.5)
+
+i = 1
+
+while(enrichment_cut <= 0)
+{
+  enrichment_cut <- readline(prompt="Please insert a valid value for the gene enrichment clustering cut:")
+  enrichment_cut <- as.integer(enrichment_cut)
+  
+  if(enrichment_cut > 0)
+  {
+    c(enrichmentHm, enrichmentHmUnclustered, scoreDF, enrichmentClusters) %<-% EnrichmentHeatmap(obj, row_km = 6L,  column_km = enrichment_cut, groupMarkers = groupMarkers, clName = "MergedClusters")
+    plotPDF(outDirPlot, dataset_name, patientID, "_27_enrichmentHm", enrichmentHm, width = 35, height = 7.5)
+    
+    answer = readline(prompt="Do you want to cut further? [y/n]")
+    if(answer == 'y')
+      enrichment_cut = -1
+    
+    i = i + 1
+  }
+}
+
+plotPDF(outDirPlot,dataset_name,patientID,"_28_enrichmentHmUnclustered",enrichmentHmUnclustered, width = 35, height = 5)
 
 ################################################################################
+logThis(paste0("FINAL LOG:"))
+logThis(paste0("cells count: ", cells_count))
+logThis(paste0("gene count: ", gene_count))
+logThis(paste0("mitocondrial percentage: ", mitocondrial_count))
+logThis(paste0("Cluster B removed: ", remove_clusterB))
+logThis(paste0("nu_threshold: ", nu_threshold))
+logThis(paste0("enrichment_cut ", enrichment_cut))
+
 logThis("Program finished. saving the data.")
-logThis("(TODO)")
-#save.image(paste0(getwd(), "/", dataset_name, "/", patientID, "/", patientID, "data.RData")
+save.image(paste0(getwd(), "/", dataset_name, "/", patientID, "/", patientID, "data.RData"))

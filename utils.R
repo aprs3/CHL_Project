@@ -5,6 +5,46 @@ library(grid)
 library(ComplexHeatmap)
 library(circlize)
 
+read_csv_data <- function(path, csv_sep = ',', genes_sep = ' ')
+{
+  f = read.csv(path,sep=csv_sep)
+  
+  to_return <- c()
+  
+  for(genes in f$genes)
+  {
+    l <- strsplit(genes, genes_sep)
+    to_return <- c(to_return, l)
+  }
+  
+  names(to_return) <- f$cell_name
+  return(to_return)
+}
+
+save_list_to_csv <- function(l, path, filename, header = "cell_name,genes")
+{
+  to_save <- c(header)
+  i <- 1
+  
+  names_list <- names(l)
+  
+  for(e in l)
+  {
+    to_concat <- paste(l[[i]], collapse = ' ')
+    curr <- paste0(names(l)[[i]], ",", to_concat)
+    
+    to_save <- c(to_save, curr)
+    
+    i<-i+1
+  }
+  
+  path <- paste0(path, "/", filename)
+  file.create(path)
+  file_conn = file(path)
+  writeLines(to_save, file_conn)
+  close(file_conn)
+}
+
 clustersMarkersHeatmapPlotB <- function(objCOTAN, groupMarkers, clName = NULL, kCuts = 3, conditionsList = NULL) 
 {
   clName <- getClusterizationName(objCOTAN, clName = clName)
@@ -112,7 +152,7 @@ clustersMarkersHeatmapPlotB <- function(objCOTAN, groupMarkers, clName = NULL, k
   return(list("heatmapPlot" = finalHeatmap, "dataScore" = scoreDF))
 }
 
-EnrichmentHeatmap <- function(objCOTAN, groupMarkers, clName = NULL, kCuts = 3, conditionsList = NULL) 
+EnrichmentHeatmap <- function(objCOTAN, groupMarkers, clName = NULL, row_km = 1L,  column_km = 1L, conditionsList = NULL) 
 {
   clName <- getClusterizationName(objCOTAN, clName = clName)
   
@@ -121,7 +161,7 @@ EnrichmentHeatmap <- function(objCOTAN, groupMarkers, clName = NULL, kCuts = 3, 
   
   scoreDFT <- t(scoreDF[, 1L:(ncol(scoreDF) - 2L)])
   
-  dend <- clustersTreePlot(objCOTAN, kCuts = kCuts)[["dend"]]
+  dend <- clustersTreePlot(objCOTAN, kCuts = row_km)[["dend"]]
   
   dend = set(dend = dend, "branches_lwd", 2)
   {
@@ -201,6 +241,10 @@ EnrichmentHeatmap <- function(objCOTAN, groupMarkers, clName = NULL, kCuts = 3, 
                           col = colorFunc,
                           
                           row_dend_width = unit(3.0, "cm"),
+                          column_dend_height = unit(5.0, "cm"),
+                          
+                          show_column_dend = TRUE,
+                          column_km = column_km,
                           
                           #width = unit(4.0, "cm"),
                           #height = unit(4.0, "cm"),
@@ -217,6 +261,29 @@ EnrichmentHeatmap <- function(objCOTAN, groupMarkers, clName = NULL, kCuts = 3, 
                           left_annotation = c(hb)
                           #, column_title = paste0("Gene marker set expression in ", sample)
   )
+  
+  clusters_data <- column_order(finalHeatmap)
+  clusters_genes <- list()
+  
+  print(clusters_data)
+  
+  for (cluster in clusters_data) 
+  {
+    curr_cluster_genes <- c()
+    
+    for (cluster_member in cluster)
+    {
+      #print(groupMarkers[[cluster_member]])
+      for (member in groupMarkers[[cluster_member]])
+        if(member != "")
+          curr_cluster_genes <- c(curr_cluster_genes, member)
+    }
+    
+    curr_cluster_genes <- curr_cluster_genes[!duplicated(curr_cluster_genes)]
+    
+    to_add <- sort(curr_cluster_genes)
+    clusters_genes[[length(clusters_genes)+1]] <- to_add
+  }
   
   finalHeatmapUnclustered <- Heatmap(scoreDFT, 
                           rect_gp = gpar(col = "white", lwd = 1L),
@@ -242,12 +309,13 @@ EnrichmentHeatmap <- function(objCOTAN, groupMarkers, clName = NULL, kCuts = 3, 
                           #, column_title = paste0("Gene marker set expression in ", sample)
   )
   
-  finalHeatmap <- draw(finalHeatmap, annotation_legend_list = lgdList)
-  finalHeatmapUnclustered <- draw(finalHeatmapUnclustered, annotation_legend_list = lgdList)
+  #finalHeatmap <- draw(finalHeatmap, annotation_legend_list = lgdList)
+  #finalHeatmapUnclustered <- draw(finalHeatmapUnclustered, annotation_legend_list = lgdList)
   
   return(list("heatmapPlot" = finalHeatmap, 
               "heatmapPlotUnclustered" = finalHeatmapUnclustered, 
-              "dataScore" = scoreDF))
+              "dataScore" = scoreDF,
+              "clusters_genes" = clusters_genes))
 } 
 
 
