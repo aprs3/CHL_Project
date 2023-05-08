@@ -15,9 +15,10 @@ logThis("#######################################################################
 setLoggingLevel(newLevel = 2L) #makes the logging a little more sophisticated
 
 args<-commandArgs(TRUE)
-#args<-c("CO_STR", "I130084", 10000, 3000, 12.5, 1, .5, 10) #ATTENZIONE: usare solo per debug
-#args<-c("CO_STR", "N124246", -1, -1, -1, -1, -1, -1) #ATTENZIONE: usare solo per debug
-args<-c("CO_STR", "N107306", -1, -1, -1, -1, -1, -1) #ATTENZIONE: usare solo per debug
+#args<-c("CO_STR", "I130084", 10000, 3000, 12.5, 1, .5, 10, -1) #ATTENZIONE: usare solo per debug
+#args<-c("CO_STR", "N124246", -1, -1, -1, -1, -1, -1, -1) #ATTENZIONE: usare solo per debug
+#args<-c("CO_STR", "N107306", -1, -1, -1, -1, -1, -1, -1) #ATTENZIONE: usare solo per debug
+args<-c("CO_IMM", "N128400", -1, -1, -1, -1, -1, -1, -1) #ATTENZIONE: usare solo per debug
 
 dataset_name = args[1]
 dataset_path = paste0(getwd(), "/", dataset_name, "/dataset/")
@@ -123,7 +124,7 @@ if(cells_count >= 0)
       obj <- dropGenesCells(obj, cells = cells_to_rem)
       plotPDF(outDirPlot,dataset_name,patientID,paste0("_04_CellSizePlot_cut_", i),cellSizePlot(obj)) ##somma del numero di geni contati per ogni cellula (per ogni colonna (cellula), somma i valori righe (gene count)) 
       
-      answer = readline(prompt="Do you want to cut further? [y/n]")
+      answer = readline(prompt="Do you want to cut further? [y/n] ")
       if(answer == 'y')
         cells_count = -1
       
@@ -148,7 +149,7 @@ if(gene_count >= 0)
 } else{
   while(gene_count < 0)
   {
-    gene_count = as.integer(readline(prompt="Please insert a valid value for the genes count threshold:"))
+    gene_count = as.integer(readline(prompt="Please insert a valid value for the genes count threshold: "))
     
     if(gene_count > 0)
     {
@@ -159,7 +160,7 @@ if(gene_count >= 0)
       obj <- dropGenesCells(obj, cells = cells_to_rem)
       plotPDF(outDirPlot,dataset_name,patientID,paste0("_05_GeneCountPlot_cut_", i),genesSizePlot(obj))
       
-      answer = readline(prompt="Do you want to cut further? [y/n]")
+      answer = readline(prompt="Do you want to cut further? [y/n] ")
       if(answer == 'y')
         gene_count = -1
       
@@ -185,7 +186,7 @@ if(mitocondrial_count >= 0)
 } else {
   while(mitocondrial_count < 0)
   {
-    mitocondrial_count = as.numeric(readline(prompt="Please insert a valid value for the mitocondrial percentage threshold:"))
+    mitocondrial_count = as.numeric(readline(prompt="Please insert a valid value for the mitocondrial percentage threshold: "))
     
     if(mitocondrial_count > 0)
     {
@@ -196,7 +197,7 @@ if(mitocondrial_count >= 0)
       mit <- mitochondrialPercentagePlot(obj, genePrefix = "^MT-")
       plotPDF(outDirPlot,dataset_name,patientID,paste0("_06_MitocondrialCount_cut_", i),mit[["plot"]])
       
-      answer = readline(prompt="Do you want to cut further? [y/n]")
+      answer = readline(prompt="Do you want to cut further? [y/n] ")
       if(answer == 'y')
         mitocondrial_count = -1
       
@@ -229,7 +230,7 @@ remove_clusterB <- as.integer(args[6])
 #whether to remove the cluster or not basing on the nu plot
 if(remove_clusterB < 0)
 {
-  answer = readline(prompt="Basing on the plots shown, do you want to remove the B cluster? [y/n]")
+  answer = readline(prompt="Basing on the plots shown, do you want to remove the B cluster? [y/n] ")
   if(answer == 'y')
     remove_clusterB = 1
   else
@@ -275,7 +276,7 @@ if(nu_threshold > 0)
 } else {
   while(nu_threshold <= 0)
   {
-    nu_threshold = as.numeric(readline(prompt="Please insert a valid value for the nu threshold:"))
+    nu_threshold = as.numeric(readline(prompt="Please insert a valid value for the nu threshold (insert 0.0000000000000001 for skipping): "))
     
     if(nu_threshold > 0)
     {
@@ -293,7 +294,7 @@ if(nu_threshold > 0)
       plotPDF(outDirPlot,dataset_name,patientID,paste0("_15_CleanPlotNu_cut_", i),cleanPlots$nu)
       
       
-      answer = readline(prompt="Do you want to cut further? [y/n]")
+      answer = readline(prompt="Do you want to cut further? [y/n] ")
       if(answer == 'y')
         nu_threshold = -1
       
@@ -302,7 +303,6 @@ if(nu_threshold > 0)
   }
 }
 
-logThis("Experiments setup done. The rest is fully automated, so enjoy")
 ################################################################################
 #COTAN ANALYSIS
 logThis("Estimating the dispersion bijection")
@@ -406,40 +406,75 @@ fulladjPval
 '
 ###############################################################################
 logThis("Plotting the cell type heatmap")
-clustersMarkersHeatmapPlot <- clustersMarkersHeatmapPlotB(
-                                obj,
-                                groupMarkers = knownCells,
-                                clName = "MergedClusters")[["heatmapPlot"]]
-plotPDF(outDirPlot,dataset_name,patientID,"_26_clustersMarkersHeatmapPlot",clustersMarkersHeatmapPlot, width=20, height=20)
+kCuts <- as.numeric(args[8])
+
+if(kCuts >= 1)
+{
+  clustersMarkersHeatmapPlot <- clustersMarkersHeatmapPlotB(
+    obj,
+    kCuts = kCuts,
+    groupMarkers = knownCells,
+    clName = "MergedClusters")[["heatmapPlot"]]
+  plotPDF(outDirPlot,dataset_name,patientID,"_26_clustersMarkersHeatmapPlot",clustersMarkersHeatmapPlot, width=20, height=20)
+} else {
+  clustersMarkersHeatmapPlot <- clustersMarkersHeatmapPlotB(
+    obj,
+    kCuts = 1,
+    groupMarkers = knownCells,
+    clName = "MergedClusters")[["heatmapPlot"]]
+  plotPDF(outDirPlot,dataset_name,patientID,"_26_clustersMarkersHeatmapPlot",clustersMarkersHeatmapPlot, width=20, height=20)
+  
+  while(kCuts < 1)
+  {
+    kCuts = as.numeric(readline(prompt="Please insert a valid value for the number of cuts: "))
+    
+    if(kCuts >= 1)
+    {
+      clustersMarkersHeatmapPlot <- clustersMarkersHeatmapPlotB(
+        obj,
+        kCuts = kCuts,
+        groupMarkers = knownCells,
+        clName = "MergedClusters")[["heatmapPlot"]]
+      plotPDF(outDirPlot,dataset_name,patientID,"_26_clustersMarkersHeatmapPlot",clustersMarkersHeatmapPlot, width=20, height=20)
+      
+      answer = readline(prompt="Do you want to cut differently? [y/n]")
+      if(answer == 'y')
+        kCuts = -1
+    }
+  }
+}
 
 ################################################################################
 logThis("Plotting the gene enrichment heatmaps")
+enrichment_cut <- as.integer(args[9])
 
-enrichment_cut <- as.integer(args[8])
-
-c(enrichmentHm, enrichmentHmUnclustered, scoreDF, enrichmentClusters) %<-% EnrichmentHeatmap(obj, row_km = 1L,  column_km = 18, groupMarkers = groupMarkers, clName = "MergedClusters")
-names(enrichmentClusters) = as.character(seq(1, length(enrichmentClusters), by=1))
-save_list_to_csv(enrichmentClusters, outDir, "EnrichmentGenesClusters.csv", header = "cluster_ID,genes")
-
-plotPDF(outDirPlot,dataset_name,patientID,"_27_enrichmentHm",enrichmentHm, width = 35, height = 7.5)
-
-i = 1
-
-while(enrichment_cut <= 0)
+if(enrichment_cut >= 1)
 {
-  enrichment_cut <- readline(prompt="Please insert a valid value for the gene enrichment clustering cut:")
-  enrichment_cut <- as.integer(enrichment_cut)
+  c(enrichmentHm, enrichmentHmUnclustered, scoreDF, enrichmentClusters) %<-% EnrichmentHeatmap(obj, row_km = kCuts,  column_km = enrichment_cut, groupMarkers = groupMarkers, clName = "MergedClusters")
+  names(enrichmentClusters) = as.character(seq(1, length(enrichmentClusters), by=1))
+  save_list_to_csv(enrichmentClusters, outDir, "EnrichmentGenesClusters.csv", header = "cluster_ID,genes")
   
-  if(enrichment_cut > 0)
+  plotPDF(outDirPlot,dataset_name,patientID,"_27_enrichmentHm",enrichmentHm, width = 35, height = 7.5)
+} else {
+  c(enrichmentHm, enrichmentHmUnclustered, scoreDF, enrichmentClusters) %<-% EnrichmentHeatmap(obj, row_km = kCuts,  column_km = 1, groupMarkers = groupMarkers, clName = "MergedClusters")
+  plotPDF(outDirPlot,dataset_name,patientID,"_27_enrichmentHm",enrichmentHm, width = 35, height = 7.5)
+  
+  while(enrichment_cut < 1)
   {
-    c(enrichmentHm, enrichmentHmUnclustered, scoreDF, enrichmentClusters) %<-% EnrichmentHeatmap(obj, row_km = 6L,  column_km = enrichment_cut, groupMarkers = groupMarkers, clName = "MergedClusters")
-    plotPDF(outDirPlot, dataset_name, patientID, "_27_enrichmentHm", enrichmentHm, width = 35, height = 7.5)
+    enrichment_cut = as.numeric(readline(prompt="Please insert a valid value for the number of cuts: "))
     
-    answer = readline(prompt="Do you want to cut further? [y/n]")
-    if(answer == 'y')
-      enrichment_cut = -1
-    
-    i = i + 1
+    if(enrichment_cut >= 1)
+    {
+      c(enrichmentHm, enrichmentHmUnclustered, scoreDF, enrichmentClusters) %<-% EnrichmentHeatmap(obj, row_km = kCuts,  column_km = enrichment_cut, groupMarkers = groupMarkers, clName = "MergedClusters")
+      names(enrichmentClusters) = as.character(seq(1, length(enrichmentClusters), by=1))
+      save_list_to_csv(enrichmentClusters, outDir, "EnrichmentGenesClusters.csv", header = "cluster_ID,genes")
+      
+      plotPDF(outDirPlot,dataset_name,patientID,"_27_enrichmentHm",enrichmentHm, width = 35, height = 7.5)
+      
+      answer = readline(prompt="Do you want to cut differently? [y/n]")
+      if(answer == 'y')
+        enrichment_cut = -1
+    }
   }
 }
 
@@ -452,6 +487,7 @@ logThis(paste0("gene count: ", gene_count))
 logThis(paste0("mitocondrial percentage: ", mitocondrial_count))
 logThis(paste0("Cluster B removed: ", remove_clusterB))
 logThis(paste0("nu_threshold: ", nu_threshold))
+logThis(paste0("kCuts: ", kCuts))
 logThis(paste0("enrichment_cut ", enrichment_cut))
 
 logThis("Program finished. saving the data.")
