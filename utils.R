@@ -5,7 +5,7 @@ library(grid)
 library(ComplexHeatmap)
 library(circlize)
 
-read_csv_data <- function(path, csv_sep = ',', genes_sep = ' ')
+read_csv_data <- function(path, csv_sep = ',', genes_sep = ';')
 {
   f = read.csv(path,sep=csv_sep)
   
@@ -30,7 +30,7 @@ save_list_to_csv <- function(l, path, filename, header = "cell_name,genes")
   
   for(e in l)
   {
-    to_concat <- paste(l[[i]], collapse = ' ')
+    to_concat <- paste(l[[i]], collapse = ';')
     curr <- paste0(names(l)[[i]], ",", to_concat)
     
     to_save <- c(to_save, curr)
@@ -265,20 +265,17 @@ EnrichmentHeatmap <- function(objCOTAN, groupMarkers, clName = NULL, row_km = 1L
   clusters_data <- column_order(finalHeatmap)
   clusters_genes <- list()
   
-  print(clusters_data)
-  
   for (cluster in clusters_data) 
   {
     curr_cluster_genes <- c()
     
     for (cluster_member in cluster)
     {
-      #print(groupMarkers[[cluster_member]])
-      for (member in groupMarkers[[cluster_member]])
-        if(member != "")
-          curr_cluster_genes <- c(curr_cluster_genes, member)
+      #print(names(groupMarkers)[[cluster_member]])
+      curr_cluster_genes <- c(curr_cluster_genes, names(groupMarkers)[[cluster_member]])
     }
     
+    print(curr_cluster_genes)
     curr_cluster_genes <- curr_cluster_genes[!duplicated(curr_cluster_genes)]
     
     to_add <- sort(curr_cluster_genes)
