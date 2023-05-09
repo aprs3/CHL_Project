@@ -15,10 +15,7 @@ logThis("#######################################################################
 setLoggingLevel(newLevel = 2L) #makes the logging a little more sophisticated
 
 args<-commandArgs(TRUE)
-#args<-c("CO_STR", "I130084", 10000, 3000, 12.5, 1, .5, 10, -1) #ATTENZIONE: usare solo per debug
-#args<-c("CO_STR", "N124246", -1, -1, -1, -1, -1, -1, -1) #ATTENZIONE: usare solo per debug
-#args<-c("CO_STR", "N107306", -1, -1, -1, -1, -1, -1, -1) #ATTENZIONE: usare solo per debug
-args<-c("CO_IMM", "N128400", -1, -1, -1, -1, -1, -1, -1) #ATTENZIONE: usare solo per debug
+args<-c("TI_IMM", "I139892", -1, -1, -1, -1, -1, -1, -1) #ATTENZIONE: usare solo per debug
 
 dataset_name = args[1]
 dataset_path = paste0(getwd(), "/", dataset_name, "/dataset/")
@@ -206,7 +203,6 @@ if(mitocondrial_count >= 0)
   }
 }
 
-
 ##REMOVING ALL MT MITOCONDRIAL CELLS
 logThis("Removing the mitocondrial genes altogether")
 genes_to_rem = getGenes(obj)[grep('^MT-', getGenes(obj))] 
@@ -293,7 +289,6 @@ if(nu_threshold > 0)
       plotPDF(outDirPlot,dataset_name,patientID,paste0("_14_CleanPlotUDE_cut_", i),cleanPlots$UDE)
       plotPDF(outDirPlot,dataset_name,patientID,paste0("_15_CleanPlotNu_cut_", i),cleanPlots$nu)
       
-      
       answer = readline(prompt="Do you want to cut further? [y/n] ")
       if(answer == 'y')
         nu_threshold = -1
@@ -317,24 +312,6 @@ quant.p = calculateGDI(obj)
 GDIPlot = GDIPlot(obj, cond = paste0("GDI plot for dataset ", dataset_name, ", patient ", patientID), genes = knownCellsClean)
 plotPDF(outDirPlot,dataset_name,patientID,"_16_GDIPlot",GDIPlot, width = 14, height = 14)
 ################################################################################
-# TODO: FIX ME
-# saveRDS(obj, file = file.path(outDir, paste0(patientID, ".cotan.RDS")))
-
-# c(gSpace, eigPlot, pcaClustersDF, treePlot) %<-% establishGenesClusters(obj, groupMarkers = knownCellsClean,
-#                                                                         numGenesPerMarker = 25, kCuts = 6)
-# plotPDF(outDirPlot,dataset_name,patientID,"_17_eigPlot",eigPlot)
-# plotPDF(outDirPlot,dataset_name,patientID,"_18_treePlot",treePlot)
-
-# estabilishedUMAP <- UMAPPlot(pcaClustersDF[, 1:10],
-#                             clusters = pcaClustersDF[["hclust"]],
-#                             elements = knownCellsClean,
-#                             title = paste0("Estabilished genes' clusters UMAP Plot for dataset ",
-#                                            dataset_name, ", patient ", patientID))
-# 
-# 
-# plotPDF(outDirPlot,dataset_name,patientID,"_19_estabilishedUMAP",estabilishedUMAP)
-
-################################################################################
 ## Uniform Clustering
 logThis("Uniform clustering")
 fineClusters <- cellsUniformClustering(obj, GDIThreshold = 1.4, cores = 2, saveObj = TRUE, outDir = outDirClustering)
@@ -344,18 +321,10 @@ logThis("Calculating the fine clusters' coex data")
 c(coexDF, pValueDF) %<-% DEAOnClusters(obj, clusters = fineClusters)
 obj <- addClusterizationCoex(obj, clName = "FineClusters", coexDF = coexDF)
 
-logThis("Merging completed. Plotting the data")
-# fineUMAPPlot <- UMAPPlot(coexDF, clusters = fineClusters, elements = knownCellsClean, title = paste0("Fine Clusters UMAP Plot for dataset ", dataset_name, ", patient ", patientID))
-# plotPDF(outDirPlot,dataset_name,patientID,"_20_fineUMAPPlot",fineUMAPPlot)
-
 logThis("Merging the clusters")
 c(mergedClusters, coexDF, pValueDF) %<-%
   mergeUniformCellsClusters(obj, GDIThreshold = 1.4, cores = 6, saveObj = TRUE, outDir = outDirClustering)
 obj <- addClusterization(obj, clName = "MergedClusters", clusters = mergedClusters, coexDF = coexDF)
-
-# mergedUMAPPlot <- UMAPPlot(coexDF, clusters = mergedClusters, elements = knownCellsClean, title = paste0("Merged Clusters UMAP Plot for dataset ", dataset_name, ", patient ", patientID))
-# plotPDF(outDirPlot,dataset_name,patientID,"_21_mergedUMAPPlot",mergedUMAPPlot)
-
 ################################################################################
 # Making sense of the clusters
 plotPDF(outDirPlot,dataset_name,patientID,"_22_FineClustersSummary",clustersSummaryPlot(obj, clName = "FineClusters")[["plot"]])
@@ -379,31 +348,6 @@ names(markers) <- gene
 knownMarkersList = sort(markers[isMarker == 1])
 knownMarkersList
 
-# logThis("Plotting the UMAP with the clusters informations")
-# plot1 <- UMAPPlot(t(obj@raw), clusters = mergedClusters, title = paste0("Merged Cluster UMAP  Plot for dataset ", dataset_name, ", patient ", patientID))
-# plotPDF(outDirPlot,dataset_name,patientID,"_24_MergedClustersUMAP",plot1)
-
-#treePlot = clustersTreePlot(obj, clName = "MergedClusters", kCuts = 4)
-#plotPDF(outDirPlot,dataset_name,patientID,"_25_MergedClustersTreePlot",treePlot$dend)
-
-'
-c(fullcl, fullgene, fullscore, fullpVal, fulladjPval, fullDEA, fullisMarker) %<-% findClustersMarkers(
-  obj,
-  n = 5L,
-  clusters = mergedClusters,
-  coexDF = coexDF,
-  pValueDF = pValueDF,
-  deltaExp = NULL,
-  method = "bonferroni"
-)
-
-fullmarkers <- fullcl
-names(fullmarkers) <- fullgene
-fullmarkers
-
-names(fulladjPval) <- fullgene
-fulladjPval
-'
 ###############################################################################
 logThis("Plotting the cell type heatmap")
 kCuts <- as.numeric(args[8])
@@ -479,6 +423,15 @@ if(enrichment_cut >= 1)
 }
 
 plotPDF(outDirPlot,dataset_name,patientID,"_28_enrichmentHmUnclustered",enrichmentHmUnclustered, width = 35, height = 5)
+################################################################################
+logThis("Saving various clusters alternatives")
+for(i in 5:20)
+{
+  c(a, b, c, curr_cluster) %<-% EnrichmentHeatmap(obj, row_km = kCuts,  column_km = i, groupMarkers = groupMarkers, clName = "MergedClusters")
+  names(curr_cluster) = as.character(seq(1, length(curr_cluster), by=1))
+  save_list_to_csv(curr_cluster, outDir, paste0(dataset_name,"_",patientID,"_","EnrichmentGenesClusters_", i, ".csv"), header = "cluster_ID,genes")
+}
+
 
 ################################################################################
 logThis(paste0("FINAL LOG:"))
