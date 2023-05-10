@@ -142,11 +142,13 @@ for (cell_to_search in cells_to_search)
   overlaps <- calculate.overlap(x = to_process)
   intersection <- c()
   for (overlap in overlaps)
+  {
     if(cell_to_search %in% overlap)
-      intersection <- overlap
-  print(intersection)
-  
-  intersections_list[length(intersections_list) + 1] <- intersection
+    {
+      intersections_list[[length(intersections_list) + 1]] <- overlap
+      print(typeof(overlap))
+    }
+  }
 }
 
 names(intersections_list) <- cells_to_search
