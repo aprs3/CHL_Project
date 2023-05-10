@@ -3,13 +3,12 @@ library(VennDiagram)
 source("utils.R")
 
 dataset = "TI_IMM"
-to_load <- c("I104689", "I130064", "I139892", "I134300", "I191305")
-
-
+#to_load <- c("I104689", "I130064", "I182231", "I139892", "I127693")
+to_load <- c("I104689", "I130064", "I182231", "I139892")
 
 p <- paste0(getwd(), "/", dataset)
-start = 10
-end = 18
+start = 5
+end = 20
 
 #list containing for each patient the list of clusters (one for each cut)
 #->[n_patiens, (start - end), dim_cluster]
@@ -35,7 +34,8 @@ for(patient in to_load)
 #number of combinations = (n cuts)^(n patients)
 combinations <- expand.grid(seqs)
 
-cells_to_search <- list("Plasma cells", "Immune Cycling cells", "Macrophages Metallothionein")
+cells_to_search <- list("Macrophages CXCL9+ CXCL10+", "T cells CD4+ FOSB+", "B cells")
+cells_to_search <- names(read_csv_data(paste0(p, "/known_cells_genes.csv")))
 
 combination_average_score <- integer(length(combinations[[1]]))
 
@@ -47,7 +47,6 @@ for(cell_to_search in cells_to_search)
   #for each combination of cluster cuts
   for (curr_combination_idx in 1:length(combinations[[1]]))
   {
-    
     curr_combination <- list()
     
     #loads the combination's clusters
@@ -71,9 +70,13 @@ for(cell_to_search in cells_to_search)
       
       #extracts the cluster containing the target cell
       for (cluster in curr_patient_correct_cluster)
+      {
         if(cell_to_search %in% cluster)
+        {
+          #print(paste0("cluster ", cluster))
           curr_combination[[length(curr_combination) + 1]] <- cluster
-      
+        }
+      }
     }
     
     #now curr_combination is a list of length(to_load) elements where at position
@@ -116,27 +119,36 @@ best_combination_clusters
 names(best_combination_ncuts) <- to_load
 capture.output(best_combination_ncuts, file = paste0(p, "/", dataset, "_OptimalClusterCuts.txt"))
 ################################################################################
+intersections_list <- list()
+for (cell_to_search in cells_to_search)
+{
+  print("#####################################################################")
+  print(paste0("printing intersection for the cell ", cell_to_search))
+  to_process <- list()
+  for (patient in best_combination_clusters)
+    for (cluster in patient)
+      if(cell_to_search %in% cluster)
+        to_process[[length(to_process) + 1]] <- cluster
+  
+  futile.logger::flog.threshold(futile.logger::ERROR, name = "VennDiagramLogger")
+  filename <- paste0(p, "/", paste(to_load, collapse = "_"), "_venn_", cell_to_search, ".pdf")
+  venn.diagram(
+    x = to_process,
+    category.names = to_load,
+    print.mode=c("raw","percent"),
+    filename = filename
+  )
+  
+  overlaps <- calculate.overlap(x = to_process)
+  intersection <- c()
+  for (overlap in overlaps)
+    if(cell_to_search %in% overlap)
+      intersection <- overlap
+  print(intersection)
+  
+  intersections_list[length(intersections_list) + 1] <- intersection
+}
 
-cell_to_search <- "Plasma cells"
-
-to_process <- list()
-for (patient in best_combination_clusters)
-  for (cluster in patient)
-    if(cell_to_search %in% cluster)
-      to_process[[length(to_process) + 1]] <- cluster
-
-futile.logger::flog.threshold(futile.logger::ERROR, name = "VennDiagramLogger")
-filename <- paste0(p, "/", paste(to_load, collapse = "_"), "_venn.pdf")
-venn.diagram(
-  x = to_process,
-  category.names = to_load,
-  print.mode=c("raw","percent"),
-  filename = filename
-)
-
-overlaps <- calculate.overlap(x = to_process)
-intersection <- c()
-for (overlap in overlaps)
-  if(cell_to_search %in% overlap)
-    intersection <- overlap
-intersection
+names(intersections_list) <- cells_to_search
+filename = paste0(dataset, "_", paste(to_load, collapse = "_"), "_OptimalIntersection.csv")
+save_list_to_csv(intersections_list, paste0(getwd(), "/", dataset, "/"), filename)
