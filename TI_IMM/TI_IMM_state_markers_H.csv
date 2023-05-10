@@ -1,0 +1,29 @@
+cell_name,genes
+B cells,PXK
+B cells AICDA+ LRMP+,
+DC1,
+DC2 CD1D-,Macrophages;RASSF4
+DC2 CD1D+,Macrophages;RASSF4
+IELs ID3+ ENTPD1+ (NK-like cells ID3+ ENTPD1+),
+ILCs,
+Immune Cycling cells,
+Macrophages,DC2 CD1D-;DC2 CD1D+;RASSF4
+Macrophages CCL3+ CCL4+,P2RY6;SERPING1
+Macrophages CXCL9+ CXCL10+,
+Macrophages LYVE1+,FCGR1A
+Macrophages Metallothionein,
+Macrophages PLA2G2D+,
+Mast cells,
+Mature DCs,
+Monocytes CHI3L1+ CYP27A1+,C10orf10;C4orf33;HELZ2;MT1M;STARD5
+Monocytes S100A8+ S100A9+,
+Neutrophils S100A8+ S100A9+,S100A8
+NK cells KLRF1+ CD3G-,CDK17
+Plasma cells,
+T cells CD4+ FOSB+,T cells Naive CD4+;Tregs
+T cells CD4+ IL17A+,ETV7
+T cells CD8+,CCL5;GZMB;HLA-F
+T cells CD8+ KLRG1+,CCL5;HLA-F
+T cells Naive CD4+,T cells CD4+ FOSB+;Tregs
+T cells OGT+,ANXA2R
+Tregs,T cells CD4+ FOSB+;T cells Naive CD4+
