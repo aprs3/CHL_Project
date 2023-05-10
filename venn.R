@@ -4,11 +4,25 @@ source("utils.R")
 
 dataset = "TI_IMM"
 #to_load <- c("I104689", "I130064", "I182231", "I139892", "I127693")
-to_load <- c("I104689", "I130064", "I182231", "I139892")
+to_load <- c("N109389", "N119540", "N130064", "N158891")
+
+#Get type of patient character for the folders
+firstCharacter = substr(to_load[[1]],1,1)
+
 
 p <- paste0(getwd(), "/", dataset)
-start = 5
+
+#Creating clustering folder
+outputDir <- paste0(getwd(), "/", dataset, "/venn_plots")
+dir.create(file.path(outputDir))
+outputDir <- paste0(getwd(), "/", dataset, "/venn_plots/", firstCharacter)
+dir.create(file.path(outputDir))
+
+
+start = 8
 end = 20
+
+
 
 #list containing for each patient the list of clusters (one for each cut)
 #->[n_patiens, (start - end), dim_cluster]
@@ -26,7 +40,7 @@ for(patient in to_load)
   #puts into that list all the cuts data
   for(i in start:end)
   {
-    tmp <- read_csv_data(paste0(p, "/", patient, "/", dataset, "_", patient, "_", "EnrichmentGenesClusters_", i , ".csv"))
+    tmp <- read_csv_data(paste0(p, "/", patient, "/","enrichment_csv/", dataset, "_", patient, "_", "EnrichmentGenesClusters_", i , ".csv"))
     patients[[length(patients)]][[i - (start - 1)]] <- tmp
   }
 }
@@ -34,7 +48,7 @@ for(patient in to_load)
 #number of combinations = (n cuts)^(n patients)
 combinations <- expand.grid(seqs)
 
-cells_to_search <- list("Macrophages CXCL9+ CXCL10+", "T cells CD4+ FOSB+", "B cells")
+cells_to_search <- list("Macrophages CXCL9+ CXCL10+", "T cells CD4+ FOSB+", "B cells") #Only for debug
 cells_to_search <- names(read_csv_data(paste0(p, "/known_cells_genes.csv")))
 
 combination_average_score <- integer(length(combinations[[1]]))
@@ -117,7 +131,7 @@ best_combination_ncuts
 best_combination_clusters
 
 names(best_combination_ncuts) <- to_load
-capture.output(best_combination_ncuts, file = paste0(p, "/", dataset, "_OptimalClusterCuts.txt"))
+capture.output(best_combination_ncuts, file = paste0(p, "/", dataset, "_OptimalClusterCuts_", paste(to_load, collapse = "_") ,".txt"))
 ################################################################################
 intersections_list <- list()
 for (cell_to_search in cells_to_search)
@@ -131,7 +145,7 @@ for (cell_to_search in cells_to_search)
         to_process[[length(to_process) + 1]] <- cluster
   
   futile.logger::flog.threshold(futile.logger::ERROR, name = "VennDiagramLogger")
-  filename <- paste0(p, "/", paste(to_load, collapse = "_"), "_venn_", cell_to_search, ".pdf")
+  filename <- paste0(outputDir, "/", paste(to_load, collapse = "_"), "_venn_", cell_to_search, ".pdf")
   venn.diagram(
     x = to_process,
     category.names = to_load,
@@ -146,7 +160,7 @@ for (cell_to_search in cells_to_search)
     if(cell_to_search %in% overlap)
     {
       intersections_list[[length(intersections_list) + 1]] <- overlap
-      print(typeof(overlap))
+      print(overlap)
     }
   }
 }

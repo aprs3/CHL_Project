@@ -15,7 +15,7 @@ logThis("#######################################################################
 setLoggingLevel(newLevel = 2L) #makes the logging a little more sophisticated
 
 args<-commandArgs(TRUE)
-args<-c("TI_IMM", "I139892", -1, -1, -1, -1, -1, -1, -1) #ATTENZIONE: usare solo per debug
+args<-c("TI_IMM", "H158108", -1, -1, -1, -1, -1, -1, -1) #ATTENZIONE: usare solo per debug
 
 dataset_name = args[1]
 dataset_path = paste0(getwd(), "/", dataset_name, "/dataset/")
@@ -82,6 +82,13 @@ dir.create(file.path(paste0(getwd(), "/", dataset_name, "/", patientID, "/plot")
 
 #Creating clustering folder
 dir.create(file.path(paste0(getwd(), "/", dataset_name, "/", patientID, "/clustering")))
+
+#Creating enrichment_csv folder
+outDirEnrichmentCsv <- paste0(getwd(), "/", dataset_name, "/", patientID, "/enrichment_csv")
+dir.create(file.path(outDirEnrichmentCsv))
+
+
+
 
 logThis(paste0("Extracting the cells from patient", patientID))
 cells_to_remove <- getCells(obj)[!grepl(patientID, colnames(mat))] #Removing all patients not considered
@@ -314,7 +321,7 @@ plotPDF(outDirPlot,dataset_name,patientID,"_16_GDIPlot",GDIPlot, width = 14, hei
 ################################################################################
 ## Uniform Clustering
 logThis("Uniform clustering")
-fineClusters <- cellsUniformClustering(obj, GDIThreshold = 1.4, cores = 2, saveObj = TRUE, outDir = outDirClustering)
+fineClusters <- cellsUniformClustering(obj, GDIThreshold = 1.4, cores = 6, saveObj = TRUE, outDir = outDirClustering)
 obj <- addClusterization(obj, clName = "FineClusters", clusters = fineClusters)
 
 logThis("Calculating the fine clusters' coex data")
@@ -429,7 +436,7 @@ for(i in 5:20)
 {
   c(a, b, c, curr_cluster) %<-% EnrichmentHeatmap(obj, row_km = kCuts,  column_km = i, groupMarkers = groupMarkers, clName = "MergedClusters")
   names(curr_cluster) = as.character(seq(1, length(curr_cluster), by=1))
-  save_list_to_csv(curr_cluster, outDir, paste0(dataset_name,"_",patientID,"_","EnrichmentGenesClusters_", i, ".csv"), header = "cluster_ID,genes")
+  save_list_to_csv(curr_cluster, outDirEnrichmentCsv, paste0(dataset_name,"_",patientID,"_","EnrichmentGenesClusters_", i, ".csv"), header = "cluster_ID,genes")
 }
 
 
