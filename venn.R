@@ -146,7 +146,7 @@ for (cell_to_search in cells_to_search)
     if(cell_to_search %in% overlap)
     {
       intersections_list[[length(intersections_list) + 1]] <- overlap
-      print(typeof(overlap))
+      print(overlap)
     }
   }
 }
