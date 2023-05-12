@@ -399,16 +399,29 @@ if(kCuts >= 1)
 logThis("Plotting the gene enrichment heatmaps")
 enrichment_cut <- as.integer(args[9])
 
+clustersMarkersPlot2 <- clustersMarkersHeatmapPlotB(obj, kCuts = kCuts,
+                                                    groupMarkers = knownCells,
+                                                    clName = "MergedClusters",
+                                                    row_dend_width = 3.0,
+                                                    cellsize = .2,
+                                                    font_size = 6L,
+                                                    use_cell_fun = FALSE)[["heatmapPlot"]]
+
 if(enrichment_cut >= 1)
 {
-  c(enrichmentHm, enrichmentHmUnclustered, scoreDF, enrichmentClusters) %<-% EnrichmentHeatmap(obj, row_km = kCuts,  column_km = enrichment_cut, groupMarkers = groupMarkers, clName = "MergedClusters")
+  c(enrichmentHm, enrichmentHmUnclustered, scoreDF, enrichmentClusters) %<-% EnrichmentHeatmap(obj, 
+                                                                                               row_km = kCuts,
+                                                                                               column_km = enrichment_cut,
+                                                                                               groupMarkers = groupMarkers,
+                                                                                               clName = "MergedClusters",
+                                                                                               cellsHeatmap = clustersMarkersPlot2)
   names(enrichmentClusters) = as.character(seq(1, length(enrichmentClusters), by=1))
   save_list_to_csv(enrichmentClusters, outDir, "EnrichmentGenesClusters.csv", header = "cluster_ID,genes")
   
-  plotPDF(outDirPlot,dataset_name,patientID,"_27_enrichmentHm",enrichmentHm, width = 35, height = 7.5)
+  plotPDF(outDirPlot,dataset_name,patientID,"_27_enrichmentHm",enrichmentHm, width = 35, height = 10)
 } else {
-  c(enrichmentHm, enrichmentHmUnclustered, scoreDF, enrichmentClusters) %<-% EnrichmentHeatmap(obj, row_km = kCuts,  column_km = 1, groupMarkers = groupMarkers, clName = "MergedClusters")
-  plotPDF(outDirPlot,dataset_name,patientID,"_27_enrichmentHm",enrichmentHm, width = 35, height = 7.5)
+  c(enrichmentHm, enrichmentHmUnclustered, scoreDF, enrichmentClusters) %<-% EnrichmentHeatmap(obj, row_km = kCuts,  column_km = 1, groupMarkers = groupMarkers, clName = "MergedClusters", cellsHeatmap = clustersMarkersPlot2)
+  plotPDF(outDirPlot,dataset_name,patientID,"_27_enrichmentHm",enrichmentHm, width = 35, height = 10)
   
   while(enrichment_cut < 1)
   {
@@ -416,11 +429,11 @@ if(enrichment_cut >= 1)
     
     if(enrichment_cut >= 1)
     {
-      c(enrichmentHm, enrichmentHmUnclustered, scoreDF, enrichmentClusters) %<-% EnrichmentHeatmap(obj, row_km = kCuts,  column_km = enrichment_cut, groupMarkers = groupMarkers, clName = "MergedClusters")
+      c(enrichmentHm, enrichmentHmUnclustered, scoreDF, enrichmentClusters) %<-% EnrichmentHeatmap(obj, row_km = kCuts,  column_km = enrichment_cut, groupMarkers = groupMarkers, clName = "MergedClusters", cellsHeatmap = clustersMarkersPlot2)
       names(enrichmentClusters) = as.character(seq(1, length(enrichmentClusters), by=1))
       save_list_to_csv(enrichmentClusters, outDir, "EnrichmentGenesClusters.csv", header = "cluster_ID,genes")
       
-      plotPDF(outDirPlot,dataset_name,patientID,"_27_enrichmentHm",enrichmentHm, width = 35, height = 7.5)
+      plotPDF(outDirPlot,dataset_name,patientID,"_27_enrichmentHm",enrichmentHm, width = 35, height = 10)
       
       answer = readline(prompt="Do you want to cut differently? [y/n]")
       if(answer == 'y')
