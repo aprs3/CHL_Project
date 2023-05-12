@@ -179,7 +179,7 @@ clustersMarkersHeatmapPlotB <- function(objCOTAN,
   
   #finalHeatmap <- draw(finalHeatmap, annotation_legend_list = lgdList)
   
-  return(list("heatmapPlot" = finalHeatmap, "dataScore" = scoreDF))
+  return(list("heatmapPlot" = finalHeatmap, "dataScore" = scoreDFT))
 }
 
 EnrichmentHeatmap <- function(objCOTAN, groupMarkers, clName = NULL, row_km = 1L, 
@@ -261,7 +261,7 @@ EnrichmentHeatmap <- function(objCOTAN, groupMarkers, clName = NULL, row_km = 1L
   
   return(list("heatmapPlot" = finalHeatmap, 
               "heatmapPlotUnclustered" = finalHeatmapUnclustered, 
-              "dataScore" = scoreDF,
+              "dataScore" = scoreDFT,
               "clusters_genes" = clusters_genes))
 } 
 
