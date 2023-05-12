@@ -268,13 +268,13 @@ EnrichmentHeatmap <- function(objCOTAN, groupMarkers, clName = NULL, row_km = 1L
 
 plotPDF <- function(path,dataset_name,patient_name,plotName, plt,plot_at_screen=TRUE, width = NULL, height = NULL) {
   if(plot_at_screen)
-    draw(plt, ht_gap = unit(1, "mm"))
+    plot(plt)
   
   pdf(file = paste0(path,dataset_name,"_",patient_name,"_",plotName,".pdf"),   # The directory you want to save the file in
       width = width, # The width of the plot in inches
       height = height) # The height of the plot in inches
   
-  draw(plt, ht_gap = unit(1, "mm"))
+  plot(plt)
   
   # Step 3: Run dev.off() to create the file!
   dev.off()

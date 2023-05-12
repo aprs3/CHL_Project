@@ -15,7 +15,7 @@ logThis("#######################################################################
 setLoggingLevel(newLevel = 2L) #makes the logging a little more sophisticated
 
 args<-commandArgs(TRUE)
-args<-c("TI_IMM", "H158108", -1, -1, -1, -1, -1, -1, -1) #ATTENZIONE: usare solo per debug
+args<-c("CO_STR", "N104689", -1, -1, -1, -1, -1, -1, -1) #ATTENZIONE: usare solo per debug
 
 dataset_name = args[1]
 dataset_path = paste0(getwd(), "/", dataset_name, "/dataset/")
@@ -86,9 +86,6 @@ dir.create(file.path(paste0(getwd(), "/", dataset_name, "/", patientID, "/cluste
 #Creating enrichment_csv folder
 outDirEnrichmentCsv <- paste0(getwd(), "/", dataset_name, "/", patientID, "/enrichment_csv")
 dir.create(file.path(outDirEnrichmentCsv))
-
-
-
 
 logThis(paste0("Extracting the cells from patient", patientID))
 cells_to_remove <- getCells(obj)[!grepl(patientID, colnames(mat))] #Removing all patients not considered
@@ -279,7 +276,7 @@ if(nu_threshold > 0)
 } else {
   while(nu_threshold <= 0)
   {
-    nu_threshold = as.numeric(readline(prompt="Please insert a valid value for the nu threshold (insert 0.0000000000000001 for skipping): "))
+    nu_threshold = as.numeric(readline(prompt="Please insert a valid value for the nu threshold: "))
     
     if(nu_threshold > 0)
     {
@@ -316,7 +313,7 @@ obj <- calculateCoex(obj)
 logThis("GDI calculation")
 quant.p = calculateGDI(obj)
 
-GDIPlot = GDIPlot(obj, cond = paste0("GDI plot for dataset ", dataset_name, ", patient ", patientID), genes = knownCellsClean)
+GDIPlot = GDIPlot(obj, cond = paste0(" for dataset ", dataset_name, ", patient ", patientID), genes = knownCellsClean)
 plotPDF(outDirPlot,dataset_name,patientID,"_16_GDIPlot",GDIPlot, width = 14, height = 14)
 ################################################################################
 ## Uniform Clustering
@@ -445,7 +442,7 @@ if(enrichment_cut >= 1)
 plotPDF(outDirPlot,dataset_name,patientID,"_28_enrichmentHmUnclustered",enrichmentHmUnclustered, width = 35, height = 5)
 ################################################################################
 logThis("Saving various clusters alternatives")
-for(i in 5:20)
+for(i in 3:20)
 {
   c(a, b, c, curr_cluster) %<-% EnrichmentHeatmap(obj, row_km = kCuts,  column_km = i, groupMarkers = groupMarkers, clName = "MergedClusters")
   names(curr_cluster) = as.character(seq(1, length(curr_cluster), by=1))
