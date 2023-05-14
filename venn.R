@@ -1,20 +1,28 @@
 setwd("~/Scrivania/CHL_Project")
 library(VennDiagram)
+library(zeallot)
 source("utils.R")
 
 lists_intersection <- function(l)
 {
   curr_intersection <- l[[1]]
+  curr_union <- l[[1]]
   
   for(i in 2: length(l))
   {
     curr_intersection <- intersect(curr_intersection, l[[i]])
+    curr_union <- union(curr_union, l[[i]])
   }
-  return(curr_intersection)
+  union_count <- length(curr_union)
+  
+  return(list("curr_intersection" <- curr_intersection, "union_count" <- union_count))
 }
 
-dataset = "CO_IMM"
-to_load <- c("N104689","N154787","N128400","N124246")
+dataset = "CO_STR"
+
+to_load <- c("N107306","N124246","N104152","N104689")
+
+#to_load <- c("N104689","N154787","N128400","N124246")
 #to_load <- c("H197396", "H139073")
 
 #Get type of patient character for the folders
@@ -29,11 +37,8 @@ dir.create(file.path(outputDir))
 outputDir <- paste0(getwd(), "/", dataset, "/venn_plots/", firstCharacter)
 dir.create(file.path(outputDir))
 
-
-start = 8
-end = 20
-
-
+start = 5
+end = 10
 
 #list containing for each patient the list of clusters (one for each cut)
 #->[n_patiens, (start - end), dim_cluster]
@@ -59,7 +64,6 @@ for(patient in to_load)
 #number of combinations = (n cuts)^(n patients)
 combinations <- expand.grid(seqs)
 
-cells_to_search <- list("Macrophages CXCL9+ CXCL10+", "T cells CD4+ FOSB+", "B cells") #Only for debug
 cells_to_search <- names(read_csv_data(paste0(p, "/known_cells_genes.csv")))
 
 combination_average_score <- integer(length(combinations[[1]]))
@@ -108,11 +112,11 @@ for(cell_to_search in cells_to_search)
     #i we have the cluster containing the target cell for the i^th patient.
     
     #we calculate the intersection of such clusters
-    combination_intersect <- lists_intersection(curr_combination)
+    c(combination_intersect, union_count) %<-% lists_intersection(curr_combination)
     
     #calculates the score of the current combination, which is
     #(number of elements intersected)/(total number of elements in the clusters)
-    curr_combination_score <- length(combination_intersect)/length(unique(unlist(curr_combination)))
+    curr_combination_score <- length(combination_intersect)/union_count
     
     combination_average_score[[curr_combination_idx]] <- combination_average_score[[curr_combination_idx]] + curr_combination_score
   }
@@ -159,7 +163,7 @@ for (cell_to_search in cells_to_search)
   )
   
   #we calculate the intersection of such clusters
-  combination_intersect <- lists_intersection(to_process)
+  c(combination_intersect, union_count) %<-% lists_intersection(to_process)
   intersections_list[[length(intersections_list) + 1]] <- combination_intersect
 }
 
