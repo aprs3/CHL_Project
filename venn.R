@@ -8,7 +8,8 @@ lists_intersection <- function(l)
   curr_intersection <- l[[1]]
   curr_union <- l[[1]]
   
-  for(i in 2: length(l))
+  #we could start from i = 2 but in case l has only one list it causes an exception
+  for(i in 1:length(l))
   {
     curr_intersection <- intersect(curr_intersection, l[[i]])
     curr_union <- union(curr_union, l[[i]])
@@ -18,11 +19,10 @@ lists_intersection <- function(l)
   return(list("curr_intersection" <- curr_intersection, "union_count" <- union_count))
 }
 
-dataset = "CO_STR"
+dataset = "CO_IMM"
 
-to_load <- c("N107306","N124246","N104152","N104689")
 
-#to_load <- c("N104689","N154787","N128400","N124246")
+to_load <- c("N104689","N154787","N128400","N124246")
 #to_load <- c("H197396", "H139073")
 
 #Get type of patient character for the folders
@@ -37,8 +37,8 @@ dir.create(file.path(outputDir))
 outputDir <- paste0(getwd(), "/", dataset, "/venn_plots/", firstCharacter)
 dir.create(file.path(outputDir))
 
-start = 5
-end = 10
+start = 8
+end = 20
 
 #list containing for each patient the list of clusters (one for each cut)
 #->[n_patiens, (start - end), dim_cluster]
@@ -165,6 +165,8 @@ for (cell_to_search in cells_to_search)
   #we calculate the intersection of such clusters
   c(combination_intersect, union_count) %<-% lists_intersection(to_process)
   intersections_list[[length(intersections_list) + 1]] <- combination_intersect
+  
+  print(combination_intersect)
 }
 
 names(intersections_list) <- cells_to_search
