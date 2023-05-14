@@ -2,9 +2,20 @@ setwd("~/Scrivania/CHL_Project")
 library(VennDiagram)
 source("utils.R")
 
-dataset = "TI_IMM"
-#to_load <- c("I104689", "I130064", "I182231", "I139892", "I127693")
-to_load <- c("N109389", "N119540", "N130064", "N158891")
+lists_intersection <- function(l)
+{
+  curr_intersection <- l[[1]]
+  
+  for(i in 2: length(l))
+  {
+    curr_intersection <- intersect(curr_intersection, l[[i]])
+  }
+  return(curr_intersection)
+}
+
+dataset = "CO_IMM"
+to_load <- c("N104689","N154787","N128400","N124246")
+#to_load <- c("H197396", "H139073")
 
 #Get type of patient character for the folders
 firstCharacter = substr(to_load[[1]],1,1)
@@ -97,17 +108,11 @@ for(cell_to_search in cells_to_search)
     #i we have the cluster containing the target cell for the i^th patient.
     
     #we calculate the intersection of such clusters
-    overlaps <- calculate.overlap(x = curr_combination)
-    
-    #searches for the intersection containing the target cell
-    intersection <- c()
-    for (overlap in overlaps)
-      if(cell_to_search %in% overlap)
-        intersection <- overlap
+    combination_intersect <- lists_intersection(curr_combination)
     
     #calculates the score of the current combination, which is
     #(number of elements intersected)/(total number of elements in the clusters)
-    curr_combination_score <- length(intersection)/length(unique(unlist(curr_combination)))
+    curr_combination_score <- length(combination_intersect)/length(unique(unlist(curr_combination)))
     
     combination_average_score[[curr_combination_idx]] <- combination_average_score[[curr_combination_idx]] + curr_combination_score
   }
@@ -153,16 +158,9 @@ for (cell_to_search in cells_to_search)
     filename = filename
   )
   
-  overlaps <- calculate.overlap(x = to_process)
-  intersection <- c()
-  for (overlap in overlaps)
-  {
-    if(cell_to_search %in% overlap)
-    {
-      intersections_list[[length(intersections_list) + 1]] <- overlap
-      print(overlap)
-    }
-  }
+  #we calculate the intersection of such clusters
+  combination_intersect <- lists_intersection(to_process)
+  intersections_list[[length(intersections_list) + 1]] <- combination_intersect
 }
 
 names(intersections_list) <- cells_to_search
