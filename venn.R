@@ -19,10 +19,10 @@ lists_intersection <- function(l)
   return(list("curr_intersection" <- curr_intersection, "union_count" <- union_count))
 }
 
-dataset = "CO_IMM"
+dataset = "TI_IMM"
 
 
-to_load <- c("N104689","N154787","N128400","N124246")
+to_load <- c("I104689", "I130064", "I182231", "I139892")
 #to_load <- c("H197396", "H139073")
 
 #Get type of patient character for the folders
@@ -37,7 +37,7 @@ dir.create(file.path(outputDir))
 outputDir <- paste0(getwd(), "/", dataset, "/venn_plots/", firstCharacter)
 dir.create(file.path(outputDir))
 
-start = 8
+start = 12
 end = 20
 
 #list containing for each patient the list of clusters (one for each cut)

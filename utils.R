@@ -51,6 +51,7 @@ clustersMarkersHeatmapPlot_main <- function(objCOTAN, groupMarkers, clName = NUL
   clName <- getClusterizationName(objCOTAN, clName = clName)
   
   expressionCl <- clustersDeltaExpression(objCOTAN, clName = clName)
+  #expressionCl <- DEAOnClusters(objCOTAN)[["coex"]]
   scoreDF <- geneSetEnrichment(groupMarkers = groupMarkers, clustersCoex = expressionCl)
   
   scoreDFT <- t(scoreDF[, 1L:(ncol(scoreDF) - 2L)])
@@ -190,6 +191,7 @@ EnrichmentHeatmap <- function(objCOTAN, groupMarkers, clName = NULL, row_km = 1L
                               cellsHeatmap = NULL
                               ) 
 {
+  set.seed(1)
   c(scoreDFT, dend, colorFunc, cellFunc,ha2, hb) %<-% clustersMarkersHeatmapPlot_main(objCOTAN, groupMarkers, clName, kCuts, conditionsList)
   
   finalHeatmap <- Heatmap(scoreDFT, 
@@ -214,22 +216,25 @@ EnrichmentHeatmap <- function(objCOTAN, groupMarkers, clName = NULL, row_km = 1L
   )
   
   clusters_data <- column_order(finalHeatmap)
-  clusters_genes <- list()
   
+  clusters_genes <- list()
   for (cluster in clusters_data) 
   {
-    curr_cluster_genes <- c()
+    curr_cluster_genes <- list()
     
     for (cluster_member in cluster)
     {
       #print(names(groupMarkers)[[cluster_member]])
-      curr_cluster_genes <- c(curr_cluster_genes, names(groupMarkers)[[cluster_member]])
+      curr_cluster_genes[[length(curr_cluster_genes) + 1]] <- names(groupMarkers)[[cluster_member]]
     }
     
-    print(curr_cluster_genes)
-    curr_cluster_genes <- curr_cluster_genes[!duplicated(curr_cluster_genes)]
+    #print("====================================================================")
+    #print(curr_cluster_genes)
+    #curr_cluster_genes <- curr_cluster_genes[!duplicated(curr_cluster_genes)]
     
-    to_add <- sort(curr_cluster_genes)
+    #to_add <- sort(curr_cluster_genes)
+    to_add <- curr_cluster_genes
+    
     clusters_genes[[length(clusters_genes)+1]] <- to_add
   }
   
@@ -253,6 +258,7 @@ EnrichmentHeatmap <- function(objCOTAN, groupMarkers, clName = NULL, row_km = 1L
                           left_annotation = c(hb)
   )
   
+  
   if(!is.null(cellsHeatmap))
     finalHeatmapUnclustered <- cellsHeatmap + finalHeatmapUnclustered
   
@@ -274,6 +280,7 @@ plotPDF <- function(path,dataset_name,patient_name,plotName, plt,plot_at_screen=
       width = width, # The width of the plot in inches
       height = height) # The height of the plot in inches
   
+  set.seed(1)
   plot(plt)
   
   # Step 3: Run dev.off() to create the file!

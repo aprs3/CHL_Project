@@ -1,10 +1,12 @@
 setwd("~/Scrivania/CHL_Project")
 source("utils.R")
 
-dataset = "TI_IMM"
-N <- list("N109389", "N119540", "N130064", "N158891")
-I <- list("I104689", "I130064", "I182231", "I139892")
-H <- list("H101694", "H152638", "H158108", "H180844")
+dataset = "CO_STR"
+
+
+N <- list("N107306", "N124246", "N104152", "N104689")
+I <- list("I130084")
+H <- list("H197396")
 
 #to_load <- list(N, I, H)
 states_to_load <- list(N, I, H)

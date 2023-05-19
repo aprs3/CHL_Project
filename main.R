@@ -15,7 +15,7 @@ logThis("#######################################################################
 setLoggingLevel(newLevel = 2L) #makes the logging a little more sophisticated
 
 args<-commandArgs(TRUE)
-args<-c("CO_STR", "N104689", -1, -1, -1, -1, -1, -1, -1) #ATTENZIONE: usare solo per debug
+args<-c("CO_IMM", "I130084", -1, -1, -1, -1, -1, -1, -1) #ATTENZIONE: usare solo per debug
 
 dataset_name = args[1]
 dataset_path = paste0(getwd(), "/", dataset_name, "/dataset/")
@@ -440,17 +440,32 @@ if(enrichment_cut >= 1)
 }
 
 plotPDF(outDirPlot,dataset_name,patientID,"_28_enrichmentHmUnclustered",enrichmentHmUnclustered, width = 35, height = 5)
+
 ################################################################################
 logThis("Saving various clusters alternatives")
-for(i in 3:20)
+outDirEnrichmentCsv <- paste0(getwd(), "/", dataset_name, "/", patientID, "/enrichment_csv")
+set.seed(1)
+clustersMarkersPlot2 <- clustersMarkersHeatmapPlotB(obj, kCuts = kCuts,
+                                                    groupMarkers = knownCells,
+                                                    clName = "MergedClusters",
+                                                    row_dend_width = 3.0,
+                                                    cellsize = .2,
+                                                    font_size = 6L,
+                                                    use_cell_fun = FALSE)[["heatmapPlot"]]
+for(i in 10:20)
 {
-  c(a, b, c, curr_cluster) %<-% EnrichmentHeatmap(obj, row_km = kCuts,  column_km = i, groupMarkers = groupMarkers, clName = "MergedClusters")
+  set.seed(1)
+  c(enrichmentHm, b, c, curr_cluster) %<-% EnrichmentHeatmap(obj, row_km = kCuts,  column_km = i, groupMarkers = groupMarkers, clName = "MergedClusters", cellsHeatmap = clustersMarkersPlot2)
+  plotPDF(outDirPlot,dataset_name,patientID,paste0("_27_enrichmentHm_", i),enrichmentHm, width = 35, height = 10, plot_at_screen = FALSE)
+  
   names(curr_cluster) = as.character(seq(1, length(curr_cluster), by=1))
   save_list_to_csv(curr_cluster, outDirEnrichmentCsv, paste0(dataset_name,"_",patientID,"_","EnrichmentGenesClusters_", i, ".csv"), header = "cluster_ID,genes")
 }
-
-
 ################################################################################
+rm(clustersMarkersPlot2)
+gc()
+################################################################################
+setLoggingLevel(newLevel = 2L) #makes the logging a little more sophisticated
 logThis(paste0("FINAL LOG:"))
 logThis(paste0("cells count: ", cells_count))
 logThis(paste0("gene count: ", gene_count))
