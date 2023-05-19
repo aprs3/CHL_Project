@@ -7,8 +7,8 @@ DC2 CD1D+,
 IELs ID3+ ENTPD1+ (NK-like cells ID3+ ENTPD1+),SUN2;TAP1
 ILCs,
 Immune Cycling cells,
-Macrophages,CD163;Macrophages CCL3+ CCL4+
-Macrophages CCL3+ CCL4+,CD163;LGMN;Macrophages
+Macrophages,CD163
+Macrophages CCL3+ CCL4+,CD163
 Macrophages CXCL9+ CXCL10+,
 Macrophages LYVE1+,
 Macrophages Metallothionein,
