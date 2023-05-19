@@ -1,29 +1,29 @@
 cell_name,genes
-B cells,PXK
-B cells AICDA+ LRMP+,
+B cells,ODC1
+B cells AICDA+ LRMP+,ODC1
 DC1,
 DC2 CD1D-,Macrophages;RASSF4
 DC2 CD1D+,Macrophages;RASSF4
-IELs ID3+ ENTPD1+ (NK-like cells ID3+ ENTPD1+),
+IELs ID3+ ENTPD1+ (NK-like cells ID3+ ENTPD1+),CCL5;GZMB;HLA-F;RARRES3;T cells CD8+;T cells CD8+ KLRG1+
 ILCs,
 Immune Cycling cells,
 Macrophages,DC2 CD1D-;DC2 CD1D+;RASSF4
-Macrophages CCL3+ CCL4+,P2RY6;SERPING1
+Macrophages CCL3+ CCL4+,LIPA;P2RY6;SERPING1
 Macrophages CXCL9+ CXCL10+,
 Macrophages LYVE1+,FCGR1A
 Macrophages Metallothionein,
 Macrophages PLA2G2D+,
-Mast cells,
+Mast cells,CD9
 Mature DCs,
-Monocytes CHI3L1+ CYP27A1+,C10orf10;C4orf33;HELZ2;MT1M;STARD5
+Monocytes CHI3L1+ CYP27A1+,HELZ2;Neutrophils S100A8+ S100A9+;S100A8
 Monocytes S100A8+ S100A9+,
-Neutrophils S100A8+ S100A9+,S100A8
-NK cells KLRF1+ CD3G-,CDK17
+Neutrophils S100A8+ S100A9+,ANKRD22;APOBEC3A;AQP9;CES1;HELZ2;Monocytes CHI3L1+ CYP27A1+;TNFAIP6
+NK cells KLRF1+ CD3G-,
 Plasma cells,
 T cells CD4+ FOSB+,T cells Naive CD4+;Tregs
-T cells CD4+ IL17A+,ETV7
-T cells CD8+,CCL5;GZMB;HLA-F
-T cells CD8+ KLRG1+,CCL5;HLA-F
+T cells CD4+ IL17A+,ETV7;NDC80
+T cells CD8+,CCL5;GZMB;HLA-F;IELs ID3+ ENTPD1+ (NK-like cells ID3+ ENTPD1+);RARRES3;T cells CD8+ KLRG1+
+T cells CD8+ KLRG1+,CCL5;GZMB;HLA-F;IELs ID3+ ENTPD1+ (NK-like cells ID3+ ENTPD1+);RARRES3;T cells CD8+
 T cells Naive CD4+,T cells CD4+ FOSB+;Tregs
 T cells OGT+,ANXA2R
 Tregs,T cells CD4+ FOSB+;T cells Naive CD4+
