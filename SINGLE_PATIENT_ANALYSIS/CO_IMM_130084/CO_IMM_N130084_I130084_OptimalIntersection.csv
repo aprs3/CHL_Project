@@ -1,0 +1,29 @@
+cell_name,genes
+B cells,NCOA3;B cells;STAP1
+B cells AICDA+ LRMP+,B cells AICDA+ LRMP+
+DC1,DC1;Macrophages PLA2G2D+;Macrophages LYVE1+;C9orf91;IL15;FUT4;CASP7;ILCs;Mature DCs;Macrophages CXCL9+ CXCL10+
+DC2 CD1D-,P2RY6;DC2 CD1D-;DC2 CD1D+
+DC2 CD1D+,P2RY6;DC2 CD1D-;DC2 CD1D+
+IELs ID3+ ENTPD1+ (NK-like cells ID3+ ENTPD1+),RBCK1;OPTN;DDIT4;RARRES3;IELs ID3+ ENTPD1+ (NK-like cells ID3+ ENTPD1+);Tregs;CCL5;T cells CD8+ KLRG1+
+ILCs,DC1;Macrophages PLA2G2D+;Macrophages LYVE1+;C9orf91;IL15;FUT4;CASP7;ILCs;Mature DCs;Macrophages CXCL9+ CXCL10+
+Immune Cycling cells,ALYREF;MICB;USP18;Immune Cycling cells;NDC80;BUB1;SLC16A1;TREX1
+Macrophages,Macrophages CCL3+ CCL4+;Macrophages;LIPA;MAFB;SIRPA;SLC15A3;TFEC;LGMN;CD163;SECTM1;SCARB2
+Macrophages CCL3+ CCL4+,Macrophages CCL3+ CCL4+;Macrophages;LIPA;MAFB;SIRPA;SLC15A3;TFEC;LGMN;CD163;SECTM1;SCARB2
+Macrophages CXCL9+ CXCL10+,DC1;Macrophages PLA2G2D+;Macrophages LYVE1+;C9orf91;IL15;FUT4;CASP7;ILCs;Mature DCs;Macrophages CXCL9+ CXCL10+
+Macrophages LYVE1+,DC1;Macrophages PLA2G2D+;Macrophages LYVE1+;C9orf91;IL15;FUT4;CASP7;ILCs;Mature DCs;Macrophages CXCL9+ CXCL10+
+Macrophages Metallothionein,GBP3;Macrophages Metallothionein
+Macrophages PLA2G2D+,DC1;Macrophages PLA2G2D+;Macrophages LYVE1+;C9orf91;IL15;FUT4;CASP7;ILCs;Mature DCs;Macrophages CXCL9+ CXCL10+
+Mast cells,ST3GAL4;Mast cells;TDRD7
+Mature DCs,DC1;Macrophages PLA2G2D+;Macrophages LYVE1+;C9orf91;IL15;FUT4;CASP7;ILCs;Mature DCs;Macrophages CXCL9+ CXCL10+
+Monocytes CHI3L1+ CYP27A1+,CYP1B1;Monocytes CHI3L1+ CYP27A1+
+Monocytes S100A8+ S100A9+,GCH1;MB21D1;CD274;Neutrophils S100A8+ S100A9+;Monocytes S100A8+ S100A9+
+Neutrophils S100A8+ S100A9+,GCH1;MB21D1;CD274;Neutrophils S100A8+ S100A9+;Monocytes S100A8+ S100A9+
+NK cells KLRF1+ CD3G-,HLA-G;HERC6;NK cells KLRF1+ CD3G-;ETV7
+Plasma cells,ISG20;ODC1;BST2;COMMD3;CD38;HSH2D;Plasma cells;PDK1;ZBP1;DUSP5
+T cells CD4+ FOSB+,T cells CD4+ FOSB+
+T cells CD4+ IL17A+,HLA-B;T cells CD4+ IL17A+
+T cells CD8+,ARHGEF3;T cells CD8+;GZMB
+T cells CD8+ KLRG1+,RBCK1;OPTN;DDIT4;RARRES3;IELs ID3+ ENTPD1+ (NK-like cells ID3+ ENTPD1+);Tregs;CCL5;T cells CD8+ KLRG1+
+T cells Naive CD4+,MT1X;T cells OGT+;T cells Naive CD4+
+T cells OGT+,MT1X;T cells OGT+;T cells Naive CD4+
+Tregs,RBCK1;OPTN;DDIT4;RARRES3;IELs ID3+ ENTPD1+ (NK-like cells ID3+ ENTPD1+);Tregs;CCL5;T cells CD8+ KLRG1+
