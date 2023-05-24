@@ -19,7 +19,7 @@ Install COTAN and his dependencies in R
 devtools::install_github("seriph78/COTAN")
 ```
 
-Download the [dataset](https://singlecell.broadinstitute.org/single_cell/study/SCP1884/human-cd-atlas-study-between-colon-and-terminal-ileum#study-download) in the dataset folder. Compress with gzip the barcodes.tsv, features.tsv, raw.mtx. Then rename them features.tsv.zip, barcodes.tsv.zip, matrix.mtx.zip.
+Download the [dataset](https://singlecell.broadinstitute.org/single_cell/study/SCP1884/human-cd-atlas-study-between-colon-and-terminal-ileum#study-download) files in the dataset folder. Compress with gzip the barcodes.tsv, features.tsv, raw.mtx. Then rename them features.tsv.zip, barcodes.tsv.zip, matrix.mtx.zip.
 
 ## Resources
 - [COTAN](https://github.com/seriph78/COTAN/tree/devel)
