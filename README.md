@@ -1,5 +1,5 @@
 # A Single Cell data analysis for Chron’s Disease with COTAN
-2023 Computational Health Laboratory project.
+2023 Computational Health Laboratory project - MD Computer Science University of Pisa.
 
 ## Group Members
 - [Andrea Piras](https://github.com/aprs3)
@@ -19,7 +19,7 @@ Install COTAN and his dependencies in R
 devtools::install_github("seriph78/COTAN")
 ```
 
-Download the [dataset](https://singlecell.broadinstitute.org/single_cell/study/SCP1884/human-cd-atlas-study-between-colon-and-terminal-ileum#study-download) files in the dataset folder. Compress with gzip the barcodes.tsv, features.tsv, raw.mtx. Then rename them features.tsv.zip, barcodes.tsv.zip, matrix.mtx.zip.
+Download the [dataset](https://singlecell.broadinstitute.org/single_cell/study/SCP1884/human-cd-atlas-study-between-colon-and-terminal-ileum#study-download) files in the correct dataset folder. Compress with gzip the scp.barcodes.tsv, scp.features.tsv, scp.raw.mtx. Then rename them features.tsv.gz, barcodes.tsv.gz, matrix.mtx.gz.
 
 ## Resources
 - [COTAN](https://github.com/seriph78/COTAN/tree/devel)
