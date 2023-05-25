@@ -1,0 +1,15 @@
+FINAL LOG:
+> logThis(paste0("cells count: ", cells_count))
+cells count: 8750
+> logThis(paste0("gene count: ", gene_count))
+gene count: 3000
+> logThis(paste0("mitocondrial percentage: ", mitocondrial_count))
+mitocondrial percentage: 12.5
+> logThis(paste0("Cluster B removed: ", remove_clusterB))
+Cluster B removed: 1
+> logThis(paste0("nu_threshold: ", nu_threshold))
+nu_threshold: 0.35
+> logThis(paste0("kCuts: ", kCuts))
+kCuts: 6
+> logThis(paste0("enrichment_cut ", enrichment_cut))
+enrichment_cut 19
