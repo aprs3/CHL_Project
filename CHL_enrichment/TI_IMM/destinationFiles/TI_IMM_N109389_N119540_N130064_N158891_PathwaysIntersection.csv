@@ -1,0 +1,29 @@
+cell_name$genes
+B cells$
+B cells AICDA+ LRMP+$
+DC1$Cytokine-cytokine receptor interaction
+DC2 CD1D-$
+DC2 CD1D+$
+IELs ID3+ ENTPD1+ (NK-like cells ID3+ ENTPD1+)$Allograft rejection@Graft-versus-host disease@Type I diabetes mellitus@Autoimmune thyroid disease
+ILCs$
+Immune Cycling cells$
+Macrophages$
+Macrophages CCL3+ CCL4+$
+Macrophages CXCL9+ CXCL10+$Cytokine-cytokine receptor interaction
+Macrophages LYVE1+$
+Macrophages Metallothionein$
+Macrophages PLA2G2D+$Cytokine-cytokine receptor interaction
+Mast cells$Viral protein interaction with cytokine and cytokine receptor@Toll-like receptor signaling pathway@Cytokine-cytokine receptor interaction
+Mature DCs$Cytokine-cytokine receptor interaction
+Monocytes CHI3L1+ CYP27A1+$TNF signaling pathway@Human T-cell leukemia virus 1 infection@Cytokine-cytokine receptor interaction@Epstein-Barr virus infection@Viral protein interaction with cytokine and cytokine receptor@Toll-like receptor signaling pathway
+Monocytes S100A8+ S100A9+$
+Neutrophils S100A8+ S100A9+$TNF signaling pathway@Human T-cell leukemia virus 1 infection@Cytokine-cytokine receptor interaction@Epstein-Barr virus infection@Viral protein interaction with cytokine and cytokine receptor@Toll-like receptor signaling pathway
+NK cells KLRF1+ CD3G-$
+Plasma cells$
+T cells CD4+ FOSB+$Allograft rejection@Graft-versus-host disease@Type I diabetes mellitus@Autoimmune thyroid disease
+T cells CD4+ IL17A+$Influenza A@Measles@NOD-like receptor signaling pathway@Epstein-Barr virus infection@Coronavirus disease - COVID-19
+T cells CD8+$Allograft rejection@Graft-versus-host disease@Type I diabetes mellitus
+T cells CD8+ KLRG1+$Allograft rejection@Graft-versus-host disease@Type I diabetes mellitus
+T cells Naive CD4+$
+T cells OGT+$Allograft rejection@Graft-versus-host disease@Type I diabetes mellitus@Autoimmune thyroid disease
+Tregs$

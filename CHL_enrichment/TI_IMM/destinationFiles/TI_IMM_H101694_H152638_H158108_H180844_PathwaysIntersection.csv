@@ -1,0 +1,29 @@
+cell_name$genes
+B cells$
+B cells AICDA+ LRMP+$
+DC1$Viral protein interaction with cytokine and cytokine receptor@Cytokine-cytokine receptor interaction
+DC2 CD1D-$
+DC2 CD1D+$
+IELs ID3+ ENTPD1+ (NK-like cells ID3+ ENTPD1+)$
+ILCs$
+Immune Cycling cells$
+Macrophages$
+Macrophages CCL3+ CCL4+$Kaposi sarcoma-associated herpesvirus infection
+Macrophages CXCL9+ CXCL10+$
+Macrophages LYVE1+$TNF signaling pathway@Influenza A@Viral protein interaction with cytokine and cytokine receptor
+Macrophages Metallothionein$
+Macrophages PLA2G2D+$Antigen processing and presentation@Human immunodeficiency virus 1 infection
+Mast cells$
+Mature DCs$
+Monocytes CHI3L1+ CYP27A1+$Human T-cell leukemia virus 1 infection@Cytokine-cytokine receptor interaction@Human cytomegalovirus infection@TNF signaling pathway@Epstein-Barr virus infection@Complement and coagulation cascades@Cellular senescence@Circadian rhythm@Intestinal immune network for IgA production@AMPK signaling pathway
+Monocytes S100A8+ S100A9+$Toll-like receptor signaling pathway
+Neutrophils S100A8+ S100A9+$Cytokine-cytokine receptor interaction@Viral protein interaction with cytokine and cytokine receptor@TNF signaling pathway@Complement and coagulation cascades@Toll-like receptor signaling pathway
+NK cells KLRF1+ CD3G-$
+Plasma cells$
+T cells CD4+ FOSB+$
+T cells CD4+ IL17A+$Cellular senescence@Epstein-Barr virus infection@Human T-cell leukemia virus 1 infection@Human cytomegalovirus infection@Circadian rhythm
+T cells CD8+$Allograft rejection@Graft-versus-host disease@Type I diabetes mellitus@Autoimmune thyroid disease@Kaposi sarcoma-associated herpesvirus infection@Epstein-Barr virus infection@Human cytomegalovirus infection@Human papillomavirus infection@Cellular senescence@Viral carcinogenesis@Human immunodeficiency virus 1 infection@Human T-cell leukemia virus 1 infection@Antigen processing and presentation@Phagosome@TNF signaling pathway@NOD-like receptor signaling pathway
+T cells CD8+ KLRG1+$Allograft rejection@Graft-versus-host disease@Type I diabetes mellitus@Autoimmune thyroid disease@Kaposi sarcoma-associated herpesvirus infection@Epstein-Barr virus infection@Human cytomegalovirus infection@Human papillomavirus infection@Cellular senescence@Viral carcinogenesis@Human immunodeficiency virus 1 infection@Human T-cell leukemia virus 1 infection@Antigen processing and presentation@Phagosome@TNF signaling pathway@NOD-like receptor signaling pathway
+T cells Naive CD4+$
+T cells OGT+$Antigen processing and presentation@Phagosome@Cellular senescence@Epstein-Barr virus infection@Human immunodeficiency virus 1 infection@Human T-cell leukemia virus 1 infection@Human cytomegalovirus infection@Allograft rejection
+Tregs$
