@@ -6,8 +6,8 @@
 - [Matteo Ninniri](https://github.com/Asduffo)
 
 ## Project description
-This project makes single-cell RNA sequencing analysis with COTAN: In details it performs data cleaning, clustering of the cells, gene set enrichment. Given multiple patients analyzed can output for each cell the best intersection of genes between the patients. Last, finds the
-exclusive genes for each condition (healthy, inflamed, not-inflamed samples) dividing them by new genes found in the enrichment and known genes from a given reference. 
+This project makes single-cell RNA sequencing analysis with COTAN and more: In details it performs data cleaning, clustering of the cells, gene set enrichment. Given multiple patients analyzed can output for each cell the best intersection of genes between the patients. This application also can find the
+exclusive genes for each condition (healthy, inflamed, not-inflamed samples) dividing them by new genes found in the enrichment and known genes from a given reference. Last, for each patient can perform the pathway enrichment of the genes found previeusly.
 
 ## How to run
 Clone the repository
