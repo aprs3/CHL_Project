@@ -1,0 +1,65 @@
+[1] "============================================================================================================================"
+[1] "Cell Type: Activated fibroblasts CCL19+ ADAMADEC1+, source filename: CO_STR_N107306_N124246_N104152_N104689_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Endothelial cells CD36+, source filename: CO_STR_N107306_N124246_N104152_N104689_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Endothelial cells DARC+, source filename: CO_STR_N107306_N124246_N104152_N104689_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Endothelial cells LTC4S+ SEMA3G+, source filename: CO_STR_N107306_N124246_N104152_N104689_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Fibroblasts ADAMDEC1+, source filename: CO_STR_N107306_N124246_N104152_N104689_OptimalIntersection.csv"
+                                                           Description GeneRatio       pvalue    geneID Count
+hsa04061 Viral protein interaction with cytokine and cytokine receptor       2/3 0.0004115215 3572/6355     2
+hsa05171                                Coronavirus disease - COVID-19       2/3 0.0022043534  716/3572     2
+hsa04060                        Cytokine-cytokine receptor interaction       2/3 0.0035493549 3572/6355     2
+hsa05133                                                     Pertussis       1/3 0.0267027168       716     1
+hsa04610                           Complement and coagulation cascades       1/3 0.0301804313       716     1
+hsa05150                               Staphylococcus aureus infection       1/3 0.0336498518       716     1
+hsa04659                                     Th17 cell differentiation       1/3 0.0378022220      3572     1
+hsa05322                                  Systemic lupus erythematosus       1/3 0.0477879713       716     1
+hsa04550      Signaling pathways regulating pluripotency of stem cells       1/3 0.0498453246      3572     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Fibroblasts KCNN3+ LY6H+, source filename: CO_STR_N107306_N124246_N104152_N104689_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Fibroblasts NPY+ SLITRK6+, source filename: CO_STR_N107306_N124246_N104152_N104689_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Fibroblasts SFRP2+ SLPI+, source filename: CO_STR_N107306_N124246_N104152_N104689_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Fibroblasts SMOC2+ PTGIS+, source filename: CO_STR_N107306_N124246_N104152_N104689_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Glial cells, source filename: CO_STR_N107306_N124246_N104152_N104689_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Inflammatory fibroblasts IL11+ CHI3L1+, source filename: CO_STR_N107306_N124246_N104152_N104689_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Myofibroblasts GREM1+ GREM2+, source filename: CO_STR_N107306_N124246_N104152_N104689_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Myofibroblasts HHIP+ NPNT+, source filename: CO_STR_N107306_N124246_N104152_N104689_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Pericytes HIGD1B+ STEAP4+, source filename: CO_STR_N107306_N124246_N104152_N104689_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Pericytes RERGL+ NTRK2+, source filename: CO_STR_N107306_N124246_N104152_N104689_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Stromal Cycling cells, source filename: CO_STR_N107306_N124246_N104152_N104689_OptimalIntersection.csv"
+                                          Description GeneRatio       pvalue                 geneID Count
+hsa05330                          Allograft rejection      3/39 0.0006827769          3135/3002/941     3
+hsa05332                    Graft-versus-host disease      3/39 0.0009173944          3135/3002/941     3
+hsa04940                     Type I diabetes mellitus      3/39 0.0009830667          3135/3002/941     3
+hsa05320                   Autoimmune thyroid disease      3/39 0.0018076942          3135/3002/941     3
+hsa04145                                    Phagosome      4/39 0.0050475866    6891/4481/3135/2209     4
+hsa05202      Transcriptional misregulation in cancer      4/39 0.0115643676   51513/3002/2209/8900     4
+hsa04625     C-type lectin receptor signaling pathway      3/39 0.0119571150      9020/26253/338339     3
+hsa05169                 Epstein-Barr virus infection      4/39 0.0134922906    6891/9020/3135/8900     4
+hsa04668                        TNF signaling pathway      3/39 0.0152991488       64127/9020/84699     3
+hsa05166      Human T-cell leukemia virus 1 infection      4/39 0.0184844354   9020/3135/84699/8900     4
+hsa05163              Human cytomegalovirus infection      4/39 0.0193204433   6891/3135/84699/1230     4
+hsa04672 Intestinal immune network for IgA production      2/39 0.0212349507               9020/941     2
+hsa04650    Natural killer cell mediated cytotoxicity      3/39 0.0225249746         4277/3135/3002     3
+hsa05416                            Viral myocarditis      2/39 0.0309654417               3135/941     2
+hsa04110                                   Cell cycle      3/39 0.0351715323         10403/8900/699     3
+hsa04514                      Cell adhesion molecules      3/39 0.0351715323         3135/941/29126     3
+hsa05221                       Acute myeloid leukemia      2/39 0.0379116670              2209/8900     2
+hsa04060       Cytokine-cytokine receptor interaction      4/39 0.0457213162 3557/55540/163702/1230     4
+hsa03320                       PPAR signaling pathway      2/39 0.0465055052              2180/2710     2
+hsa04918                    Thyroid hormone synthesis      2/39 0.0465055052             2877/84699     2
+hsa05152                                 Tuberculosis      3/39 0.0494519871       64127/2209/26253     3
+hsa04612          Antigen processing and presentation      2/39 0.0498970067              6891/3135     2

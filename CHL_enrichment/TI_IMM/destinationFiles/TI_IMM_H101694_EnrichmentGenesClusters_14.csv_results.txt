@@ -1,227 +1,486 @@
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_B cells.txt"
- [1] "Fatty acid biosynthesis"             "Ferroptosis"                         "Fatty acid degradation"              "Fatty acid metabolism"              
- [5] "Adipocytokine signaling pathway"     "PPAR signaling pathway"              "Cytosolic DNA-sensing pathway"       "Leishmaniasis"                      
- [9] "Antigen processing and presentation" "Peroxisome"                         
+                                 Description GeneRatio     pvalue geneID Count
+hsa00061             Fatty acid biosynthesis       1/5 0.01059188   2180     1
+hsa04216                         Ferroptosis       1/5 0.02399514   2180     1
+hsa00071              Fatty acid degradation       1/5 0.02515374   2180     1
+hsa01212               Fatty acid metabolism       1/5 0.03323317   2180     1
+hsa04920     Adipocytokine signaling pathway       1/5 0.04011567   2180     1
+hsa03320              PPAR signaling pathway       1/5 0.04354220   2180     1
+hsa04623       Cytosolic DNA-sensing pathway       1/5 0.04354220   9447     1
+hsa05140                       Leishmaniasis       1/5 0.04468219 653361     1
+hsa04612 Antigen processing and presentation       1/5 0.04525179    972     1
+hsa04146                          Peroxisome       1/5 0.04752743   2180     1
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_B cells AICDA+ LRMP+.txt"
- [1] "Fatty acid biosynthesis"             "Ferroptosis"                         "Fatty acid degradation"              "Fatty acid metabolism"              
- [5] "Adipocytokine signaling pathway"     "PPAR signaling pathway"              "Cytosolic DNA-sensing pathway"       "Leishmaniasis"                      
- [9] "Antigen processing and presentation" "Peroxisome"                         
+                                 Description GeneRatio     pvalue geneID Count
+hsa00061             Fatty acid biosynthesis       1/5 0.01059188   2180     1
+hsa04216                         Ferroptosis       1/5 0.02399514   2180     1
+hsa00071              Fatty acid degradation       1/5 0.02515374   2180     1
+hsa01212               Fatty acid metabolism       1/5 0.03323317   2180     1
+hsa04920     Adipocytokine signaling pathway       1/5 0.04011567   2180     1
+hsa03320              PPAR signaling pathway       1/5 0.04354220   2180     1
+hsa04623       Cytosolic DNA-sensing pathway       1/5 0.04354220   9447     1
+hsa05140                       Leishmaniasis       1/5 0.04468219 653361     1
+hsa04612 Antigen processing and presentation       1/5 0.04525179    972     1
+hsa04146                          Peroxisome       1/5 0.04752743   2180     1
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_DC1.txt"
-[1] "Kaposi sarcoma-associated herpesvirus infection"               "Complement and coagulation cascades"                          
-[3] "Viral protein interaction with cytokine and cytokine receptor" "Cytokine-cytokine receptor interaction"                       
+                                                           Description GeneRatio     pvalue         geneID Count
+hsa05167               Kaposi sarcoma-associated herpesvirus infection      3/24 0.01684245 3572/1230/6934     3
+hsa04610                           Complement and coagulation cascades      2/24 0.02437169       7056/710     2
+hsa04061 Viral protein interaction with cytokine and cytokine receptor      2/24 0.03222433      3572/1230     2
+hsa04060                        Cytokine-cytokine receptor interaction      3/24 0.04941575 3572/3557/1230     3
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_DC2 CD1D-.txt"
-[1] "Kaposi sarcoma-associated herpesvirus infection"               "Complement and coagulation cascades"                          
-[3] "Viral protein interaction with cytokine and cytokine receptor" "Cytokine-cytokine receptor interaction"                       
+                                                           Description GeneRatio     pvalue         geneID Count
+hsa05167               Kaposi sarcoma-associated herpesvirus infection      3/24 0.01684245 3572/1230/6934     3
+hsa04610                           Complement and coagulation cascades      2/24 0.02437169       7056/710     2
+hsa04061 Viral protein interaction with cytokine and cytokine receptor      2/24 0.03222433      3572/1230     2
+hsa04060                        Cytokine-cytokine receptor interaction      3/24 0.04941575 3572/3557/1230     3
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_DC2 CD1D+.txt"
-[1] "Kaposi sarcoma-associated herpesvirus infection"               "Complement and coagulation cascades"                          
-[3] "Viral protein interaction with cytokine and cytokine receptor" "Cytokine-cytokine receptor interaction"                       
+                                                           Description GeneRatio     pvalue         geneID Count
+hsa05167               Kaposi sarcoma-associated herpesvirus infection      3/24 0.01684245 3572/1230/6934     3
+hsa04610                           Complement and coagulation cascades      2/24 0.02437169       7056/710     2
+hsa04061 Viral protein interaction with cytokine and cytokine receptor      2/24 0.03222433      3572/1230     2
+hsa04060                        Cytokine-cytokine receptor interaction      3/24 0.04941575 3572/3557/1230     3
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_IELs ID3+ ENTPD1+ (NK-like cells ID3+ ENTPD1+).txt"
- [1] "Antigen processing and presentation"            "Growth hormone synthesis, secretion and action" "Osteoclast differentiation"                    
- [4] "Phagosome"                                      "Cellular senescence"                            "Epstein-Barr virus infection"                  
- [7] "Human immunodeficiency virus 1 infection"       "Human T-cell leukemia virus 1 infection"        "Human cytomegalovirus infection"               
-[10] "Endocytosis"                                    "Circadian rhythm"                               "Allograft rejection"                           
-[13] "Primary immunodeficiency"                      
+                                            Description GeneRatio      pvalue    geneID Count
+hsa04612            Antigen processing and presentation      2/11 0.004370561 6890/3105     2
+hsa04935 Growth hormone synthesis, secretion and action      2/11 0.010086551 8651/3726     2
+hsa04380                     Osteoclast differentiation      2/11 0.011417320 8651/3726     2
+hsa04145                                      Phagosome      2/11 0.015848183 6890/3105     2
+hsa04218                            Cellular senescence      2/11 0.016648818 4088/3105     2
+hsa05169                   Epstein-Barr virus infection      2/11 0.027058926 6890/3105     2
+hsa05170       Human immunodeficiency virus 1 infection      2/11 0.029600762 6890/3105     2
+hsa05166        Human T-cell leukemia virus 1 infection      2/11 0.032236768 4088/3105     2
+hsa05163                Human cytomegalovirus infection      2/11 0.033045576 6890/3105     2
+hsa04144                                    Endocytosis      2/11 0.040391896 4088/3105     2
+hsa04710                               Circadian rhythm      1/11 0.043340368      1407     1
+hsa05330                            Allograft rejection      1/11 0.048325320      3105     1
+hsa05340                       Primary immunodeficiency      1/11 0.048325320      6890     1
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_ILCs.txt"
-[1] "Apoptosis - multiple species" "African trypanosomiasis"     
+                          Description GeneRatio    pvalue geneID Count
+hsa04215 Apoptosis - multiple species      1/11 0.0408390    840     1
+hsa05143      African trypanosomiasis      1/11 0.0470813   8542     1
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_Immune Cycling cells.txt"
- [1] "p53 signaling pathway"                           "Cytosolic DNA-sensing pathway"                   "Natural killer cell mediated cytotoxicity"      
- [4] "Apoptosis"                                       "Influenza A"                                     "Kaposi sarcoma-associated herpesvirus infection"
- [7] "Viral carcinogenesis"                            "Lipid and atherosclerosis"                       "Apoptosis - multiple species"                   
-[10] "Cytokine-cytokine receptor interaction"         
+                                             Description GeneRatio      pvalue      geneID Count
+hsa04115                           p53 signaling pathway       2/9 0.002540606   8797/5366     2
+hsa04623                   Cytosolic DNA-sensing pathway       2/9 0.002679755  3665/11277     2
+hsa04650       Natural killer cell mediated cytotoxicity       2/9 0.008090297   8797/4277     2
+hsa04210                                       Apoptosis       2/9 0.008570994   8797/5366     2
+hsa05164                                     Influenza A       2/9 0.013310508   8797/3665     2
+hsa05167 Kaposi sarcoma-associated herpesvirus infection       2/9 0.016927007   3665/4277     2
+hsa05203                            Viral carcinogenesis       2/9 0.018618429   3665/5366     2
+hsa05417                       Lipid and atherosclerosis       2/9 0.020560037   8797/3665     2
+hsa04215                    Apoptosis - multiple species       1/9 0.033535916        5366     1
+hsa04060          Cytokine-cytokine receptor interaction       2/9 0.037075822 8797/163702     2
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_Macrophages.txt"
-[1] "Kaposi sarcoma-associated herpesvirus infection"               "Complement and coagulation cascades"                          
-[3] "Viral protein interaction with cytokine and cytokine receptor" "Cytokine-cytokine receptor interaction"                       
+                                                           Description GeneRatio     pvalue         geneID Count
+hsa05167               Kaposi sarcoma-associated herpesvirus infection      3/24 0.01684245 3572/1230/6934     3
+hsa04610                           Complement and coagulation cascades      2/24 0.02437169       7056/710     2
+hsa04061 Viral protein interaction with cytokine and cytokine receptor      2/24 0.03222433      3572/1230     2
+hsa04060                        Cytokine-cytokine receptor interaction      3/24 0.04941575 3572/3557/1230     3
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_Macrophages CCL3+ CCL4+.txt"
-[1] "Kaposi sarcoma-associated herpesvirus infection"               "Complement and coagulation cascades"                          
-[3] "Viral protein interaction with cytokine and cytokine receptor" "Cytokine-cytokine receptor interaction"                       
+                                                           Description GeneRatio     pvalue         geneID Count
+hsa05167               Kaposi sarcoma-associated herpesvirus infection      3/24 0.01684245 3572/1230/6934     3
+hsa04610                           Complement and coagulation cascades      2/24 0.02437169       7056/710     2
+hsa04061 Viral protein interaction with cytokine and cytokine receptor      2/24 0.03222433      3572/1230     2
+hsa04060                        Cytokine-cytokine receptor interaction      3/24 0.04941575 3572/3557/1230     3
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_Macrophages CXCL9+ CXCL10+.txt"
-[1] "Apoptosis - multiple species" "African trypanosomiasis"     
+                          Description GeneRatio    pvalue geneID Count
+hsa04215 Apoptosis - multiple species      1/11 0.0408390    840     1
+hsa05143      African trypanosomiasis      1/11 0.0470813   8542     1
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_Macrophages LYVE1+.txt"
- [1] "Rheumatoid arthritis"                                          "TNF signaling pathway"                                        
- [3] "Influenza A"                                                   "Intestinal immune network for IgA production"                 
- [5] "Coronavirus disease - COVID-19"                                "IL-17 signaling pathway"                                      
- [7] "Viral protein interaction with cytokine and cytokine receptor" "Toll-like receptor signaling pathway"                         
- [9] "Cytokine-cytokine receptor interaction"                        "Systemic lupus erythematosus"                                 
-[11] "Phagosome"                                                     "Hepatitis C"                                                  
-[13] "One carbon pool by folate"                                     "Mannose type O-glycan biosynthesis"                           
-[15] "NOD-like receptor signaling pathway"                           "Glycosphingolipid biosynthesis - lacto and neolacto series"   
-[17] "Chemokine signaling pathway"                                  
+                                                           Description GeneRatio       pvalue         geneID Count
+hsa05323                                          Rheumatoid arthritis      3/16 0.0006485979  941/3600/6347     3
+hsa04668                                         TNF signaling pathway      3/16 0.0011730898 3600/3627/6347     3
+hsa05164                                                   Influenza A      3/16 0.0037398709 4940/3627/6347     3
+hsa04672                  Intestinal immune network for IgA production      2/16 0.0037421282       941/3600     2
+hsa05171                                Coronavirus disease - COVID-19      3/16 0.0087442098 4940/3627/6347     3
+hsa04657                                       IL-17 signaling pathway      2/16 0.0132373034      3627/6347     2
+hsa04061 Viral protein interaction with cytokine and cytokine receptor      2/16 0.0148923173      3627/6347     2
+hsa04620                          Toll-like receptor signaling pathway      2/16 0.0160431793       941/3627     2
+hsa04060                        Cytokine-cytokine receptor interaction      3/16 0.0167601172 3600/3627/6347     3
+hsa05322                                  Systemic lupus erythematosus      2/16 0.0269129744       2209/941     2
+hsa04145                                                     Phagosome      2/16 0.0326128343      4481/2209     2
+hsa05160                                                   Hepatitis C      2/16 0.0346111184      4940/3627     2
+hsa00670                                     One carbon pool by folate      1/16 0.0371811833         441024     1
+hsa00515                            Mannose type O-glycan biosynthesis      1/16 0.0426452639           2526     1
+hsa04621                           NOD-like receptor signaling pathway      2/16 0.0471092466      4940/6347     2
+hsa04062                                   Chemokine signaling pathway      2/16 0.0498781442      3627/6347     2
+hsa00601    Glycosphingolipid biosynthesis - lacto and neolacto series      1/16 0.0498854919           2526     1
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_Macrophages Metallothionein.txt"
-[1] "Apoptosis - multiple species" "African trypanosomiasis"     
+                          Description GeneRatio    pvalue geneID Count
+hsa04215 Apoptosis - multiple species      1/11 0.0408390    840     1
+hsa05143      African trypanosomiasis      1/11 0.0470813   8542     1
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_Macrophages PLA2G2D+.txt"
- [1] "Human T-cell leukemia virus 1 infection"                       "Cytokine-cytokine receptor interaction"                       
- [3] "Viral protein interaction with cytokine and cytokine receptor" "Human cytomegalovirus infection"                              
- [5] "TNF signaling pathway"                                         "Antigen processing and presentation"                          
- [7] "Epstein-Barr virus infection"                                  "Mineral absorption"                                           
- [9] "Chemokine signaling pathway"                                   "Human immunodeficiency virus 1 infection"                     
-[11] "Complement and coagulation cascades"                           "Cellular senescence"                                          
-[13] "Circadian rhythm"                                              "Allograft rejection"                                          
-[15] "NF-kappa B signaling pathway"                                  "Toll-like receptor signaling pathway"                         
-[17] "C-type lectin receptor signaling pathway"                      "Tryptophan metabolism"                                        
-[19] "Graft-versus-host disease"                                     "Type I diabetes mellitus"                                     
-[21] "Intestinal immune network for IgA production"                  "Viral carcinogenesis"                                         
-[23] "AMPK signaling pathway"                                        "Autoimmune thyroid disease"                                   
+                                                           Description GeneRatio       pvalue                                        geneID Count
+hsa05166                       Human T-cell leukemia virus 1 infection      8/56 9.484413e-05       3601/3106/9020/3554/3135/84699/8900/567     8
+hsa04060                        Cytokine-cytokine receptor interaction      9/56 1.204463e-04 3601/3554/55540/4283/6373/6376/6355/6363/3953     9
+hsa04061 Viral protein interaction with cytokine and cytokine receptor      5/56 4.937262e-04                      4283/6373/6376/6355/6363     5
+hsa05163                               Human cytomegalovirus infection      7/56 6.545587e-04            3106/6891/3554/3135/6376/84699/567     7
+hsa04668                                         TNF signaling pathway      5/56 8.975065e-04                    7424/9020/6376/84699/64127     5
+hsa04612                           Antigen processing and presentation      4/56 1.705720e-03                            3106/6891/3135/567     4
+hsa05169                                  Epstein-Barr virus infection      6/56 2.063966e-03                  3106/6891/9020/3135/8900/567     6
+hsa04978                                            Mineral absorption      3/56 7.193953e-03                                4494/4499/4496     3
+hsa04062                                   Chemokine signaling pathway      5/56 8.544365e-03                      4283/6373/6376/6355/6363     5
+hsa05170                      Human immunodeficiency virus 1 infection      5/56 1.275915e-02                     3106/6891/3135/567/200315     5
+hsa04610                           Complement and coagulation cascades      3/56 1.907345e-02                                  5054/629/716     3
+hsa04218                                           Cellular senescence      4/56 1.943053e-02                           3106/5054/3135/8900     4
+hsa04710                                              Circadian rhythm      2/56 2.107053e-02                                     4862/4783     2
+hsa05330                                           Allograft rejection      2/56 2.596415e-02                                     3106/3135     2
+hsa04064                                  NF-kappa B signaling pathway      3/56 3.123937e-02                                9020/3554/6363     3
+hsa04620                          Toll-like receptor signaling pathway      3/56 3.123937e-02                                7098/4283/6373     3
+hsa04625                      C-type lectin receptor signaling pathway      3/56 3.123937e-02                             9020/26253/338339     3
+hsa00380                                         Tryptophan metabolism      2/56 3.127104e-02                                     1545/3620     2
+hsa05332                                     Graft-versus-host disease      2/56 3.127104e-02                                     3106/3135     2
+hsa04940                                      Type I diabetes mellitus      2/56 3.265947e-02                                     3106/3135     2
+hsa04672                  Intestinal immune network for IgA production      2/56 4.148018e-02                                     3601/9020     2
+hsa05203                                          Viral carcinogenesis      4/56 4.551734e-02                          3106/3135/84699/8900     4
+hsa04152                                        AMPK signaling pathway      3/56 4.569907e-02                               84699/8900/3953     3
+hsa05320                                    Autoimmune thyroid disease      2/56 4.780149e-02                                     3106/3135     2
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_Mast cells.txt"
- [1] "Human T-cell leukemia virus 1 infection"                       "Cytokine-cytokine receptor interaction"                       
- [3] "Viral protein interaction with cytokine and cytokine receptor" "Human cytomegalovirus infection"                              
- [5] "TNF signaling pathway"                                         "Antigen processing and presentation"                          
- [7] "Epstein-Barr virus infection"                                  "Mineral absorption"                                           
- [9] "Chemokine signaling pathway"                                   "Human immunodeficiency virus 1 infection"                     
-[11] "Complement and coagulation cascades"                           "Cellular senescence"                                          
-[13] "Circadian rhythm"                                              "Allograft rejection"                                          
-[15] "NF-kappa B signaling pathway"                                  "Toll-like receptor signaling pathway"                         
-[17] "C-type lectin receptor signaling pathway"                      "Tryptophan metabolism"                                        
-[19] "Graft-versus-host disease"                                     "Type I diabetes mellitus"                                     
-[21] "Intestinal immune network for IgA production"                  "Viral carcinogenesis"                                         
-[23] "AMPK signaling pathway"                                        "Autoimmune thyroid disease"                                   
+                                                           Description GeneRatio       pvalue                                        geneID Count
+hsa05166                       Human T-cell leukemia virus 1 infection      8/56 9.484413e-05       3601/3106/9020/3554/3135/84699/8900/567     8
+hsa04060                        Cytokine-cytokine receptor interaction      9/56 1.204463e-04 3601/3554/55540/4283/6373/6376/6355/6363/3953     9
+hsa04061 Viral protein interaction with cytokine and cytokine receptor      5/56 4.937262e-04                      4283/6373/6376/6355/6363     5
+hsa05163                               Human cytomegalovirus infection      7/56 6.545587e-04            3106/6891/3554/3135/6376/84699/567     7
+hsa04668                                         TNF signaling pathway      5/56 8.975065e-04                    7424/9020/6376/84699/64127     5
+hsa04612                           Antigen processing and presentation      4/56 1.705720e-03                            3106/6891/3135/567     4
+hsa05169                                  Epstein-Barr virus infection      6/56 2.063966e-03                  3106/6891/9020/3135/8900/567     6
+hsa04978                                            Mineral absorption      3/56 7.193953e-03                                4494/4499/4496     3
+hsa04062                                   Chemokine signaling pathway      5/56 8.544365e-03                      4283/6373/6376/6355/6363     5
+hsa05170                      Human immunodeficiency virus 1 infection      5/56 1.275915e-02                     3106/6891/3135/567/200315     5
+hsa04610                           Complement and coagulation cascades      3/56 1.907345e-02                                  5054/629/716     3
+hsa04218                                           Cellular senescence      4/56 1.943053e-02                           3106/5054/3135/8900     4
+hsa04710                                              Circadian rhythm      2/56 2.107053e-02                                     4862/4783     2
+hsa05330                                           Allograft rejection      2/56 2.596415e-02                                     3106/3135     2
+hsa04064                                  NF-kappa B signaling pathway      3/56 3.123937e-02                                9020/3554/6363     3
+hsa04620                          Toll-like receptor signaling pathway      3/56 3.123937e-02                                7098/4283/6373     3
+hsa04625                      C-type lectin receptor signaling pathway      3/56 3.123937e-02                             9020/26253/338339     3
+hsa00380                                         Tryptophan metabolism      2/56 3.127104e-02                                     1545/3620     2
+hsa05332                                     Graft-versus-host disease      2/56 3.127104e-02                                     3106/3135     2
+hsa04940                                      Type I diabetes mellitus      2/56 3.265947e-02                                     3106/3135     2
+hsa04672                  Intestinal immune network for IgA production      2/56 4.148018e-02                                     3601/9020     2
+hsa05203                                          Viral carcinogenesis      4/56 4.551734e-02                          3106/3135/84699/8900     4
+hsa04152                                        AMPK signaling pathway      3/56 4.569907e-02                               84699/8900/3953     3
+hsa05320                                    Autoimmune thyroid disease      2/56 4.780149e-02                                     3106/3135     2
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_Mature DCs.txt"
- [1] "Human T-cell leukemia virus 1 infection"                       "Cytokine-cytokine receptor interaction"                       
- [3] "Viral protein interaction with cytokine and cytokine receptor" "Human cytomegalovirus infection"                              
- [5] "TNF signaling pathway"                                         "Antigen processing and presentation"                          
- [7] "Epstein-Barr virus infection"                                  "Mineral absorption"                                           
- [9] "Chemokine signaling pathway"                                   "Human immunodeficiency virus 1 infection"                     
-[11] "Complement and coagulation cascades"                           "Cellular senescence"                                          
-[13] "Circadian rhythm"                                              "Allograft rejection"                                          
-[15] "NF-kappa B signaling pathway"                                  "Toll-like receptor signaling pathway"                         
-[17] "C-type lectin receptor signaling pathway"                      "Tryptophan metabolism"                                        
-[19] "Graft-versus-host disease"                                     "Type I diabetes mellitus"                                     
-[21] "Intestinal immune network for IgA production"                  "Viral carcinogenesis"                                         
-[23] "AMPK signaling pathway"                                        "Autoimmune thyroid disease"                                   
+                                                           Description GeneRatio       pvalue                                        geneID Count
+hsa05166                       Human T-cell leukemia virus 1 infection      8/56 9.484413e-05       3601/3106/9020/3554/3135/84699/8900/567     8
+hsa04060                        Cytokine-cytokine receptor interaction      9/56 1.204463e-04 3601/3554/55540/4283/6373/6376/6355/6363/3953     9
+hsa04061 Viral protein interaction with cytokine and cytokine receptor      5/56 4.937262e-04                      4283/6373/6376/6355/6363     5
+hsa05163                               Human cytomegalovirus infection      7/56 6.545587e-04            3106/6891/3554/3135/6376/84699/567     7
+hsa04668                                         TNF signaling pathway      5/56 8.975065e-04                    7424/9020/6376/84699/64127     5
+hsa04612                           Antigen processing and presentation      4/56 1.705720e-03                            3106/6891/3135/567     4
+hsa05169                                  Epstein-Barr virus infection      6/56 2.063966e-03                  3106/6891/9020/3135/8900/567     6
+hsa04978                                            Mineral absorption      3/56 7.193953e-03                                4494/4499/4496     3
+hsa04062                                   Chemokine signaling pathway      5/56 8.544365e-03                      4283/6373/6376/6355/6363     5
+hsa05170                      Human immunodeficiency virus 1 infection      5/56 1.275915e-02                     3106/6891/3135/567/200315     5
+hsa04610                           Complement and coagulation cascades      3/56 1.907345e-02                                  5054/629/716     3
+hsa04218                                           Cellular senescence      4/56 1.943053e-02                           3106/5054/3135/8900     4
+hsa04710                                              Circadian rhythm      2/56 2.107053e-02                                     4862/4783     2
+hsa05330                                           Allograft rejection      2/56 2.596415e-02                                     3106/3135     2
+hsa04064                                  NF-kappa B signaling pathway      3/56 3.123937e-02                                9020/3554/6363     3
+hsa04620                          Toll-like receptor signaling pathway      3/56 3.123937e-02                                7098/4283/6373     3
+hsa04625                      C-type lectin receptor signaling pathway      3/56 3.123937e-02                             9020/26253/338339     3
+hsa00380                                         Tryptophan metabolism      2/56 3.127104e-02                                     1545/3620     2
+hsa05332                                     Graft-versus-host disease      2/56 3.127104e-02                                     3106/3135     2
+hsa04940                                      Type I diabetes mellitus      2/56 3.265947e-02                                     3106/3135     2
+hsa04672                  Intestinal immune network for IgA production      2/56 4.148018e-02                                     3601/9020     2
+hsa05203                                          Viral carcinogenesis      4/56 4.551734e-02                          3106/3135/84699/8900     4
+hsa04152                                        AMPK signaling pathway      3/56 4.569907e-02                               84699/8900/3953     3
+hsa05320                                    Autoimmune thyroid disease      2/56 4.780149e-02                                     3106/3135     2
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_Monocytes CHI3L1+ CYP27A1+.txt"
- [1] "Human T-cell leukemia virus 1 infection"                       "Cytokine-cytokine receptor interaction"                       
- [3] "Viral protein interaction with cytokine and cytokine receptor" "Human cytomegalovirus infection"                              
- [5] "TNF signaling pathway"                                         "Antigen processing and presentation"                          
- [7] "Epstein-Barr virus infection"                                  "Mineral absorption"                                           
- [9] "Chemokine signaling pathway"                                   "Human immunodeficiency virus 1 infection"                     
-[11] "Complement and coagulation cascades"                           "Cellular senescence"                                          
-[13] "Circadian rhythm"                                              "Allograft rejection"                                          
-[15] "NF-kappa B signaling pathway"                                  "Toll-like receptor signaling pathway"                         
-[17] "C-type lectin receptor signaling pathway"                      "Tryptophan metabolism"                                        
-[19] "Graft-versus-host disease"                                     "Type I diabetes mellitus"                                     
-[21] "Intestinal immune network for IgA production"                  "Viral carcinogenesis"                                         
-[23] "AMPK signaling pathway"                                        "Autoimmune thyroid disease"                                   
+                                                           Description GeneRatio       pvalue                                        geneID Count
+hsa05166                       Human T-cell leukemia virus 1 infection      8/56 9.484413e-05       3601/3106/9020/3554/3135/84699/8900/567     8
+hsa04060                        Cytokine-cytokine receptor interaction      9/56 1.204463e-04 3601/3554/55540/4283/6373/6376/6355/6363/3953     9
+hsa04061 Viral protein interaction with cytokine and cytokine receptor      5/56 4.937262e-04                      4283/6373/6376/6355/6363     5
+hsa05163                               Human cytomegalovirus infection      7/56 6.545587e-04            3106/6891/3554/3135/6376/84699/567     7
+hsa04668                                         TNF signaling pathway      5/56 8.975065e-04                    7424/9020/6376/84699/64127     5
+hsa04612                           Antigen processing and presentation      4/56 1.705720e-03                            3106/6891/3135/567     4
+hsa05169                                  Epstein-Barr virus infection      6/56 2.063966e-03                  3106/6891/9020/3135/8900/567     6
+hsa04978                                            Mineral absorption      3/56 7.193953e-03                                4494/4499/4496     3
+hsa04062                                   Chemokine signaling pathway      5/56 8.544365e-03                      4283/6373/6376/6355/6363     5
+hsa05170                      Human immunodeficiency virus 1 infection      5/56 1.275915e-02                     3106/6891/3135/567/200315     5
+hsa04610                           Complement and coagulation cascades      3/56 1.907345e-02                                  5054/629/716     3
+hsa04218                                           Cellular senescence      4/56 1.943053e-02                           3106/5054/3135/8900     4
+hsa04710                                              Circadian rhythm      2/56 2.107053e-02                                     4862/4783     2
+hsa05330                                           Allograft rejection      2/56 2.596415e-02                                     3106/3135     2
+hsa04064                                  NF-kappa B signaling pathway      3/56 3.123937e-02                                9020/3554/6363     3
+hsa04620                          Toll-like receptor signaling pathway      3/56 3.123937e-02                                7098/4283/6373     3
+hsa04625                      C-type lectin receptor signaling pathway      3/56 3.123937e-02                             9020/26253/338339     3
+hsa00380                                         Tryptophan metabolism      2/56 3.127104e-02                                     1545/3620     2
+hsa05332                                     Graft-versus-host disease      2/56 3.127104e-02                                     3106/3135     2
+hsa04940                                      Type I diabetes mellitus      2/56 3.265947e-02                                     3106/3135     2
+hsa04672                  Intestinal immune network for IgA production      2/56 4.148018e-02                                     3601/9020     2
+hsa05203                                          Viral carcinogenesis      4/56 4.551734e-02                          3106/3135/84699/8900     4
+hsa04152                                        AMPK signaling pathway      3/56 4.569907e-02                               84699/8900/3953     3
+hsa05320                                    Autoimmune thyroid disease      2/56 4.780149e-02                                     3106/3135     2
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_Monocytes S100A8+ S100A9+.txt"
- [1] "Human T-cell leukemia virus 1 infection"                       "Cytokine-cytokine receptor interaction"                       
- [3] "Viral protein interaction with cytokine and cytokine receptor" "Human cytomegalovirus infection"                              
- [5] "TNF signaling pathway"                                         "Antigen processing and presentation"                          
- [7] "Epstein-Barr virus infection"                                  "Mineral absorption"                                           
- [9] "Chemokine signaling pathway"                                   "Human immunodeficiency virus 1 infection"                     
-[11] "Complement and coagulation cascades"                           "Cellular senescence"                                          
-[13] "Circadian rhythm"                                              "Allograft rejection"                                          
-[15] "NF-kappa B signaling pathway"                                  "Toll-like receptor signaling pathway"                         
-[17] "C-type lectin receptor signaling pathway"                      "Tryptophan metabolism"                                        
-[19] "Graft-versus-host disease"                                     "Type I diabetes mellitus"                                     
-[21] "Intestinal immune network for IgA production"                  "Viral carcinogenesis"                                         
-[23] "AMPK signaling pathway"                                        "Autoimmune thyroid disease"                                   
+                                                           Description GeneRatio       pvalue                                        geneID Count
+hsa05166                       Human T-cell leukemia virus 1 infection      8/56 9.484413e-05       3601/3106/9020/3554/3135/84699/8900/567     8
+hsa04060                        Cytokine-cytokine receptor interaction      9/56 1.204463e-04 3601/3554/55540/4283/6373/6376/6355/6363/3953     9
+hsa04061 Viral protein interaction with cytokine and cytokine receptor      5/56 4.937262e-04                      4283/6373/6376/6355/6363     5
+hsa05163                               Human cytomegalovirus infection      7/56 6.545587e-04            3106/6891/3554/3135/6376/84699/567     7
+hsa04668                                         TNF signaling pathway      5/56 8.975065e-04                    7424/9020/6376/84699/64127     5
+hsa04612                           Antigen processing and presentation      4/56 1.705720e-03                            3106/6891/3135/567     4
+hsa05169                                  Epstein-Barr virus infection      6/56 2.063966e-03                  3106/6891/9020/3135/8900/567     6
+hsa04978                                            Mineral absorption      3/56 7.193953e-03                                4494/4499/4496     3
+hsa04062                                   Chemokine signaling pathway      5/56 8.544365e-03                      4283/6373/6376/6355/6363     5
+hsa05170                      Human immunodeficiency virus 1 infection      5/56 1.275915e-02                     3106/6891/3135/567/200315     5
+hsa04610                           Complement and coagulation cascades      3/56 1.907345e-02                                  5054/629/716     3
+hsa04218                                           Cellular senescence      4/56 1.943053e-02                           3106/5054/3135/8900     4
+hsa04710                                              Circadian rhythm      2/56 2.107053e-02                                     4862/4783     2
+hsa05330                                           Allograft rejection      2/56 2.596415e-02                                     3106/3135     2
+hsa04064                                  NF-kappa B signaling pathway      3/56 3.123937e-02                                9020/3554/6363     3
+hsa04620                          Toll-like receptor signaling pathway      3/56 3.123937e-02                                7098/4283/6373     3
+hsa04625                      C-type lectin receptor signaling pathway      3/56 3.123937e-02                             9020/26253/338339     3
+hsa00380                                         Tryptophan metabolism      2/56 3.127104e-02                                     1545/3620     2
+hsa05332                                     Graft-versus-host disease      2/56 3.127104e-02                                     3106/3135     2
+hsa04940                                      Type I diabetes mellitus      2/56 3.265947e-02                                     3106/3135     2
+hsa04672                  Intestinal immune network for IgA production      2/56 4.148018e-02                                     3601/9020     2
+hsa05203                                          Viral carcinogenesis      4/56 4.551734e-02                          3106/3135/84699/8900     4
+hsa04152                                        AMPK signaling pathway      3/56 4.569907e-02                               84699/8900/3953     3
+hsa05320                                    Autoimmune thyroid disease      2/56 4.780149e-02                                     3106/3135     2
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_Neutrophils S100A8+ S100A9+.txt"
- [1] "Human T-cell leukemia virus 1 infection"                       "Cytokine-cytokine receptor interaction"                       
- [3] "Viral protein interaction with cytokine and cytokine receptor" "Human cytomegalovirus infection"                              
- [5] "TNF signaling pathway"                                         "Antigen processing and presentation"                          
- [7] "Epstein-Barr virus infection"                                  "Mineral absorption"                                           
- [9] "Chemokine signaling pathway"                                   "Human immunodeficiency virus 1 infection"                     
-[11] "Complement and coagulation cascades"                           "Cellular senescence"                                          
-[13] "Circadian rhythm"                                              "Allograft rejection"                                          
-[15] "NF-kappa B signaling pathway"                                  "Toll-like receptor signaling pathway"                         
-[17] "C-type lectin receptor signaling pathway"                      "Tryptophan metabolism"                                        
-[19] "Graft-versus-host disease"                                     "Type I diabetes mellitus"                                     
-[21] "Intestinal immune network for IgA production"                  "Viral carcinogenesis"                                         
-[23] "AMPK signaling pathway"                                        "Autoimmune thyroid disease"                                   
+                                                           Description GeneRatio       pvalue                                        geneID Count
+hsa05166                       Human T-cell leukemia virus 1 infection      8/56 9.484413e-05       3601/3106/9020/3554/3135/84699/8900/567     8
+hsa04060                        Cytokine-cytokine receptor interaction      9/56 1.204463e-04 3601/3554/55540/4283/6373/6376/6355/6363/3953     9
+hsa04061 Viral protein interaction with cytokine and cytokine receptor      5/56 4.937262e-04                      4283/6373/6376/6355/6363     5
+hsa05163                               Human cytomegalovirus infection      7/56 6.545587e-04            3106/6891/3554/3135/6376/84699/567     7
+hsa04668                                         TNF signaling pathway      5/56 8.975065e-04                    7424/9020/6376/84699/64127     5
+hsa04612                           Antigen processing and presentation      4/56 1.705720e-03                            3106/6891/3135/567     4
+hsa05169                                  Epstein-Barr virus infection      6/56 2.063966e-03                  3106/6891/9020/3135/8900/567     6
+hsa04978                                            Mineral absorption      3/56 7.193953e-03                                4494/4499/4496     3
+hsa04062                                   Chemokine signaling pathway      5/56 8.544365e-03                      4283/6373/6376/6355/6363     5
+hsa05170                      Human immunodeficiency virus 1 infection      5/56 1.275915e-02                     3106/6891/3135/567/200315     5
+hsa04610                           Complement and coagulation cascades      3/56 1.907345e-02                                  5054/629/716     3
+hsa04218                                           Cellular senescence      4/56 1.943053e-02                           3106/5054/3135/8900     4
+hsa04710                                              Circadian rhythm      2/56 2.107053e-02                                     4862/4783     2
+hsa05330                                           Allograft rejection      2/56 2.596415e-02                                     3106/3135     2
+hsa04064                                  NF-kappa B signaling pathway      3/56 3.123937e-02                                9020/3554/6363     3
+hsa04620                          Toll-like receptor signaling pathway      3/56 3.123937e-02                                7098/4283/6373     3
+hsa04625                      C-type lectin receptor signaling pathway      3/56 3.123937e-02                             9020/26253/338339     3
+hsa00380                                         Tryptophan metabolism      2/56 3.127104e-02                                     1545/3620     2
+hsa05332                                     Graft-versus-host disease      2/56 3.127104e-02                                     3106/3135     2
+hsa04940                                      Type I diabetes mellitus      2/56 3.265947e-02                                     3106/3135     2
+hsa04672                  Intestinal immune network for IgA production      2/56 4.148018e-02                                     3601/9020     2
+hsa05203                                          Viral carcinogenesis      4/56 4.551734e-02                          3106/3135/84699/8900     4
+hsa04152                                        AMPK signaling pathway      3/56 4.569907e-02                               84699/8900/3953     3
+hsa05320                                    Autoimmune thyroid disease      2/56 4.780149e-02                                     3106/3135     2
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_NK cells KLRF1+ CD3G-.txt"
- [1] "Allograft rejection"                             "Graft-versus-host disease"                       "Type I diabetes mellitus"                       
- [4] "Autoimmune thyroid disease"                      "Kaposi sarcoma-associated herpesvirus infection" "Epstein-Barr virus infection"                   
- [7] "Human cytomegalovirus infection"                 "Human papillomavirus infection"                  "Cellular senescence"                            
-[10] "Viral myocarditis"                               "Viral carcinogenesis"                            "Human immunodeficiency virus 1 infection"       
-[13] "Human T-cell leukemia virus 1 infection"         "Antigen processing and presentation"             "Natural killer cell mediated cytotoxicity"      
-[16] "Phagosome"                                       "Cell adhesion molecules"                         "Influenza A"                                    
-[19] "Endocytosis"                                     "Chagas disease"                                  "Toll-like receptor signaling pathway"           
-[22] "C-type lectin receptor signaling pathway"        "TNF signaling pathway"                           "Osteoclast differentiation"                     
-[25] "Apoptosis"                                       "Measles"                                         "Hepatitis C"                                    
-[28] "JAK-STAT signaling pathway"                      "NOD-like receptor signaling pathway"             "Chemokine signaling pathway"                    
-[31] "Lipid and atherosclerosis"                       "Shigellosis"                                    
+                                             Description GeneRatio       pvalue                     geneID Count
+hsa05330                             Allograft rejection      4/10 7.118592e-08        3134/3133/3002/3107     4
+hsa05332                       Graft-versus-host disease      4/10 1.076979e-07        3134/3133/3002/3107     4
+hsa04940                        Type I diabetes mellitus      4/10 1.186763e-07        3134/3133/3002/3107     4
+hsa05320                      Autoimmune thyroid disease      4/10 2.799940e-07        3134/3133/3002/3107     4
+hsa05167 Kaposi sarcoma-associated herpesvirus infection      5/10 1.380253e-06 3134/3133/10379/10000/3107     5
+hsa05169                    Epstein-Barr virus infection      5/10 1.686033e-06 3134/3133/10379/10000/3107     5
+hsa05163                 Human cytomegalovirus infection      5/10 2.872357e-06  3134/6352/3133/10000/3107     5
+hsa05165                  Human papillomavirus infection      5/10 1.903195e-05 3134/3133/10379/10000/3107     5
+hsa04218                             Cellular senescence      4/10 2.140014e-05       3134/3133/10000/3107     4
+hsa05416                               Viral myocarditis      3/10 3.924676e-05             3134/3133/3107     3
+hsa05203                            Viral carcinogenesis      4/10 6.143744e-05       3134/3133/10379/3107     4
+hsa05170        Human immunodeficiency virus 1 infection      4/10 7.140705e-05       3134/3133/10000/3107     4
+hsa05166         Human T-cell leukemia virus 1 infection      4/10 8.548003e-05       3134/3133/10000/3107     4
+hsa04612             Antigen processing and presentation      3/10 8.627838e-05             3134/3133/3107     3
+hsa04650       Natural killer cell mediated cytotoxicity      3/10 4.108238e-04             3133/3002/3107     3
+hsa04145                                       Phagosome      3/10 6.213662e-04             3134/3133/3107     3
+hsa04514                         Cell adhesion molecules      3/10 6.830195e-04             3134/3133/3107     3
+hsa05164                                     Influenza A      3/10 8.761990e-04           6352/10379/10000     3
+hsa04144                                     Endocytosis      3/10 2.650221e-03             3134/3133/3107     3
+hsa05142                                  Chagas disease      2/10 6.077718e-03                 6352/10000     2
+hsa04620            Toll-like receptor signaling pathway      2/10 6.311628e-03                 6352/10000     2
+hsa04625        C-type lectin receptor signaling pathway      2/10 6.311628e-03                10379/10000     2
+hsa04668                           TNF signaling pathway      2/10 7.542465e-03                 6352/10000     2
+hsa04380                      Osteoclast differentiation      2/10 9.434225e-03                10379/10000     2
+hsa04210                                       Apoptosis      2/10 1.060162e-02                 3002/10000     2
+hsa05162                                         Measles      2/10 1.105531e-02                10379/10000     2
+hsa05160                                     Hepatitis C      2/10 1.395618e-02                10379/10000     2
+hsa04630                      JAK-STAT signaling pathway      2/10 1.551911e-02                10379/10000     2
+hsa04621             NOD-like receptor signaling pathway      2/10 1.925199e-02                 6352/10379     2
+hsa04062                     Chemokine signaling pathway      2/10 2.043997e-02                 6352/10000     2
+hsa05417                       Lipid and atherosclerosis      2/10 2.527497e-02                 6352/10000     2
+hsa05131                                     Shigellosis      2/10 3.271104e-02                 6352/10000     2
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_Plasma cells.txt"
- [1] "HIF-1 signaling pathway"                     "Oxytocin signaling pathway"                  "JAK-STAT signaling pathway"                 
- [4] "Fructose and mannose metabolism"             "MicroRNAs in cancer"                         "Nicotinate and nicotinamide metabolism"     
- [7] "Biosynthesis of nucleotide sugars"           "Thyroid cancer"                              "Bladder cancer"                             
-[10] "PI3K-Akt signaling pathway"                  "Amino sugar and nucleotide sugar metabolism"
+                                         Description GeneRatio       pvalue         geneID Count
+hsa04066                     HIF-1 signaling pathway       3/8 0.0001110512 7076/5163/1026     3
+hsa04921                  Oxytocin signaling pathway       2/8 0.0085721458       952/1026     2
+hsa04630                  JAK-STAT signaling pathway       2/8 0.0099081835      1026/4170     2
+hsa00051             Fructose and mannose metabolism       1/8 0.0307847432           5373     1
+hsa05206                         MicroRNAs in cancer       2/8 0.0323561280      1026/4170     2
+hsa00760      Nicotinate and nicotinamide metabolism       1/8 0.0335417839            952     1
+hsa01250           Biosynthesis of nucleotide sugars       1/8 0.0344592713           5373     1
+hsa05216                              Thyroid cancer       1/8 0.0344592713           1026     1
+hsa05219                              Bladder cancer       1/8 0.0381216039           1026     1
+hsa04151                  PI3K-Akt signaling pathway       2/8 0.0413330789      1026/4170     2
+hsa00520 Amino sugar and nucleotide sugar metabolism       1/8 0.0454098216           5373     1
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_T cells CD4+ FOSB+.txt"
- [1] "Antigen processing and presentation"            "Growth hormone synthesis, secretion and action" "Osteoclast differentiation"                    
- [4] "Phagosome"                                      "Cellular senescence"                            "Epstein-Barr virus infection"                  
- [7] "Human immunodeficiency virus 1 infection"       "Human T-cell leukemia virus 1 infection"        "Human cytomegalovirus infection"               
-[10] "Endocytosis"                                    "Circadian rhythm"                               "Allograft rejection"                           
-[13] "Primary immunodeficiency"                      
+                                            Description GeneRatio      pvalue    geneID Count
+hsa04612            Antigen processing and presentation      2/11 0.004370561 6890/3105     2
+hsa04935 Growth hormone synthesis, secretion and action      2/11 0.010086551 8651/3726     2
+hsa04380                     Osteoclast differentiation      2/11 0.011417320 8651/3726     2
+hsa04145                                      Phagosome      2/11 0.015848183 6890/3105     2
+hsa04218                            Cellular senescence      2/11 0.016648818 4088/3105     2
+hsa05169                   Epstein-Barr virus infection      2/11 0.027058926 6890/3105     2
+hsa05170       Human immunodeficiency virus 1 infection      2/11 0.029600762 6890/3105     2
+hsa05166        Human T-cell leukemia virus 1 infection      2/11 0.032236768 4088/3105     2
+hsa05163                Human cytomegalovirus infection      2/11 0.033045576 6890/3105     2
+hsa04144                                    Endocytosis      2/11 0.040391896 4088/3105     2
+hsa04710                               Circadian rhythm      1/11 0.043340368      1407     1
+hsa05330                            Allograft rejection      1/11 0.048325320      3105     1
+hsa05340                       Primary immunodeficiency      1/11 0.048325320      6890     1
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_T cells CD4+ IL17A+.txt"
- [1] "Antigen processing and presentation"            "Growth hormone synthesis, secretion and action" "Osteoclast differentiation"                    
- [4] "Phagosome"                                      "Cellular senescence"                            "Epstein-Barr virus infection"                  
- [7] "Human immunodeficiency virus 1 infection"       "Human T-cell leukemia virus 1 infection"        "Human cytomegalovirus infection"               
-[10] "Endocytosis"                                    "Circadian rhythm"                               "Allograft rejection"                           
-[13] "Primary immunodeficiency"                      
+                                            Description GeneRatio      pvalue    geneID Count
+hsa04612            Antigen processing and presentation      2/11 0.004370561 6890/3105     2
+hsa04935 Growth hormone synthesis, secretion and action      2/11 0.010086551 8651/3726     2
+hsa04380                     Osteoclast differentiation      2/11 0.011417320 8651/3726     2
+hsa04145                                      Phagosome      2/11 0.015848183 6890/3105     2
+hsa04218                            Cellular senescence      2/11 0.016648818 4088/3105     2
+hsa05169                   Epstein-Barr virus infection      2/11 0.027058926 6890/3105     2
+hsa05170       Human immunodeficiency virus 1 infection      2/11 0.029600762 6890/3105     2
+hsa05166        Human T-cell leukemia virus 1 infection      2/11 0.032236768 4088/3105     2
+hsa05163                Human cytomegalovirus infection      2/11 0.033045576 6890/3105     2
+hsa04144                                    Endocytosis      2/11 0.040391896 4088/3105     2
+hsa04710                               Circadian rhythm      1/11 0.043340368      1407     1
+hsa05330                            Allograft rejection      1/11 0.048325320      3105     1
+hsa05340                       Primary immunodeficiency      1/11 0.048325320      6890     1
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_T cells CD8+.txt"
- [1] "Allograft rejection"                             "Graft-versus-host disease"                       "Type I diabetes mellitus"                       
- [4] "Autoimmune thyroid disease"                      "Kaposi sarcoma-associated herpesvirus infection" "Epstein-Barr virus infection"                   
- [7] "Human cytomegalovirus infection"                 "Human papillomavirus infection"                  "Cellular senescence"                            
-[10] "Viral myocarditis"                               "Viral carcinogenesis"                            "Human immunodeficiency virus 1 infection"       
-[13] "Human T-cell leukemia virus 1 infection"         "Antigen processing and presentation"             "Natural killer cell mediated cytotoxicity"      
-[16] "Phagosome"                                       "Cell adhesion molecules"                         "Influenza A"                                    
-[19] "Endocytosis"                                     "Chagas disease"                                  "Toll-like receptor signaling pathway"           
-[22] "C-type lectin receptor signaling pathway"        "TNF signaling pathway"                           "Osteoclast differentiation"                     
-[25] "Apoptosis"                                       "Measles"                                         "Hepatitis C"                                    
-[28] "JAK-STAT signaling pathway"                      "NOD-like receptor signaling pathway"             "Chemokine signaling pathway"                    
-[31] "Lipid and atherosclerosis"                       "Shigellosis"                                    
+                                             Description GeneRatio       pvalue                     geneID Count
+hsa05330                             Allograft rejection      4/10 7.118592e-08        3134/3133/3002/3107     4
+hsa05332                       Graft-versus-host disease      4/10 1.076979e-07        3134/3133/3002/3107     4
+hsa04940                        Type I diabetes mellitus      4/10 1.186763e-07        3134/3133/3002/3107     4
+hsa05320                      Autoimmune thyroid disease      4/10 2.799940e-07        3134/3133/3002/3107     4
+hsa05167 Kaposi sarcoma-associated herpesvirus infection      5/10 1.380253e-06 3134/3133/10379/10000/3107     5
+hsa05169                    Epstein-Barr virus infection      5/10 1.686033e-06 3134/3133/10379/10000/3107     5
+hsa05163                 Human cytomegalovirus infection      5/10 2.872357e-06  3134/6352/3133/10000/3107     5
+hsa05165                  Human papillomavirus infection      5/10 1.903195e-05 3134/3133/10379/10000/3107     5
+hsa04218                             Cellular senescence      4/10 2.140014e-05       3134/3133/10000/3107     4
+hsa05416                               Viral myocarditis      3/10 3.924676e-05             3134/3133/3107     3
+hsa05203                            Viral carcinogenesis      4/10 6.143744e-05       3134/3133/10379/3107     4
+hsa05170        Human immunodeficiency virus 1 infection      4/10 7.140705e-05       3134/3133/10000/3107     4
+hsa05166         Human T-cell leukemia virus 1 infection      4/10 8.548003e-05       3134/3133/10000/3107     4
+hsa04612             Antigen processing and presentation      3/10 8.627838e-05             3134/3133/3107     3
+hsa04650       Natural killer cell mediated cytotoxicity      3/10 4.108238e-04             3133/3002/3107     3
+hsa04145                                       Phagosome      3/10 6.213662e-04             3134/3133/3107     3
+hsa04514                         Cell adhesion molecules      3/10 6.830195e-04             3134/3133/3107     3
+hsa05164                                     Influenza A      3/10 8.761990e-04           6352/10379/10000     3
+hsa04144                                     Endocytosis      3/10 2.650221e-03             3134/3133/3107     3
+hsa05142                                  Chagas disease      2/10 6.077718e-03                 6352/10000     2
+hsa04620            Toll-like receptor signaling pathway      2/10 6.311628e-03                 6352/10000     2
+hsa04625        C-type lectin receptor signaling pathway      2/10 6.311628e-03                10379/10000     2
+hsa04668                           TNF signaling pathway      2/10 7.542465e-03                 6352/10000     2
+hsa04380                      Osteoclast differentiation      2/10 9.434225e-03                10379/10000     2
+hsa04210                                       Apoptosis      2/10 1.060162e-02                 3002/10000     2
+hsa05162                                         Measles      2/10 1.105531e-02                10379/10000     2
+hsa05160                                     Hepatitis C      2/10 1.395618e-02                10379/10000     2
+hsa04630                      JAK-STAT signaling pathway      2/10 1.551911e-02                10379/10000     2
+hsa04621             NOD-like receptor signaling pathway      2/10 1.925199e-02                 6352/10379     2
+hsa04062                     Chemokine signaling pathway      2/10 2.043997e-02                 6352/10000     2
+hsa05417                       Lipid and atherosclerosis      2/10 2.527497e-02                 6352/10000     2
+hsa05131                                     Shigellosis      2/10 3.271104e-02                 6352/10000     2
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_T cells CD8+ KLRG1+.txt"
- [1] "Allograft rejection"                             "Graft-versus-host disease"                       "Type I diabetes mellitus"                       
- [4] "Autoimmune thyroid disease"                      "Kaposi sarcoma-associated herpesvirus infection" "Epstein-Barr virus infection"                   
- [7] "Human cytomegalovirus infection"                 "Human papillomavirus infection"                  "Cellular senescence"                            
-[10] "Viral myocarditis"                               "Viral carcinogenesis"                            "Human immunodeficiency virus 1 infection"       
-[13] "Human T-cell leukemia virus 1 infection"         "Antigen processing and presentation"             "Natural killer cell mediated cytotoxicity"      
-[16] "Phagosome"                                       "Cell adhesion molecules"                         "Influenza A"                                    
-[19] "Endocytosis"                                     "Chagas disease"                                  "Toll-like receptor signaling pathway"           
-[22] "C-type lectin receptor signaling pathway"        "TNF signaling pathway"                           "Osteoclast differentiation"                     
-[25] "Apoptosis"                                       "Measles"                                         "Hepatitis C"                                    
-[28] "JAK-STAT signaling pathway"                      "NOD-like receptor signaling pathway"             "Chemokine signaling pathway"                    
-[31] "Lipid and atherosclerosis"                       "Shigellosis"                                    
+                                             Description GeneRatio       pvalue                     geneID Count
+hsa05330                             Allograft rejection      4/10 7.118592e-08        3134/3133/3002/3107     4
+hsa05332                       Graft-versus-host disease      4/10 1.076979e-07        3134/3133/3002/3107     4
+hsa04940                        Type I diabetes mellitus      4/10 1.186763e-07        3134/3133/3002/3107     4
+hsa05320                      Autoimmune thyroid disease      4/10 2.799940e-07        3134/3133/3002/3107     4
+hsa05167 Kaposi sarcoma-associated herpesvirus infection      5/10 1.380253e-06 3134/3133/10379/10000/3107     5
+hsa05169                    Epstein-Barr virus infection      5/10 1.686033e-06 3134/3133/10379/10000/3107     5
+hsa05163                 Human cytomegalovirus infection      5/10 2.872357e-06  3134/6352/3133/10000/3107     5
+hsa05165                  Human papillomavirus infection      5/10 1.903195e-05 3134/3133/10379/10000/3107     5
+hsa04218                             Cellular senescence      4/10 2.140014e-05       3134/3133/10000/3107     4
+hsa05416                               Viral myocarditis      3/10 3.924676e-05             3134/3133/3107     3
+hsa05203                            Viral carcinogenesis      4/10 6.143744e-05       3134/3133/10379/3107     4
+hsa05170        Human immunodeficiency virus 1 infection      4/10 7.140705e-05       3134/3133/10000/3107     4
+hsa05166         Human T-cell leukemia virus 1 infection      4/10 8.548003e-05       3134/3133/10000/3107     4
+hsa04612             Antigen processing and presentation      3/10 8.627838e-05             3134/3133/3107     3
+hsa04650       Natural killer cell mediated cytotoxicity      3/10 4.108238e-04             3133/3002/3107     3
+hsa04145                                       Phagosome      3/10 6.213662e-04             3134/3133/3107     3
+hsa04514                         Cell adhesion molecules      3/10 6.830195e-04             3134/3133/3107     3
+hsa05164                                     Influenza A      3/10 8.761990e-04           6352/10379/10000     3
+hsa04144                                     Endocytosis      3/10 2.650221e-03             3134/3133/3107     3
+hsa05142                                  Chagas disease      2/10 6.077718e-03                 6352/10000     2
+hsa04620            Toll-like receptor signaling pathway      2/10 6.311628e-03                 6352/10000     2
+hsa04625        C-type lectin receptor signaling pathway      2/10 6.311628e-03                10379/10000     2
+hsa04668                           TNF signaling pathway      2/10 7.542465e-03                 6352/10000     2
+hsa04380                      Osteoclast differentiation      2/10 9.434225e-03                10379/10000     2
+hsa04210                                       Apoptosis      2/10 1.060162e-02                 3002/10000     2
+hsa05162                                         Measles      2/10 1.105531e-02                10379/10000     2
+hsa05160                                     Hepatitis C      2/10 1.395618e-02                10379/10000     2
+hsa04630                      JAK-STAT signaling pathway      2/10 1.551911e-02                10379/10000     2
+hsa04621             NOD-like receptor signaling pathway      2/10 1.925199e-02                 6352/10379     2
+hsa04062                     Chemokine signaling pathway      2/10 2.043997e-02                 6352/10000     2
+hsa05417                       Lipid and atherosclerosis      2/10 2.527497e-02                 6352/10000     2
+hsa05131                                     Shigellosis      2/10 3.271104e-02                 6352/10000     2
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_T cells Naive CD4+.txt"
- [1] "Antigen processing and presentation"            "Growth hormone synthesis, secretion and action" "Osteoclast differentiation"                    
- [4] "Phagosome"                                      "Cellular senescence"                            "Epstein-Barr virus infection"                  
- [7] "Human immunodeficiency virus 1 infection"       "Human T-cell leukemia virus 1 infection"        "Human cytomegalovirus infection"               
-[10] "Endocytosis"                                    "Circadian rhythm"                               "Allograft rejection"                           
-[13] "Primary immunodeficiency"                      
+                                            Description GeneRatio      pvalue    geneID Count
+hsa04612            Antigen processing and presentation      2/11 0.004370561 6890/3105     2
+hsa04935 Growth hormone synthesis, secretion and action      2/11 0.010086551 8651/3726     2
+hsa04380                     Osteoclast differentiation      2/11 0.011417320 8651/3726     2
+hsa04145                                      Phagosome      2/11 0.015848183 6890/3105     2
+hsa04218                            Cellular senescence      2/11 0.016648818 4088/3105     2
+hsa05169                   Epstein-Barr virus infection      2/11 0.027058926 6890/3105     2
+hsa05170       Human immunodeficiency virus 1 infection      2/11 0.029600762 6890/3105     2
+hsa05166        Human T-cell leukemia virus 1 infection      2/11 0.032236768 4088/3105     2
+hsa05163                Human cytomegalovirus infection      2/11 0.033045576 6890/3105     2
+hsa04144                                    Endocytosis      2/11 0.040391896 4088/3105     2
+hsa04710                               Circadian rhythm      1/11 0.043340368      1407     1
+hsa05330                            Allograft rejection      1/11 0.048325320      3105     1
+hsa05340                       Primary immunodeficiency      1/11 0.048325320      6890     1
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_T cells OGT+.txt"
- [1] "Antigen processing and presentation"            "Growth hormone synthesis, secretion and action" "Osteoclast differentiation"                    
- [4] "Phagosome"                                      "Cellular senescence"                            "Epstein-Barr virus infection"                  
- [7] "Human immunodeficiency virus 1 infection"       "Human T-cell leukemia virus 1 infection"        "Human cytomegalovirus infection"               
-[10] "Endocytosis"                                    "Circadian rhythm"                               "Allograft rejection"                           
-[13] "Primary immunodeficiency"                      
+                                            Description GeneRatio      pvalue    geneID Count
+hsa04612            Antigen processing and presentation      2/11 0.004370561 6890/3105     2
+hsa04935 Growth hormone synthesis, secretion and action      2/11 0.010086551 8651/3726     2
+hsa04380                     Osteoclast differentiation      2/11 0.011417320 8651/3726     2
+hsa04145                                      Phagosome      2/11 0.015848183 6890/3105     2
+hsa04218                            Cellular senescence      2/11 0.016648818 4088/3105     2
+hsa05169                   Epstein-Barr virus infection      2/11 0.027058926 6890/3105     2
+hsa05170       Human immunodeficiency virus 1 infection      2/11 0.029600762 6890/3105     2
+hsa05166        Human T-cell leukemia virus 1 infection      2/11 0.032236768 4088/3105     2
+hsa05163                Human cytomegalovirus infection      2/11 0.033045576 6890/3105     2
+hsa04144                                    Endocytosis      2/11 0.040391896 4088/3105     2
+hsa04710                               Circadian rhythm      1/11 0.043340368      1407     1
+hsa05330                            Allograft rejection      1/11 0.048325320      3105     1
+hsa05340                       Primary immunodeficiency      1/11 0.048325320      6890     1
 [1] "==============================================================="
 [1] "Destination: /home/matteo/Scrivania/CHL_enrichment/TI_IMM/destinationFiles/TI_IMM_H101694_EnrichmentGenesClusters_14.csv_Tregs.txt"
- [1] "Antigen processing and presentation"            "Growth hormone synthesis, secretion and action" "Osteoclast differentiation"                    
- [4] "Phagosome"                                      "Cellular senescence"                            "Epstein-Barr virus infection"                  
- [7] "Human immunodeficiency virus 1 infection"       "Human T-cell leukemia virus 1 infection"        "Human cytomegalovirus infection"               
-[10] "Endocytosis"                                    "Circadian rhythm"                               "Allograft rejection"                           
-[13] "Primary immunodeficiency"                      
+                                            Description GeneRatio      pvalue    geneID Count
+hsa04612            Antigen processing and presentation      2/11 0.004370561 6890/3105     2
+hsa04935 Growth hormone synthesis, secretion and action      2/11 0.010086551 8651/3726     2
+hsa04380                     Osteoclast differentiation      2/11 0.011417320 8651/3726     2
+hsa04145                                      Phagosome      2/11 0.015848183 6890/3105     2
+hsa04218                            Cellular senescence      2/11 0.016648818 4088/3105     2
+hsa05169                   Epstein-Barr virus infection      2/11 0.027058926 6890/3105     2
+hsa05170       Human immunodeficiency virus 1 infection      2/11 0.029600762 6890/3105     2
+hsa05166        Human T-cell leukemia virus 1 infection      2/11 0.032236768 4088/3105     2
+hsa05163                Human cytomegalovirus infection      2/11 0.033045576 6890/3105     2
+hsa04144                                    Endocytosis      2/11 0.040391896 4088/3105     2
+hsa04710                               Circadian rhythm      1/11 0.043340368      1407     1
+hsa05330                            Allograft rejection      1/11 0.048325320      3105     1
+hsa05340                       Primary immunodeficiency      1/11 0.048325320      6890     1
