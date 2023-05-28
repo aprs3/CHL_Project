@@ -1,0 +1,288 @@
+[1] "============================================================================================================================"
+[1] "Cell Type: B cells, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: B cells AICDA+ LRMP+, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: DC1, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                             Description GeneRatio      pvalue geneID Count
+hsa05330                             Allograft rejection       1/2 0.008960634   3135     1
+hsa05332                       Graft-versus-host disease       1/2 0.009901513   3135     1
+hsa04940                        Type I diabetes mellitus       1/2 0.010136663   3135     1
+hsa05320                      Autoimmune thyroid disease       1/2 0.012486625   3135     1
+hsa05416                               Viral myocarditis       1/2 0.014129937   3135     1
+hsa00562                   Inositol phosphate metabolism       1/2 0.017178172   3613     1
+hsa04612             Antigen processing and presentation       1/2 0.018349313   3135     1
+hsa04070           Phosphatidylinositol signaling system       1/2 0.022793283   3613     1
+hsa04650       Natural killer cell mediated cytotoxicity       1/2 0.030953150   3135     1
+hsa04145                                       Phagosome       1/2 0.035600572   3135     1
+hsa04218                             Cellular senescence       1/2 0.036528716   3135     1
+hsa04514                         Cell adhesion molecules       1/2 0.036760682   3135     1
+hsa05167 Kaposi sarcoma-associated herpesvirus infection       1/2 0.045323795   3135     1
+hsa05169                    Epstein-Barr virus infection       1/2 0.047170252   3135     1
+hsa05203                            Viral carcinogenesis       1/2 0.047631587   3135     1
+hsa05170        Human immunodeficiency virus 1 infection       1/2 0.049475810   3135     1
+[1] "============================================================================================================================"
+[1] "Cell Type: DC2 CD1D-, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                     Description GeneRatio     pvalue geneID Count
+hsa00071                  Fatty acid degradation       1/2 0.01013666   1374     1
+hsa01212                   Fatty acid metabolism       1/2 0.01342583   1374     1
+hsa05221                  Acute myeloid leukemia       1/2 0.01577188   5371     1
+hsa04920         Adipocytokine signaling pathway       1/2 0.01624076   1374     1
+hsa03320                  PPAR signaling pathway       1/2 0.01764671   1374     1
+hsa04922              Glucagon signaling pathway       1/2 0.02512816   1374     1
+hsa04931                      Insulin resistance       1/2 0.02536150   1374     1
+hsa04152                  AMPK signaling pathway       1/2 0.02839231   1374     1
+hsa04120          Ubiquitin mediated proteolysis       1/2 0.03327826   5371     1
+hsa04936                 Alcoholic liver disease       1/2 0.03327826   1374     1
+hsa05164                             Influenza A       1/2 0.04000527   5371     1
+hsa05202 Transcriptional misregulation in cancer       1/2 0.04509286   5371     1
+[1] "============================================================================================================================"
+[1] "Cell Type: DC2 CD1D+, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                     Description GeneRatio     pvalue geneID Count
+hsa00071                  Fatty acid degradation       1/2 0.01013666   1374     1
+hsa01212                   Fatty acid metabolism       1/2 0.01342583   1374     1
+hsa05221                  Acute myeloid leukemia       1/2 0.01577188   5371     1
+hsa04920         Adipocytokine signaling pathway       1/2 0.01624076   1374     1
+hsa03320                  PPAR signaling pathway       1/2 0.01764671   1374     1
+hsa04922              Glucagon signaling pathway       1/2 0.02512816   1374     1
+hsa04931                      Insulin resistance       1/2 0.02536150   1374     1
+hsa04152                  AMPK signaling pathway       1/2 0.02839231   1374     1
+hsa04120          Ubiquitin mediated proteolysis       1/2 0.03327826   5371     1
+hsa04936                 Alcoholic liver disease       1/2 0.03327826   1374     1
+hsa05164                             Influenza A       1/2 0.04000527   5371     1
+hsa05202 Transcriptional misregulation in cancer       1/2 0.04509286   5371     1
+[1] "============================================================================================================================"
+[1] "Cell Type: IELs ID3+ ENTPD1+ (NK-like cells ID3+ ENTPD1+), source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                                        Description GeneRatio      pvalue     geneID Count
+hsa04621                        NOD-like receptor signaling pathway       2/6 0.006799486 6352/10616     2
+hsa05163                            Human cytomegalovirus infection       2/6 0.009836256  6352/3134     2
+hsa05131                                                Shigellosis       2/6 0.011775658 6352/10616     2
+hsa05330                                        Allograft rejection       1/6 0.026647971       3134     1
+hsa05332                                  Graft-versus-host disease       1/6 0.029418257       3134     1
+hsa04940                                   Type I diabetes mellitus       1/6 0.030109800       3134     1
+hsa05320                                 Autoimmune thyroid disease       1/6 0.037002685       3134     1
+hsa04978                                         Mineral absorption       1/6 0.041803374       4501     1
+hsa05416                                          Viral myocarditis       1/6 0.041803374       3134     1
+hsa05120 Epithelial cell signaling in Helicobacter pylori infection       1/6 0.048626893       6352     1
+hsa04137                                         Mitophagy - animal       1/6 0.049986726      10133     1
+[1] "============================================================================================================================"
+[1] "Cell Type: ILCs, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                     Description GeneRatio     pvalue geneID Count
+hsa00071                  Fatty acid degradation       1/2 0.01013666   1374     1
+hsa01212                   Fatty acid metabolism       1/2 0.01342583   1374     1
+hsa05221                  Acute myeloid leukemia       1/2 0.01577188   5371     1
+hsa04920         Adipocytokine signaling pathway       1/2 0.01624076   1374     1
+hsa03320                  PPAR signaling pathway       1/2 0.01764671   1374     1
+hsa04922              Glucagon signaling pathway       1/2 0.02512816   1374     1
+hsa04931                      Insulin resistance       1/2 0.02536150   1374     1
+hsa04152                  AMPK signaling pathway       1/2 0.02839231   1374     1
+hsa04120          Ubiquitin mediated proteolysis       1/2 0.03327826   5371     1
+hsa04936                 Alcoholic liver disease       1/2 0.03327826   1374     1
+hsa05164                             Influenza A       1/2 0.04000527   5371     1
+hsa05202 Transcriptional misregulation in cancer       1/2 0.04509286   5371     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Immune Cycling cells, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+         Description GeneRatio      pvalue    geneID Count
+hsa04110  Cell cycle       2/5 0.003296404 699/10403     2
+[1] "============================================================================================================================"
+[1] "Cell Type: Macrophages, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                        Description GeneRatio       pvalue        geneID Count
+hsa04142                                   Lysosome      3/10 0.0004108238 5641/3988/950     3
+hsa00100                       Steroid biosynthesis      1/10 0.0233948511          3988     1
+hsa04392 Hippo signaling pathway - multiple species      1/10 0.0337608910         83937     1
+hsa04060     Cytokine-cytokine receptor interaction      2/10 0.0452966431    1230/10673     2
+[1] "============================================================================================================================"
+[1] "Cell Type: Macrophages CCL3+ CCL4+, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                        Description GeneRatio       pvalue        geneID Count
+hsa04142                                   Lysosome      3/10 0.0004108238 5641/3988/950     3
+hsa00100                       Steroid biosynthesis      1/10 0.0233948511          3988     1
+hsa04392 Hippo signaling pathway - multiple species      1/10 0.0337608910         83937     1
+hsa04060     Cytokine-cytokine receptor interaction      2/10 0.0452966431    1230/10673     2
+[1] "============================================================================================================================"
+[1] "Cell Type: Macrophages CXCL9+ CXCL10+, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                                           Description GeneRatio      pvalue    geneID Count
+hsa05160                                                   Hepatitis C       2/3 0.001013471 3627/4940     2
+hsa05164                                                   Influenza A       2/3 0.001201564 3627/4940     2
+hsa05169                                  Epstein-Barr virus infection       2/3 0.001674067 3627/4940     2
+hsa05171                                Coronavirus disease - COVID-19       2/3 0.002204353 3627/4940     2
+hsa04622                         RIG-I-like receptor signaling pathway       1/3 0.024960746      3627     1
+hsa04623                                 Cytosolic DNA-sensing pathway       1/3 0.026354489      3627     1
+hsa03018                                               RNA degradation       1/3 0.027746903     55802     1
+hsa04657                                       IL-17 signaling pathway       1/3 0.032956631      3627     1
+hsa04061 Viral protein interaction with cytokine and cytokine receptor       1/3 0.035035300      3627     1
+hsa04620                          Toll-like receptor signaling pathway       1/3 0.036419423      3627     1
+hsa04668                                         TNF signaling pathway       1/3 0.039873939      3627     1
+hsa05162                                                       Measles       1/3 0.048474085      4940     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Macrophages LYVE1+, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                                           Description GeneRatio      pvalue    geneID Count
+hsa05160                                                   Hepatitis C       2/3 0.001013471 3627/4940     2
+hsa05164                                                   Influenza A       2/3 0.001201564 3627/4940     2
+hsa05169                                  Epstein-Barr virus infection       2/3 0.001674067 3627/4940     2
+hsa05171                                Coronavirus disease - COVID-19       2/3 0.002204353 3627/4940     2
+hsa04622                         RIG-I-like receptor signaling pathway       1/3 0.024960746      3627     1
+hsa04623                                 Cytosolic DNA-sensing pathway       1/3 0.026354489      3627     1
+hsa03018                                               RNA degradation       1/3 0.027746903     55802     1
+hsa04657                                       IL-17 signaling pathway       1/3 0.032956631      3627     1
+hsa04061 Viral protein interaction with cytokine and cytokine receptor       1/3 0.035035300      3627     1
+hsa04620                          Toll-like receptor signaling pathway       1/3 0.036419423      3627     1
+hsa04668                                         TNF signaling pathway       1/3 0.039873939      3627     1
+hsa05162                                                       Measles       1/3 0.048474085      4940     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Macrophages Metallothionein, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                                           Description GeneRatio      pvalue    geneID Count
+hsa05160                                                   Hepatitis C       2/3 0.001013471 3627/4940     2
+hsa05164                                                   Influenza A       2/3 0.001201564 3627/4940     2
+hsa05169                                  Epstein-Barr virus infection       2/3 0.001674067 3627/4940     2
+hsa05171                                Coronavirus disease - COVID-19       2/3 0.002204353 3627/4940     2
+hsa04622                         RIG-I-like receptor signaling pathway       1/3 0.024960746      3627     1
+hsa04623                                 Cytosolic DNA-sensing pathway       1/3 0.026354489      3627     1
+hsa03018                                               RNA degradation       1/3 0.027746903     55802     1
+hsa04657                                       IL-17 signaling pathway       1/3 0.032956631      3627     1
+hsa04061 Viral protein interaction with cytokine and cytokine receptor       1/3 0.035035300      3627     1
+hsa04620                          Toll-like receptor signaling pathway       1/3 0.036419423      3627     1
+hsa04668                                         TNF signaling pathway       1/3 0.039873939      3627     1
+hsa05162                                                       Measles       1/3 0.048474085      4940     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Macrophages PLA2G2D+, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                                           Description GeneRatio      pvalue    geneID Count
+hsa05160                                                   Hepatitis C       2/3 0.001013471 3627/4940     2
+hsa05164                                                   Influenza A       2/3 0.001201564 3627/4940     2
+hsa05169                                  Epstein-Barr virus infection       2/3 0.001674067 3627/4940     2
+hsa05171                                Coronavirus disease - COVID-19       2/3 0.002204353 3627/4940     2
+hsa04622                         RIG-I-like receptor signaling pathway       1/3 0.024960746      3627     1
+hsa04623                                 Cytosolic DNA-sensing pathway       1/3 0.026354489      3627     1
+hsa03018                                               RNA degradation       1/3 0.027746903     55802     1
+hsa04657                                       IL-17 signaling pathway       1/3 0.032956631      3627     1
+hsa04061 Viral protein interaction with cytokine and cytokine receptor       1/3 0.035035300      3627     1
+hsa04620                          Toll-like receptor signaling pathway       1/3 0.036419423      3627     1
+hsa04668                                         TNF signaling pathway       1/3 0.039873939      3627     1
+hsa05162                                                       Measles       1/3 0.048474085      4940     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Mast cells, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                                        Description GeneRatio      pvalue geneID Count
+hsa00601 Glycosphingolipid biosynthesis - lacto and neolacto series       1/1 0.003190358   6484     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Mature DCs, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                             Description GeneRatio      pvalue geneID Count
+hsa05330                             Allograft rejection       1/2 0.008960634   3135     1
+hsa05332                       Graft-versus-host disease       1/2 0.009901513   3135     1
+hsa04940                        Type I diabetes mellitus       1/2 0.010136663   3135     1
+hsa05320                      Autoimmune thyroid disease       1/2 0.012486625   3135     1
+hsa05416                               Viral myocarditis       1/2 0.014129937   3135     1
+hsa00562                   Inositol phosphate metabolism       1/2 0.017178172   3613     1
+hsa04612             Antigen processing and presentation       1/2 0.018349313   3135     1
+hsa04070           Phosphatidylinositol signaling system       1/2 0.022793283   3613     1
+hsa04650       Natural killer cell mediated cytotoxicity       1/2 0.030953150   3135     1
+hsa04145                                       Phagosome       1/2 0.035600572   3135     1
+hsa04218                             Cellular senescence       1/2 0.036528716   3135     1
+hsa04514                         Cell adhesion molecules       1/2 0.036760682   3135     1
+hsa05167 Kaposi sarcoma-associated herpesvirus infection       1/2 0.045323795   3135     1
+hsa05169                    Epstein-Barr virus infection       1/2 0.047170252   3135     1
+hsa05203                            Viral carcinogenesis       1/2 0.047631587   3135     1
+hsa05170        Human immunodeficiency virus 1 infection       1/2 0.049475810   3135     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Monocytes CHI3L1+ CYP27A1+, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Monocytes S100A8+ S100A9+, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Neutrophils S100A8+ S100A9+, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                                        Description GeneRatio      pvalue geneID Count
+hsa00515                         Mannose type O-glycan biosynthesis       1/2 0.005428359   2526     1
+hsa00790                                        Folate biosynthesis       1/2 0.006135317   2643     1
+hsa00601 Glycosphingolipid biosynthesis - lacto and neolacto series       1/2 0.006370913   2526     1
+hsa01240                                  Biosynthesis of cofactors       1/2 0.035832650   2643     1
+[1] "============================================================================================================================"
+[1] "Cell Type: NK cells KLRF1+ CD3G-, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                     Description GeneRatio     pvalue geneID Count
+hsa05202 Transcriptional misregulation in cancer       1/1 0.02280515  51513     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Plasma cells, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                         Description GeneRatio     pvalue geneID Count
+hsa00051             Fructose and mannose metabolism       1/7 0.02698751   5373     1
+hsa00760      Nicotinate and nicotinamide metabolism       1/7 0.02940966    952     1
+hsa01250           Biosynthesis of nucleotide sugars       1/7 0.03021589   5373     1
+hsa00520 Amino sugar and nucleotide sugar metabolism       1/7 0.03984602   5373     1
+hsa00330             Arginine and proline metabolism       1/7 0.04064481   4953     1
+hsa00480                      Glutathione metabolism       1/7 0.04622046   4953     1
+[1] "============================================================================================================================"
+[1] "Cell Type: T cells CD4+ FOSB+, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                                        Description GeneRatio      pvalue     geneID Count
+hsa04621                        NOD-like receptor signaling pathway       2/6 0.006799486 6352/10616     2
+hsa05163                            Human cytomegalovirus infection       2/6 0.009836256  6352/3134     2
+hsa05131                                                Shigellosis       2/6 0.011775658 6352/10616     2
+hsa05330                                        Allograft rejection       1/6 0.026647971       3134     1
+hsa05332                                  Graft-versus-host disease       1/6 0.029418257       3134     1
+hsa04940                                   Type I diabetes mellitus       1/6 0.030109800       3134     1
+hsa05320                                 Autoimmune thyroid disease       1/6 0.037002685       3134     1
+hsa04978                                         Mineral absorption       1/6 0.041803374       4501     1
+hsa05416                                          Viral myocarditis       1/6 0.041803374       3134     1
+hsa05120 Epithelial cell signaling in Helicobacter pylori infection       1/6 0.048626893       6352     1
+hsa04137                                         Mitophagy - animal       1/6 0.049986726      10133     1
+[1] "============================================================================================================================"
+[1] "Cell Type: T cells CD4+ IL17A+, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+           Description GeneRatio     pvalue geneID Count
+hsa04360 Axon guidance       1/2 0.04255076  22885     1
+[1] "============================================================================================================================"
+[1] "Cell Type: T cells CD8+, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+         Description GeneRatio      pvalue    geneID Count
+hsa04110  Cell cycle       2/5 0.003296404 699/10403     2
+[1] "============================================================================================================================"
+[1] "Cell Type: T cells CD8+ KLRG1+, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                             Description GeneRatio       pvalue    geneID Count
+hsa05330                             Allograft rejection       2/2 1.963306e-05 3105/3107     2
+hsa05332                       Graft-versus-host disease       2/2 2.404561e-05 3105/3107     2
+hsa04940                        Type I diabetes mellitus       2/2 2.521857e-05 3105/3107     2
+hsa05320                      Autoimmune thyroid disease       2/2 3.848415e-05 3105/3107     2
+hsa05416                               Viral myocarditis       2/2 4.943174e-05 3105/3107     2
+hsa04612             Antigen processing and presentation       2/2 8.386639e-05 3105/3107     2
+hsa04650       Natural killer cell mediated cytotoxicity       2/2 2.414615e-04 3105/3107     2
+hsa04145                                       Phagosome       2/2 3.204964e-04 3105/3107     2
+hsa04218                             Cellular senescence       2/2 3.376439e-04 3105/3107     2
+hsa04514                         Cell adhesion molecules       2/2 3.420006e-04 3105/3107     2
+hsa05167 Kaposi sarcoma-associated herpesvirus infection       2/2 5.228314e-04 3105/3107     2
+hsa05169                    Epstein-Barr virus infection       2/2 5.669569e-04 3105/3107     2
+hsa05203                            Viral carcinogenesis       2/2 5.782676e-04 3105/3107     2
+hsa05170        Human immunodeficiency virus 1 infection       2/2 6.246273e-04 3105/3107     2
+hsa05166         Human T-cell leukemia virus 1 infection       2/2 6.850904e-04 3105/3107     2
+hsa05163                 Human cytomegalovirus infection       2/2 7.037739e-04 3105/3107     2
+hsa04144                                     Endocytosis       2/2 8.762265e-04 3105/3107     2
+hsa05165                  Human papillomavirus infection       2/2 1.525262e-03 3105/3107     2
+[1] "============================================================================================================================"
+[1] "Cell Type: T cells Naive CD4+, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                       Description GeneRatio      pvalue geneID Count
+hsa05330                       Allograft rejection       1/1 0.004490134   3002     1
+hsa05332                 Graft-versus-host disease       1/1 0.004962779   3002     1
+hsa04940                  Type I diabetes mellitus       1/1 0.005080941   3002     1
+hsa05320                Autoimmune thyroid disease       1/1 0.006262555   3002     1
+hsa04650 Natural killer cell mediated cytotoxicity       1/1 0.015597306   3002     1
+hsa04210                                 Apoptosis       1/1 0.016069952   3002     1
+hsa05202   Transcriptional misregulation in cancer       1/1 0.022805152   3002     1
+[1] "============================================================================================================================"
+[1] "Cell Type: T cells OGT+, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                                        Description GeneRatio      pvalue     geneID Count
+hsa04621                        NOD-like receptor signaling pathway       2/6 0.006799486 6352/10616     2
+hsa05163                            Human cytomegalovirus infection       2/6 0.009836256  6352/3134     2
+hsa05131                                                Shigellosis       2/6 0.011775658 6352/10616     2
+hsa05330                                        Allograft rejection       1/6 0.026647971       3134     1
+hsa05332                                  Graft-versus-host disease       1/6 0.029418257       3134     1
+hsa04940                                   Type I diabetes mellitus       1/6 0.030109800       3134     1
+hsa05320                                 Autoimmune thyroid disease       1/6 0.037002685       3134     1
+hsa04978                                         Mineral absorption       1/6 0.041803374       4501     1
+hsa05416                                          Viral myocarditis       1/6 0.041803374       3134     1
+hsa05120 Epithelial cell signaling in Helicobacter pylori infection       1/6 0.048626893       6352     1
+hsa04137                                         Mitophagy - animal       1/6 0.049986726      10133     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Tregs, source filename: CO_IMM_I130084_N130084_OptimalIntersection.csv"
+                                                        Description GeneRatio      pvalue     geneID Count
+hsa04621                        NOD-like receptor signaling pathway       2/6 0.006799486 6352/10616     2
+hsa05163                            Human cytomegalovirus infection       2/6 0.009836256  6352/3134     2
+hsa05131                                                Shigellosis       2/6 0.011775658 6352/10616     2
+hsa05330                                        Allograft rejection       1/6 0.026647971       3134     1
+hsa05332                                  Graft-versus-host disease       1/6 0.029418257       3134     1
+hsa04940                                   Type I diabetes mellitus       1/6 0.030109800       3134     1
+hsa05320                                 Autoimmune thyroid disease       1/6 0.037002685       3134     1
+hsa04978                                         Mineral absorption       1/6 0.041803374       4501     1
+hsa05416                                          Viral myocarditis       1/6 0.041803374       3134     1
+hsa05120 Epithelial cell signaling in Helicobacter pylori infection       1/6 0.048626893       6352     1
+hsa04137                                         Mitophagy - animal       1/6 0.049986726      10133     1

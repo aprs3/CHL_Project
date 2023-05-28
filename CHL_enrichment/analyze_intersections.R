@@ -5,7 +5,7 @@ library(clusterProfiler)
 library(limma)
 library(ReactomePA)
 
-dataset = "TI_IMM_intersect"
+dataset = "TI_STR_130064"
 
 path = paste0(getwd(), "/", dataset, "/")
 destination_path = paste0(path, "destinationFiles/")
@@ -21,7 +21,7 @@ known_cells_genes <- names(read_csv_data(paste0(path, 'known_cells_genes.csv')))
 for (file in files)
 {
   #loads the file
-  #sink(paste0(destination_path, file, "_results.txt"))
+  sink(paste0(destination_path, file, "_results.txt"))
   
   file_data <- read_csv_data(paste0(path, file))
   
@@ -35,7 +35,6 @@ for (file in files)
     #subtract from it all strings appearing in known_cells_genes, like it's
     #a set operation
     to_save <- setdiff(to_save, known_cells_genes)
-    
     
     list_filename <- paste0(file, "_", cell, ".txt")
     dest <- paste0(destination_path, list_filename)
@@ -80,10 +79,11 @@ for (file in files)
       if(!is.null(kkResult))
       {
         kkResult <- kkResult@result
-        to_print <- dplyr::select(kkResult, Description, GeneRatio, pvalue, geneID)
+        to_print <- dplyr::select(kkResult, Description, GeneRatio, pvalue, geneID, Count)
         to_print <- subset(to_print, pvalue <= 0.05)
         if(length(to_print) > 0)
         {
+          curr_cell_pathways <- to_print$Description
           print(to_print)
         }
       }
@@ -121,5 +121,5 @@ for (file in files)
     }
   }
   
-  #sink()
+  sink()
 }

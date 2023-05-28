@@ -1,0 +1,185 @@
+[1] "============================================================================================================================"
+[1] "Cell Type: B cells, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+                                 Description GeneRatio      pvalue geneID Count
+hsa04623       Cytosolic DNA-sensing pathway       1/1 0.008862106   9447     1
+hsa04621 NOD-like receptor signaling pathway       1/1 0.021978022   9447     1
+[1] "============================================================================================================================"
+[1] "Cell Type: B cells AICDA+ LRMP+, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: DC1, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: DC2 CD1D-, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+                                 Description GeneRatio    pvalue geneID Count
+hsa05230 Central carbon metabolism in cancer       1/3 0.0246121   9997     1
+[1] "============================================================================================================================"
+[1] "Cell Type: DC2 CD1D+, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+                                 Description GeneRatio    pvalue geneID Count
+hsa05230 Central carbon metabolism in cancer       1/3 0.0246121   9997     1
+[1] "============================================================================================================================"
+[1] "Cell Type: IELs ID3+ ENTPD1+ (NK-like cells ID3+ ENTPD1+), source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+                                                           Description GeneRatio      pvalue geneID Count
+hsa05330                                           Allograft rejection       1/2 0.008960634   3002     1
+hsa05332                                     Graft-versus-host disease       1/2 0.009901513   3002     1
+hsa04940                                      Type I diabetes mellitus       1/2 0.010136663   3002     1
+hsa05320                                    Autoimmune thyroid disease       1/2 0.012486625   3002     1
+hsa05120    Epithelial cell signaling in Helicobacter pylori infection       1/2 0.016475152   6352     1
+hsa04623                                 Cytosolic DNA-sensing pathway       1/2 0.017646712   6352     1
+hsa05323                                          Rheumatoid arthritis       1/2 0.021858548   6352     1
+hsa04061 Viral protein interaction with cytokine and cytokine receptor       1/2 0.023494040   6352     1
+hsa05142                                                Chagas disease       1/2 0.023961073   6352     1
+hsa04620                          Toll-like receptor signaling pathway       1/2 0.024427993   6352     1
+hsa04668                                         TNF signaling pathway       1/2 0.026760920   6352     1
+hsa04650                     Natural killer cell mediated cytotoxicity       1/2 0.030953150   3002     1
+hsa04210                                                     Apoptosis       1/2 0.031883528   3002     1
+hsa05164                                                   Influenza A       1/2 0.040005275   6352     1
+hsa04621                           NOD-like receptor signaling pathway       1/2 0.043475551   6352     1
+hsa04062                                   Chemokine signaling pathway       1/2 0.044861902   6352     1
+hsa05202                       Transcriptional misregulation in cancer       1/2 0.045092862   3002     1
+[1] "============================================================================================================================"
+[1] "Cell Type: ILCs, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Immune Cycling cells, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Macrophages, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+                                        Description GeneRatio     pvalue geneID Count
+hsa00100                       Steroid biosynthesis       1/5 0.01176319   3988     1
+hsa04392 Hippo signaling pathway - multiple species       1/5 0.01702038  83937     1
+hsa05219                             Bladder cancer       1/5 0.02399514   1890     1
+hsa00330            Arginine and proline metabolism       1/5 0.02920018  51056     1
+hsa04979                     Cholesterol metabolism       1/5 0.02977714   3988     1
+hsa00480                     Glutathione metabolism       1/5 0.03323317  51056     1
+hsa00240                      Pyrimidine metabolism       1/5 0.03380821   1890     1
+hsa00983            Drug metabolism - other enzymes       1/5 0.04639015   1890     1
+hsa01232                      Nucleotide metabolism       1/5 0.04923132   1890     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Macrophages CCL3+ CCL4+, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+                                 Description GeneRatio     pvalue geneID Count
+hsa04612 Antigen processing and presentation       1/2 0.01834931   5641     1
+hsa04380          Osteoclast differentiation       1/2 0.03002233 140885     1
+hsa04142                            Lysosome       1/2 0.03095315   5641     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Macrophages CXCL9+ CXCL10+, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+                                                           Description GeneRatio       pvalue    geneID Count
+hsa04061 Viral protein interaction with cytokine and cytokine receptor       2/2 0.0001382413 4283/3627     2
+hsa04620                          Toll-like receptor signaling pathway       2/2 0.0001495799 4283/3627     2
+hsa04062                                   Chemokine signaling pathway       2/2 0.0005120793 4283/3627     2
+hsa04060                        Cytokine-cytokine receptor interaction       2/2 0.0012110776 4283/3627     2
+hsa04622                         RIG-I-like receptor signaling pathway       1/2 0.0167095201      3627     1
+hsa04623                                 Cytosolic DNA-sensing pathway       1/2 0.0176467124      3627     1
+hsa04657                                       IL-17 signaling pathway       1/2 0.0220922735      3627     1
+hsa04668                                         TNF signaling pathway       1/2 0.0267609199      3627     1
+hsa05160                                                   Hepatitis C       1/2 0.0367606816      3627     1
+hsa05164                                                   Influenza A       1/2 0.0400052750      3627     1
+hsa05169                                  Epstein-Barr virus infection       1/2 0.0471702521      3627     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Macrophages LYVE1+, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+                                Description GeneRatio     pvalue geneID Count
+hsa04978                 Mineral absorption       1/2 0.01412994   4499     1
+hsa04270 Vascular smooth muscle contraction       1/2 0.03141840    133     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Macrophages Metallothionein, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+                                                        Description GeneRatio     pvalue    geneID Count
+hsa05160                                                Hepatitis C       2/7 0.00675525 4599/3434     2
+hsa00670                                  One carbon pool by folate       1/7 0.01643156    441024     1
+hsa00534 Glycosaminoglycan biosynthesis - heparan sulfate / heparin       1/7 0.01968995      2131     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Macrophages PLA2G2D+, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Mast cells, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Mature DCs, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Monocytes CHI3L1+ CYP27A1+, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+                                                      Description GeneRatio       pvalue                      geneID Count
+hsa04668                                    TNF signaling pathway      5/35 9.549192e-05  7424/9020/6376/84699/64127     5
+hsa04060                   Cytokine-cytokine receptor interaction      5/35 6.843876e-03 6355/3953/55540/163702/6376     5
+hsa05169                             Epstein-Barr virus infection      4/35 9.246307e-03         6891/9020/3135/8900     4
+hsa05165                           Human papillomavirus infection      5/35 1.098032e-02   7855/7098/3135/84699/8900     5
+hsa05166                  Human T-cell leukemia virus 1 infection      4/35 1.275983e-02        9020/3135/84699/8900     4
+hsa05163                          Human cytomegalovirus infection      4/35 1.335142e-02        6891/3135/6376/84699     4
+hsa04152                                   AMPK signaling pathway      3/35 1.337497e-02             3953/84699/8900     3
+hsa04550 Signaling pathways regulating pluripotency of stem cells      3/35 2.083797e-02              7855/6926/8820     3
+hsa00240                                    Pyrimidine metabolism      2/35 2.376434e-02                 151531/5167     2
+hsa04218                                      Cellular senescence      3/35 2.613403e-02              5054/3135/8900     3
+hsa05161                                              Hepatitis B      3/35 2.880148e-02             7098/84699/8900     3
+hsa04918                                Thyroid hormone synthesis      2/35 3.819421e-02                  2877/84699     2
+hsa04612                      Antigen processing and presentation      2/35 4.101664e-02                   6891/3135     2
+hsa00983                          Drug metabolism - other enzymes      2/35 4.294112e-02                 151531/1066     2
+hsa01232                                    Nucleotide metabolism      2/35 4.789759e-02                 151531/5167     2
+hsa04610                      Complement and coagulation cascades      2/35 4.891314e-02                    5054/629     2
+[1] "============================================================================================================================"
+[1] "Cell Type: Monocytes S100A8+ S100A9+, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Neutrophils S100A8+ S100A9+, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+                                                      Description GeneRatio       pvalue                      geneID Count
+hsa04668                                    TNF signaling pathway      5/35 9.549192e-05  7424/9020/6376/84699/64127     5
+hsa04060                   Cytokine-cytokine receptor interaction      5/35 6.843876e-03 6355/3953/55540/163702/6376     5
+hsa05169                             Epstein-Barr virus infection      4/35 9.246307e-03         6891/9020/3135/8900     4
+hsa05165                           Human papillomavirus infection      5/35 1.098032e-02   7855/7098/3135/84699/8900     5
+hsa05166                  Human T-cell leukemia virus 1 infection      4/35 1.275983e-02        9020/3135/84699/8900     4
+hsa05163                          Human cytomegalovirus infection      4/35 1.335142e-02        6891/3135/6376/84699     4
+hsa04152                                   AMPK signaling pathway      3/35 1.337497e-02             3953/84699/8900     3
+hsa04550 Signaling pathways regulating pluripotency of stem cells      3/35 2.083797e-02              7855/6926/8820     3
+hsa00240                                    Pyrimidine metabolism      2/35 2.376434e-02                 151531/5167     2
+hsa04218                                      Cellular senescence      3/35 2.613403e-02              5054/3135/8900     3
+hsa05161                                              Hepatitis B      3/35 2.880148e-02             7098/84699/8900     3
+hsa04918                                Thyroid hormone synthesis      2/35 3.819421e-02                  2877/84699     2
+hsa04612                      Antigen processing and presentation      2/35 4.101664e-02                   6891/3135     2
+hsa00983                          Drug metabolism - other enzymes      2/35 4.294112e-02                 151531/1066     2
+hsa01232                                    Nucleotide metabolism      2/35 4.789759e-02                 151531/5167     2
+hsa04610                      Complement and coagulation cascades      2/35 4.891314e-02                    5054/629     2
+[1] "============================================================================================================================"
+[1] "Cell Type: NK cells KLRF1+ CD3G-, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+         Description GeneRatio     pvalue geneID Count
+hsa04110  Cell cycle       1/1 0.01855134  10403     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Plasma cells, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: T cells CD4+ FOSB+, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: T cells CD4+ IL17A+, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+                                                      Description GeneRatio       pvalue                      geneID Count
+hsa04668                                    TNF signaling pathway      5/35 9.549192e-05  7424/9020/6376/84699/64127     5
+hsa04060                   Cytokine-cytokine receptor interaction      5/35 6.843876e-03 6355/3953/55540/163702/6376     5
+hsa05169                             Epstein-Barr virus infection      4/35 9.246307e-03         6891/9020/3135/8900     4
+hsa05165                           Human papillomavirus infection      5/35 1.098032e-02   7855/7098/3135/84699/8900     5
+hsa05166                  Human T-cell leukemia virus 1 infection      4/35 1.275983e-02        9020/3135/84699/8900     4
+hsa05163                          Human cytomegalovirus infection      4/35 1.335142e-02        6891/3135/6376/84699     4
+hsa04152                                   AMPK signaling pathway      3/35 1.337497e-02             3953/84699/8900     3
+hsa04550 Signaling pathways regulating pluripotency of stem cells      3/35 2.083797e-02              7855/6926/8820     3
+hsa00240                                    Pyrimidine metabolism      2/35 2.376434e-02                 151531/5167     2
+hsa04218                                      Cellular senescence      3/35 2.613403e-02              5054/3135/8900     3
+hsa05161                                              Hepatitis B      3/35 2.880148e-02             7098/84699/8900     3
+hsa04918                                Thyroid hormone synthesis      2/35 3.819421e-02                  2877/84699     2
+hsa04612                      Antigen processing and presentation      2/35 4.101664e-02                   6891/3135     2
+hsa00983                          Drug metabolism - other enzymes      2/35 4.294112e-02                 151531/1066     2
+hsa01232                                    Nucleotide metabolism      2/35 4.789759e-02                 151531/5167     2
+hsa04610                      Complement and coagulation cascades      2/35 4.891314e-02                    5054/629     2
+[1] "============================================================================================================================"
+[1] "Cell Type: T cells CD8+, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: T cells CD8+ KLRG1+, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+                                                           Description GeneRatio      pvalue geneID Count
+hsa05330                                           Allograft rejection       1/2 0.008960634   3002     1
+hsa05332                                     Graft-versus-host disease       1/2 0.009901513   3002     1
+hsa04940                                      Type I diabetes mellitus       1/2 0.010136663   3002     1
+hsa05320                                    Autoimmune thyroid disease       1/2 0.012486625   3002     1
+hsa05120    Epithelial cell signaling in Helicobacter pylori infection       1/2 0.016475152   6352     1
+hsa04623                                 Cytosolic DNA-sensing pathway       1/2 0.017646712   6352     1
+hsa05323                                          Rheumatoid arthritis       1/2 0.021858548   6352     1
+hsa04061 Viral protein interaction with cytokine and cytokine receptor       1/2 0.023494040   6352     1
+hsa05142                                                Chagas disease       1/2 0.023961073   6352     1
+hsa04620                          Toll-like receptor signaling pathway       1/2 0.024427993   6352     1
+hsa04668                                         TNF signaling pathway       1/2 0.026760920   6352     1
+hsa04650                     Natural killer cell mediated cytotoxicity       1/2 0.030953150   3002     1
+hsa04210                                                     Apoptosis       1/2 0.031883528   3002     1
+hsa05164                                                   Influenza A       1/2 0.040005275   6352     1
+hsa04621                           NOD-like receptor signaling pathway       1/2 0.043475551   6352     1
+hsa04062                                   Chemokine signaling pathway       1/2 0.044861902   6352     1
+hsa05202                       Transcriptional misregulation in cancer       1/2 0.045092862   3002     1
+[1] "============================================================================================================================"
+[1] "Cell Type: T cells Naive CD4+, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: T cells OGT+, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Tregs, source filename: CO_IMM_N104689_N154787_N128400_N124246_OptimalIntersection.csv"

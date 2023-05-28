@@ -1,0 +1,29 @@
+cell_name,genes
+B cells,TRIM38;KIAA0040;B cells;EIF3L;B cells AICDA+ LRMP+
+B cells AICDA+ LRMP+,TRIM38;KIAA0040;B cells;EIF3L;B cells AICDA+ LRMP+
+DC1,DC1
+DC2 CD1D-,DC2 CD1D-;DC2 CD1D+;C4orf33
+DC2 CD1D+,DC2 CD1D-;DC2 CD1D+;C4orf33
+IELs ID3+ ENTPD1+ (NK-like cells ID3+ ENTPD1+),RARRES3;CCL5;LY6E;IELs ID3+ ENTPD1+ (NK-like cells ID3+ ENTPD1+);ARHGEF3;CLEC2B
+ILCs,SCO2;ILCs
+Immune Cycling cells,Immune Cycling cells
+Macrophages,Macrophages
+Macrophages CCL3+ CCL4+,Macrophages CCL3+ CCL4+
+Macrophages CXCL9+ CXCL10+,Macrophages CXCL9+ CXCL10+
+Macrophages LYVE1+,C9orf91;PADI2;MSR1;FUT4;CYP1B1;CES1;Monocytes CHI3L1+ CYP27A1+;Macrophages LYVE1+;FZD5
+Macrophages Metallothionein,Macrophages Metallothionein
+Macrophages PLA2G2D+,Macrophages PLA2G2D+
+Mast cells,Mast cells
+Mature DCs,Mature DCs
+Monocytes CHI3L1+ CYP27A1+,C9orf91;PADI2;MSR1;FUT4;CYP1B1;CES1;Monocytes CHI3L1+ CYP27A1+;Macrophages LYVE1+;FZD5
+Monocytes S100A8+ S100A9+,Monocytes S100A8+ S100A9+
+Neutrophils S100A8+ S100A9+,IL1RN;Neutrophils S100A8+ S100A9+
+NK cells KLRF1+ CD3G-,NK cells KLRF1+ CD3G-
+Plasma cells,Plasma cells;ISG20;PDK1;COMMD3
+T cells CD4+ FOSB+,T cells CD4+ FOSB+
+T cells CD4+ IL17A+,T cells CD4+ IL17A+
+T cells CD8+,T cells CD8+;T cells CD8+ KLRG1+
+T cells CD8+ KLRG1+,T cells CD8+;T cells CD8+ KLRG1+
+T cells Naive CD4+,T cells Naive CD4+
+T cells OGT+,T cells OGT+
+Tregs,Tregs

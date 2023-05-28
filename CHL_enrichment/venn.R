@@ -19,16 +19,25 @@ lists_intersection <- function(l)
   return(list("curr_intersection" <- curr_intersection, "union_count" <- union_count))
 }
 
-# dataset = "CO_IMM"
-#to_load <- c("I114902","I121881","I130084","I175041")
-#to_load <- c("N104689","N124246","N128400","N154787")
-#to_load <- c("H139073","H197396")
-
 dataset = "TI_IMM"
 to_load <- c("I104689","I130064","I182231","I139892")
 to_load <- c("N109389","N119540","N130064","N158891")
 to_load <- c("H101694","H152638","H158108","H180844")
 
+dataset = "CO_IMM"
+to_load <- c("I114902","I121881","I130084","I175041")
+to_load <- c("N104689","N124246","N128400","N154787")
+to_load <- c("H139073","H197396")
+
+dataset = "CO_STR"
+to_load <- c("I130084")
+to_load <- c("N107306","N124246","N104152","N104689")
+to_load <- c("H197396")
+ 
+dataset = "TI_STR"
+to_load <- c("I104689","I130064")
+to_load <- c("N130064","N166301")
+to_load <- c("H158108","H180844")
 
 #Get type of patient character for the folders
 firstCharacter = substr(to_load[[1]],1,1)
