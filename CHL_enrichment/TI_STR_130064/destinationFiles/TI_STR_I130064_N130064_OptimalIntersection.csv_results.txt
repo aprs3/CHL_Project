@@ -1,0 +1,179 @@
+[1] "============================================================================================================================"
+[1] "Cell Type: Activated fibroblasts CCL19+ ADAMADEC1+, source filename: TI_STR_I130064_N130064_OptimalIntersection.csv"
+                                                           Description GeneRatio     pvalue geneID Count
+hsa04061 Viral protein interaction with cytokine and cytokine receptor       1/1 0.01181614   3572     1
+hsa04659                                     Th17 cell differentiation       1/1 0.01276143   3572     1
+hsa04550      Signaling pathways regulating pluripotency of stem cells       1/1 0.01689708   3572     1
+hsa04630                                    JAK-STAT signaling pathway       1/1 0.01961479   3572     1
+hsa05167               Kaposi sarcoma-associated herpesvirus infection       1/1 0.02292331   3572     1
+hsa05203                                          Viral carcinogenesis       1/1 0.02410493   3572     1
+hsa05171                                Coronavirus disease - COVID-19       1/1 0.02741345   3572     1
+hsa04060                        Cytokine-cytokine receptor interaction       1/1 0.03485762   3572     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Endothelial cells CA4+ CD36+, source filename: TI_STR_I130064_N130064_OptimalIntersection.csv"
+                                   Description GeneRatio     pvalue geneID Count
+hsa04622 RIG-I-like receptor signaling pathway       1/4 0.03314370   3665     1
+hsa04623         Cytosolic DNA-sensing pathway       1/4 0.03498610   3665     1
+hsa04612   Antigen processing and presentation       1/4 0.03636617   5641     1
+hsa05222                Small cell lung cancer       1/4 0.04278693   4149     1
+hsa01522                  Endocrine resistance       1/4 0.04552884   8202     1
+hsa04620  Toll-like receptor signaling pathway       1/4 0.04826486   3665     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Endothelial cells CD36+, source filename: TI_STR_I130064_N130064_OptimalIntersection.csv"
+                                     Description GeneRatio       pvalue           geneID Count
+hsa05164                             Influenza A       3/8 0.0004212856     8743/896/103     3
+hsa04144                             Endocytosis       3/8 0.0012925452 51510/3134/30844     3
+hsa05162                                 Measles       2/8 0.0070285281          896/103     2
+hsa04218                     Cellular senescence       2/8 0.0087886301         896/3134     2
+hsa04217                             Necroptosis       2/8 0.0091180148       8743/51510     2
+hsa05169            Epstein-Barr virus infection       2/8 0.0144383802         896/3134     2
+hsa05203                    Viral carcinogenesis       2/8 0.0147124233         896/3134     2
+hsa05166 Human T-cell leukemia virus 1 infection       2/8 0.0172816386         896/3134     2
+hsa05330                     Allograft rejection       1/8 0.0353759964             3134     1
+hsa05165          Human papillomavirus infection       2/8 0.0365282126         896/3134     2
+hsa05332               Graft-versus-host disease       1/8 0.0390352856             3134     1
+hsa04940                Type I diabetes mellitus       1/8 0.0399482078             3134     1
+hsa03050                              Proteasome       1/8 0.0426824227             5698     1
+hsa05320              Autoimmune thyroid disease       1/8 0.0490357759             3134     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Endothelial cells DARC+, source filename: TI_STR_I130064_N130064_OptimalIntersection.csv"
+                                              Description GeneRatio      pvalue    geneID Count
+hsa05130            Pathogenic Escherichia coli infection       2/3 0.001592655 3554/9267     2
+hsa05131                                      Shigellosis       2/3 0.002496262 3554/9267     2
+hsa04215                     Apoptosis - multiple species       1/3 0.011301988      5366     1
+hsa01524                         Platinum drug resistance       1/3 0.025657784      5366     1
+hsa04115                            p53 signaling pathway       1/3 0.025657784      5366     1
+hsa05210                                Colorectal cancer       1/3 0.030180431      5366     1
+hsa04750 Inflammatory mediator regulation of TRP channels       1/3 0.034342741      3554     1
+hsa04640                       Hematopoietic cell lineage       1/3 0.034689062      3554     1
+hsa05146                                       Amoebiasis       1/3 0.035727527      3554     1
+hsa04064                     NF-kappa B signaling pathway       1/3 0.036419423      3554     1
+hsa04659                        Th17 cell differentiation       1/3 0.037802222      3554     1
+hsa04380                       Osteoclast differentiation       1/3 0.044696376      3554     1
+hsa04210                                        Apoptosis       1/3 0.047444791      5366     1
+hsa05418           Fluid shear stress and atherosclerosis       1/3 0.048474085      3554     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Endothelial cells LTC4S+ SEMA3G+, source filename: TI_STR_I130064_N130064_OptimalIntersection.csv"
+                                                           Description GeneRatio      pvalue    geneID Count
+hsa04060                        Cytokine-cytokine receptor interaction       2/2 0.001211078 3953/6376     2
+hsa04920                               Adipocytokine signaling pathway       1/2 0.016240756      3953     1
+hsa04061 Viral protein interaction with cytokine and cytokine receptor       1/2 0.023494040      6376     1
+hsa04668                                         TNF signaling pathway       1/2 0.026760920      6376     1
+hsa04152                                        AMPK signaling pathway       1/2 0.028392307      3953     1
+hsa04932                             Non-alcoholic fatty liver disease       1/2 0.036296721      3953     1
+hsa04630                                    JAK-STAT signaling pathway       1/2 0.038847120      3953     1
+hsa04062                                   Chemokine signaling pathway       1/2 0.044861902      6376     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Fibroblasts ADAMDEC1+, source filename: TI_STR_I130064_N130064_OptimalIntersection.csv"
+                                                           Description GeneRatio     pvalue geneID Count
+hsa04061 Viral protein interaction with cytokine and cytokine receptor       1/1 0.01181614   3572     1
+hsa04659                                     Th17 cell differentiation       1/1 0.01276143   3572     1
+hsa04550      Signaling pathways regulating pluripotency of stem cells       1/1 0.01689708   3572     1
+hsa04630                                    JAK-STAT signaling pathway       1/1 0.01961479   3572     1
+hsa05167               Kaposi sarcoma-associated herpesvirus infection       1/1 0.02292331   3572     1
+hsa05203                                          Viral carcinogenesis       1/1 0.02410493   3572     1
+hsa05171                                Coronavirus disease - COVID-19       1/1 0.02741345   3572     1
+hsa04060                        Cytokine-cytokine receptor interaction       1/1 0.03485762   3572     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Fibroblasts KCNN3+ LY6H+, source filename: TI_STR_I130064_N130064_OptimalIntersection.csv"
+                                          Description GeneRatio     pvalue geneID Count
+hsa04672 Intestinal immune network for IgA production       1/2 0.01154698  10673     1
+hsa05323                         Rheumatoid arthritis       1/2 0.02185855  10673     1
+hsa04064                 NF-kappa B signaling pathway       1/2 0.02442799  10673     1
+hsa04270           Vascular smooth muscle contraction       1/2 0.03141840    133     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Fibroblasts NPY+ SLITRK6+, source filename: TI_STR_I130064_N130064_OptimalIntersection.csv"
+                                                    Description GeneRatio     pvalue geneID Count
+hsa00330                        Arginine and proline metabolism       1/4 0.02342779   4953     1
+hsa00480                                 Glutathione metabolism       1/4 0.02667452   4953     1
+hsa05321                             Inflammatory bowel disease       1/4 0.03037516   6772     1
+hsa04917                            Prolactin signaling pathway       1/4 0.03268269   6772     1
+hsa05212                                      Pancreatic cancer       1/4 0.03544629   6772     1
+hsa05140                                          Leishmaniasis       1/4 0.03590631   6772     1
+hsa05235 PD-L1 expression and PD-1 checkpoint pathway in cancer       1/4 0.04141376   6772     1
+hsa04658                       Th1 and Th2 cell differentiation       1/4 0.04278693   6772     1
+hsa04933   AGE-RAGE signaling pathway in diabetic complications       1/4 0.04644150   6772     1
+hsa04620                   Toll-like receptor signaling pathway       1/4 0.04826486   6772     1
+hsa04625               C-type lectin receptor signaling pathway       1/4 0.04826486   6772     1
+hsa04928    Parathyroid hormone synthesis, secretion and action       1/4 0.04917555   9935     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Fibroblasts SFRP2+ SLPI+, source filename: TI_STR_I130064_N130064_OptimalIntersection.csv"
+                                          Description GeneRatio     pvalue geneID Count
+hsa04672 Intestinal immune network for IgA production       1/2 0.01154698  10673     1
+hsa05323                         Rheumatoid arthritis       1/2 0.02185855  10673     1
+hsa04064                 NF-kappa B signaling pathway       1/2 0.02442799  10673     1
+hsa04270           Vascular smooth muscle contraction       1/2 0.03141840    133     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Fibroblasts SMOC2+ PTGIS+, source filename: TI_STR_I130064_N130064_OptimalIntersection.csv"
+                                                    Description GeneRatio     pvalue geneID Count
+hsa00330                        Arginine and proline metabolism       1/4 0.02342779   4953     1
+hsa00480                                 Glutathione metabolism       1/4 0.02667452   4953     1
+hsa05321                             Inflammatory bowel disease       1/4 0.03037516   6772     1
+hsa04917                            Prolactin signaling pathway       1/4 0.03268269   6772     1
+hsa05212                                      Pancreatic cancer       1/4 0.03544629   6772     1
+hsa05140                                          Leishmaniasis       1/4 0.03590631   6772     1
+hsa05235 PD-L1 expression and PD-1 checkpoint pathway in cancer       1/4 0.04141376   6772     1
+hsa04658                       Th1 and Th2 cell differentiation       1/4 0.04278693   6772     1
+hsa04933   AGE-RAGE signaling pathway in diabetic complications       1/4 0.04644150   6772     1
+hsa04620                   Toll-like receptor signaling pathway       1/4 0.04826486   6772     1
+hsa04625               C-type lectin receptor signaling pathway       1/4 0.04826486   6772     1
+hsa04928    Parathyroid hormone synthesis, secretion and action       1/4 0.04917555   9935     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Glial cells, source filename: TI_STR_I130064_N130064_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Inflammatory fibroblasts IL11+ CHI3L1+, source filename: TI_STR_I130064_N130064_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Lymphatics, source filename: TI_STR_I130064_N130064_OptimalIntersection.csv"
+                                    Description GeneRatio      pvalue geneID Count
+hsa00760 Nicotinate and nicotinamide metabolism       1/1 0.004253811    952     1
+hsa04970                     Salivary secretion       1/1 0.010989011    952     1
+hsa04640             Hematopoietic cell lineage       1/1 0.011697979    952     1
+hsa04972                   Pancreatic secretion       1/1 0.012052464    952     1
+hsa04921             Oxytocin signaling pathway       1/1 0.018196857    952     1
+hsa04020              Calcium signaling pathway       1/1 0.029894836    952     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Myofibroblasts GREM1+ GREM2+, source filename: TI_STR_I130064_N130064_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Myofibroblasts HHIP+ NPNT+, source filename: TI_STR_I130064_N130064_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Pericytes HIGD1B+ STEAP4+, source filename: TI_STR_I130064_N130064_OptimalIntersection.csv"
+                        Description GeneRatio     pvalue geneID Count
+hsa04710           Circadian rhythm       1/3 0.01200552   4783     1
+hsa04915 Estrogen signaling pathway       1/3 0.04813107   2289     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Pericytes RERGL+ NTRK2+, source filename: TI_STR_I130064_N130064_OptimalIntersection.csv"
+                        Description GeneRatio     pvalue geneID Count
+hsa04710           Circadian rhythm       1/3 0.01200552   4783     1
+hsa04915 Estrogen signaling pathway       1/3 0.04813107   2289     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Stromal Cycling cells, source filename: TI_STR_I130064_N130064_OptimalIntersection.csv"
+                                                           Description GeneRatio      pvalue                                     geneID Count
+hsa04620                          Toll-like receptor signaling pathway      5/69 0.001533306                    3627/4283/7098/6373/941     5
+hsa04668                                         TNF signaling pathway      5/69 0.002299099                 3627/4217/64127/9020/84699     5
+hsa04060                        Cytokine-cytokine receptor interaction      8/69 0.002612161 3627/3601/4283/3557/55540/163702/6373/1230     8
+hsa05330                                           Allograft rejection      3/69 0.003567925                              3135/3002/941     3
+hsa04380                                    Osteoclast differentiation      5/69 0.003796084                653361/8651/10379/9020/2209     5
+hsa04062                                   Chemokine signaling pathway      6/69 0.004619617            653361/3627/4283/3717/6373/1230     6
+hsa05332                                     Graft-versus-host disease      3/69 0.004743977                              3135/3002/941     3
+hsa05167               Kaposi sarcoma-associated herpesvirus infection      6/69 0.004857985             7098/3717/10379/4277/3135/1230     6
+hsa04940                                      Type I diabetes mellitus      3/69 0.005070298                              3135/3002/941     3
+hsa05169                                  Epstein-Barr virus infection      6/69 0.005903099             3627/10379/6891/9020/3135/8900     6
+hsa04672                  Intestinal immune network for IgA production      3/69 0.007311042                              3601/9020/941     3
+hsa04145                                                     Phagosome      5/69 0.007815469                 653361/6891/4481/3135/2209     5
+hsa04061 Viral protein interaction with cytokine and cytokine receptor      4/69 0.008823767                        3627/4283/6373/1230     4
+hsa05320                                    Autoimmune thyroid disease      3/69 0.009083470                              3135/3002/941     3
+hsa05166                       Human T-cell leukemia virus 1 infection      6/69 0.009226501             4088/3601/9020/3135/84699/8900     6
+hsa04625                      C-type lectin receptor signaling pathway      4/69 0.010099317                    10379/9020/26253/338339     4
+hsa05161                                                   Hepatitis B      5/69 0.010140909                  4088/7098/3717/84699/8900     5
+hsa04630                                    JAK-STAT signaling pathway      5/69 0.011191729                3601/8651/3717/10379/163702     5
+hsa04621                           NOD-like receptor signaling pathway      5/69 0.017573536               2635/115362/10379/64127/9447     5
+hsa05165                                Human papillomavirus infection      7/69 0.017748314       7098/10379/8638/3135/7855/84699/8900     7
+hsa00601    Glycosphingolipid biosynthesis - lacto and neolacto series      2/69 0.020165139                                  2526/6484     2
+hsa04623                                 Cytosolic DNA-sensing pathway      3/69 0.023069295                            3627/81030/9447     3
+hsa05140                                                 Leishmaniasis      3/69 0.024706234                           653361/3717/2209     3
+hsa04612                           Antigen processing and presentation      3/69 0.025547738                            6891/10437/3135     3
+hsa04550      Signaling pathways regulating pluripotency of stem cells      4/69 0.028998134                        4088/3717/8820/7855     4
+hsa04110                                                    Cell cycle      4/69 0.038890684                        4088/10403/8900/699     4
+hsa04217                                                   Necroptosis      4/69 0.040443910                      7098/3717/10379/81030     4
+hsa04657                                       IL-17 signaling pathway      3/69 0.041084312                            3627/6279/55540     3
+hsa04666                              Fc gamma R-mediated phagocytosis      3/69 0.044425337                            653361/2209/273     3

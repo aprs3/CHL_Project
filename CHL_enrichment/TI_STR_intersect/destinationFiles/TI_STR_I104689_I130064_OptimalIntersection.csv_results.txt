@@ -1,0 +1,83 @@
+[1] "============================================================================================================================"
+[1] "Cell Type: Activated fibroblasts CCL19+ ADAMADEC1+, source filename: TI_STR_I104689_I130064_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Endothelial cells CA4+ CD36+, source filename: TI_STR_I104689_I130064_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Endothelial cells CD36+, source filename: TI_STR_I104689_I130064_OptimalIntersection.csv"
+                                                           Description GeneRatio     pvalue geneID Count
+hsa04061 Viral protein interaction with cytokine and cytokine receptor       1/3 0.03503530   8743     1
+hsa04068                                        FoxO signaling pathway       1/3 0.04572765   8743     1
+hsa04650                     Natural killer cell mediated cytotoxicity       1/3 0.04607124   8743     1
+hsa04210                                                     Apoptosis       1/3 0.04744479   8743     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Endothelial cells DARC+, source filename: TI_STR_I104689_I130064_OptimalIntersection.csv"
+                                   Description GeneRatio      pvalue geneID Count
+hsa04215          Apoptosis - multiple species       1/2 0.007548478   5366     1
+hsa01524              Platinum drug resistance       1/2 0.017178172   5366     1
+hsa04115                 p53 signaling pathway       1/2 0.017178172   5366     1
+hsa05210                     Colorectal cancer       1/2 0.020221687   5366     1
+hsa04210                             Apoptosis       1/2 0.031883528   5366     1
+hsa04072     Phospholipase D signaling pathway       1/2 0.034671981   9267     1
+hsa05130 Pathogenic Escherichia coli infection       1/2 0.046016426   9267     1
+hsa05203                  Viral carcinogenesis       1/2 0.047631587   5366     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Endothelial cells LTC4S+ SEMA3G+, source filename: TI_STR_I104689_I130064_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Fibroblasts ADAMDEC1+, source filename: TI_STR_I104689_I130064_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Fibroblasts KCNN3+ LY6H+, source filename: TI_STR_I104689_I130064_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Fibroblasts NPY+ SLITRK6+, source filename: TI_STR_I104689_I130064_OptimalIntersection.csv"
+                                                 Description GeneRatio     pvalue geneID Count
+hsa04928 Parathyroid hormone synthesis, secretion and action       1/1 0.01252511   9935     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Fibroblasts SFRP2+ SLPI+, source filename: TI_STR_I104689_I130064_OptimalIntersection.csv"
+                                            Description GeneRatio     pvalue geneID Count
+hsa04668                          TNF signaling pathway       1/2 0.02676092   3726     1
+hsa04935 Growth hormone synthesis, secretion and action       1/2 0.02815934   3726     1
+hsa04380                     Osteoclast differentiation       1/2 0.03002233   3726     1
+hsa04140                             Autophagy - animal       1/2 0.03304587  81671     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Fibroblasts SMOC2+ PTGIS+, source filename: TI_STR_I104689_I130064_OptimalIntersection.csv"
+                                                 Description GeneRatio     pvalue geneID Count
+hsa04928 Parathyroid hormone synthesis, secretion and action       1/1 0.01252511   9935     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Glial cells, source filename: TI_STR_I104689_I130064_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Inflammatory fibroblasts IL11+ CHI3L1+, source filename: TI_STR_I104689_I130064_OptimalIntersection.csv"
+                                                 Description GeneRatio     pvalue geneID Count
+hsa04928 Parathyroid hormone synthesis, secretion and action       1/1 0.01252511   9935     1
+[1] "============================================================================================================================"
+[1] "Cell Type: Lymphatics, source filename: TI_STR_I104689_I130064_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Myofibroblasts GREM1+ GREM2+, source filename: TI_STR_I104689_I130064_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Myofibroblasts HHIP+ NPNT+, source filename: TI_STR_I104689_I130064_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Pericytes HIGD1B+ STEAP4+, source filename: TI_STR_I104689_I130064_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Pericytes RERGL+ NTRK2+, source filename: TI_STR_I104689_I130064_OptimalIntersection.csv"
+[1] "============================================================================================================================"
+[1] "Cell Type: Stromal Cycling cells, source filename: TI_STR_I104689_I130064_OptimalIntersection.csv"
+                                          Description GeneRatio       pvalue                geneID Count
+hsa05330                          Allograft rejection      3/40 0.0007358565         3002/3135/941     3
+hsa05332                    Graft-versus-host disease      3/40 0.0009883662         3002/3135/941     3
+hsa04940                     Type I diabetes mellitus      3/40 0.0010590262         3002/3135/941     3
+hsa05320                   Autoimmune thyroid disease      3/40 0.0019456669         3002/3135/941     3
+hsa04145                                    Phagosome      4/40 0.0055313834   2209/6891/4481/3135     4
+hsa05152                                 Tuberculosis      4/40 0.0099578640 26253/3717/2209/64127     4
+hsa05202      Transcriptional misregulation in cancer      4/40 0.0126253957  3002/51513/2209/8900     4
+hsa04625     C-type lectin receptor signaling pathway      3/40 0.0128130922     26253/9020/338339     3
+hsa05169                 Epstein-Barr virus infection      4/40 0.0147181814   6891/9020/3135/8900     4
+hsa04668                        TNF signaling pathway      3/40 0.0163803742      64127/9020/84699     3
+hsa05166      Human T-cell leukemia virus 1 infection      4/40 0.0201275023  9020/3135/84699/8900     4
+hsa04672 Intestinal immune network for IgA production      2/40 0.0222709830              9020/941     2
+hsa04650    Natural killer cell mediated cytotoxicity      3/40 0.0240800353        3002/4277/3135     3
+hsa05322                 Systemic lupus erythematosus      3/40 0.0265130479         6737/2209/941     3
+hsa00240                        Pyrimidine metabolism      2/40 0.0304832722           5167/151531     2
+hsa05416                            Viral myocarditis      2/40 0.0324489915              3135/941     2
+hsa04110                                   Cell cycle      3/40 0.0375207173        10403/8900/699     3
+hsa05221                       Acute myeloid leukemia      2/40 0.0397069533             2209/8900     2
+hsa05161                                  Hepatitis B      3/40 0.0405884818       3717/84699/8900     3
+hsa04920              Adipocytokine signaling pathway      2/40 0.0418843991             3717/2180     2
+hsa03320                       PPAR signaling pathway      2/40 0.0486784109             2710/2180     2

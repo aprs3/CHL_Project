@@ -1,0 +1,29 @@
+cell_name,genes
+B cells,B cells
+B cells AICDA+ LRMP+,STAP1;B cells AICDA+ LRMP+
+DC1,DC1
+DC2 CD1D-,DC2 CD1D-;DC2 CD1D+
+DC2 CD1D+,DC2 CD1D-;DC2 CD1D+
+IELs ID3+ ENTPD1+ (NK-like cells ID3+ ENTPD1+),IELs ID3+ ENTPD1+ (NK-like cells ID3+ ENTPD1+);ANXA2R
+ILCs,ILCs
+Immune Cycling cells,Immune Cycling cells
+Macrophages,Macrophages;Macrophages CCL3+ CCL4+
+Macrophages CCL3+ CCL4+,Macrophages;Macrophages CCL3+ CCL4+
+Macrophages CXCL9+ CXCL10+,Macrophages CXCL9+ CXCL10+
+Macrophages LYVE1+,Macrophages LYVE1+
+Macrophages Metallothionein,Macrophages Metallothionein
+Macrophages PLA2G2D+,Macrophages PLA2G2D+
+Mast cells,Mast cells
+Mature DCs,Mature DCs
+Monocytes CHI3L1+ CYP27A1+,PADI2;Monocytes CHI3L1+ CYP27A1+
+Monocytes S100A8+ S100A9+,Monocytes S100A8+ S100A9+;THBD
+Neutrophils S100A8+ S100A9+,MYOF;TCF7L2;Neutrophils S100A8+ S100A9+
+NK cells KLRF1+ CD3G-,NK cells KLRF1+ CD3G-
+Plasma cells,CD38;Plasma cells;COMMD3
+T cells CD4+ FOSB+,SOCS1;SLFN5;RARRES3;T cells CD4+ FOSB+;T cells OGT+
+T cells CD4+ IL17A+,T cells CD4+ IL17A+
+T cells CD8+,T cells CD8+
+T cells CD8+ KLRG1+,T cells CD8+ KLRG1+
+T cells Naive CD4+,T cells Naive CD4+
+T cells OGT+,SOCS1;SLFN5;RARRES3;T cells CD4+ FOSB+;T cells OGT+
+Tregs,Tregs

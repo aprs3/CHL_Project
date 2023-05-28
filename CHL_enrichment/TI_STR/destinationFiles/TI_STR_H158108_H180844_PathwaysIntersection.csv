@@ -1,0 +1,19 @@
+cell_name$genes
+Activated fibroblasts CCL19+ ADAMADEC1+$Cytokine-cytokine receptor interaction@Viral protein interaction with cytokine and cytokine receptor@Chemokine signaling pathway
+Endothelial cells CA4+ CD36+$Influenza A@NOD-like receptor signaling pathway
+Endothelial cells CD36+$Antigen processing and presentation@Epstein-Barr virus infection@Allograft rejection@Graft-versus-host disease@Type I diabetes mellitus@Kaposi sarcoma-associated herpesvirus infection@Autoimmune thyroid disease@Human cytomegalovirus infection@Viral myocarditis@Phagosome@Cellular senescence@Human papillomavirus infection@Viral carcinogenesis@Human immunodeficiency virus 1 infection@Human T-cell leukemia virus 1 infection@Natural killer cell mediated cytotoxicity@Cell adhesion molecules@Endocytosis
+Endothelial cells DARC+$Influenza A@NOD-like receptor signaling pathway
+Endothelial cells LTC4S+ SEMA3G+$Hepatitis C@Epstein-Barr virus infection@Viral carcinogenesis
+Fibroblasts ADAMDEC1+$Cytokine-cytokine receptor interaction@Viral protein interaction with cytokine and cytokine receptor@Chemokine signaling pathway
+Fibroblasts KCNN3+ LY6H+$
+Fibroblasts NPY+ SLITRK6+$NF-kappa B signaling pathway@NOD-like receptor signaling pathway@Cytokine-cytokine receptor interaction@Viral protein interaction with cytokine and cytokine receptor@Chemokine signaling pathway
+Fibroblasts SFRP2+ SLPI+$Pertussis@Complement and coagulation cascades
+Fibroblasts SMOC2+ PTGIS+$
+Glial cells$
+Inflammatory fibroblasts IL11+ CHI3L1+$Viral protein interaction with cytokine and cytokine receptor@Cytokine-cytokine receptor interaction@Chemokine signaling pathway@Toll-like receptor signaling pathway@TNF signaling pathway@Cytosolic DNA-sensing pathway@Antigen processing and presentation@Allograft rejection@Epstein-Barr virus infection@Graft-versus-host disease@Type I diabetes mellitus@Phagosome@Human T-cell leukemia virus 1 infection@Human cytomegalovirus infection@Autoimmune thyroid disease@Osteoclast differentiation@Natural killer cell mediated cytotoxicity@Apoptosis@Leishmaniasis@Hepatitis B@Tuberculosis@Intestinal immune network for IgA production@Transcriptional misregulation in cancer@Kaposi sarcoma-associated herpesvirus infection
+Lymphatics$Influenza A@NOD-like receptor signaling pathway
+Myofibroblasts GREM1+ GREM2+$
+Myofibroblasts HHIP+ NPNT+$
+Pericytes HIGD1B+ STEAP4+$
+Pericytes RERGL+ NTRK2+$Circadian rhythm
+Stromal Cycling cells$Signaling pathways regulating pluripotency of stem cells@Fructose and mannose metabolism

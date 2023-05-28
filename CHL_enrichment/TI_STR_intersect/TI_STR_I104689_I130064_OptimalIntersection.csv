@@ -1,0 +1,19 @@
+cell_name,genes
+Activated fibroblasts CCL19+ ADAMADEC1+,ADAMDEC1;Fibroblasts ADAMDEC1+;Activated fibroblasts CCL19+ ADAMADEC1+
+Endothelial cells CA4+ CD36+,Endothelial cells CA4+ CD36+;MAX
+Endothelial cells CD36+,TNFSF10;Endothelial cells CD36+;EHD4;SLFN5;GBP4
+Endothelial cells DARC+,PMAIP1;CYTH1;Endothelial cells DARC+
+Endothelial cells LTC4S+ SEMA3G+,CX3CL1;Endothelial cells LTC4S+ SEMA3G+
+Fibroblasts ADAMDEC1+,ADAMDEC1;Fibroblasts ADAMDEC1+;Activated fibroblasts CCL19+ ADAMADEC1+
+Fibroblasts KCNN3+ LY6H+,TNFAIP6;Fibroblasts KCNN3+ LY6H+
+Fibroblasts NPY+ SLITRK6+,MAFB;Fibroblasts NPY+ SLITRK6+;Inflammatory fibroblasts IL11+ CHI3L1+;Fibroblasts SMOC2+ PTGIS+;SPATS2L
+Fibroblasts SFRP2+ SLPI+,JUNB;VMP1;FAM46A;PNRC1;Fibroblasts SFRP2+ SLPI+
+Fibroblasts SMOC2+ PTGIS+,MAFB;Fibroblasts NPY+ SLITRK6+;Inflammatory fibroblasts IL11+ CHI3L1+;Fibroblasts SMOC2+ PTGIS+;SPATS2L
+Glial cells,Glial cells
+Inflammatory fibroblasts IL11+ CHI3L1+,MAFB;Fibroblasts NPY+ SLITRK6+;Inflammatory fibroblasts IL11+ CHI3L1+;Fibroblasts SMOC2+ PTGIS+;SPATS2L
+Lymphatics,Lymphatics
+Myofibroblasts GREM1+ GREM2+,Myofibroblasts HHIP+ NPNT+;Myofibroblasts GREM1+ GREM2+
+Myofibroblasts HHIP+ NPNT+,Myofibroblasts HHIP+ NPNT+;Myofibroblasts GREM1+ GREM2+
+Pericytes HIGD1B+ STEAP4+,Pericytes HIGD1B+ STEAP4+;STEAP4;Pericytes RERGL+ NTRK2+
+Pericytes RERGL+ NTRK2+,Pericytes HIGD1B+ STEAP4+;STEAP4;Pericytes RERGL+ NTRK2+
+Stromal Cycling cells,PPM1K;GZMB;LPCAT1;MCOLN2;TRIM14;GK;SECTM1;CLEC4E;JAK2;Stromal Cycling cells;TDRD7;ULK4;TRIM21;ACSL1;ETV7;AMPH;PDGFRL;MICB;C9orf91;ENPP1;FUT4;FCGR1A;PMM2;NPAS2;PUS1;IL1RN;LAMP3;HSH2D;AIM2;CFB;NDC80;BCL2L14;CD163;STARD5;FNDC4;MASTL;ARNTL;ZNF385B;UPP2;TRIM34;TMEM255A;TAP2;STAP1;S100A8;RNASE4;PHF15;NT5C3;NOD2;NEURL3;MSR1;MKX;MAP3K14;IL17RB;IFNLR1;HLA-G;HESX1;G6PC;FTSJD2;FFAR2;CTCFL;CRP;CREB3L3;CMAHP;CLEC4D;CD80;CCNA1;C5orf27;C22orf28;BUB1;ARG2;AQP9;ABTB2;APOBEC3A
