@@ -82,7 +82,7 @@ for(patient in to_load)
 }
 
 #number of combinations = (n cuts)^(n patients)
-combinations <- expand.grid(seqleasts)
+combinations <- expand.grid(seqs)
 
 #loads the known cells' markers
 cells_to_search <- names(read_csv_data(paste0(p, "/known_cells_genes.csv")))
