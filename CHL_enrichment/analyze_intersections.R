@@ -1,3 +1,23 @@
+#'This script works exactly like analyze_single_patients.R. However, it does not
+#'extract the genes which do appear alongside a particular cell type's markers.
+#'Instead, it works with .csv files which do already have stored, for each cell type, the
+#'list of genes that appears to behave just like that cell type's markers. This is 
+#'useful when we want, for example, to analyze which pathways are enriched by
+#'the genes extracted by intersecting several clusters together from patients
+#'with the same condition (refer to section 5.1 of the report for more details).
+#'It is also suited for analyzing the pathways expressed by the "condition independent
+#'genes) described in the report (section 8).
+#'
+#'Since the files that should be analyzed by this script do already contain
+#'intersections of sets, there is no need to save them in a .csv. Instead, they
+#'are saved in a .txt file which contains, alongside the name of the enriched pathway,
+#'some useful information about the genes participating in the enrichment.
+#'
+#'usage: just set the "dataset" variable to the right folder. It should contain
+#'a file named "known_cells_genes.csv" listing all the known cell types.
+
+#'set it to whatever you like. The working directory path should contain at least
+#'the analyze_intersection.R script
 setwd("~/Scrivania/CHL_enrichment")
 source("utils.R")
 
@@ -5,6 +25,7 @@ library(clusterProfiler)
 library(limma)
 library(ReactomePA)
 
+#'Name of the folder containing the dataset (it should be inside the working directory)
 dataset = "TI_STR_130064"
 
 path = paste0(getwd(), "/", dataset, "/")
@@ -13,22 +34,26 @@ destination_path = paste0(path, "destinationFiles/")
 dir.create(file.path(destination_path))
 
 #gets the various files in the "dataset" folder
-files <- list.files(path = path, pattern = "\\.csv$")
+files <- list.files(path = path, pattern = "\\.csv$")  #loads all the .csv files in the dataset folder
 files <- setdiff(files, list("known_cells_genes.csv")) #removes known_cells_genes.csv since we don't want to analyze it.
 
+#'loads the cell data
 known_cells_genes <- names(read_csv_data(paste0(path, 'known_cells_genes.csv')))
 
+#for each file, we want to extract the pathways enriched:
 for (file in files)
 {
-  #loads the file
+  #starts recording the print() output and saves it into a file named
+  #[csv filename]_results.txt
   sink(paste0(destination_path, file, "_results.txt"))
   
+  #loads the file
   file_data <- read_csv_data(paste0(path, file))
   
   #searches for the cell type in the file data
   for(cell in known_cells_genes)
   {
-    #saves the cluster
+    #stores the cluster
     to_save <- file_data[[cell]]
     
     #removes cell names from the cluster. One way to do so would be to
@@ -36,13 +61,15 @@ for (file in files)
     #a set operation
     to_save <- setdiff(to_save, known_cells_genes)
     
+    #It might seem like we are saving a file, but we are not. This is just done
+    #for verbose purposes.
     list_filename <- paste0(file, "_", cell, ".txt")
     dest <- paste0(destination_path, list_filename)
     print("============================================================================================================================")
     print(paste0("Cell Type: ", cell, ", source filename: ", file))
     
+    #Converts the gene names into the ENTRZ ID format
     alias2Symbol(to_save, species = "Hs", expand.symbols = FALSE)
-    
     to_save <- tryCatch(
       {
         bitr(to_save, fromType="SYMBOL",  toType = "ENTREZID", OrgDb = "org.Hs.eg.db") [["ENTREZID"]]
@@ -53,11 +80,11 @@ for (file in files)
       }
     )
     
-    
-    #if the cell is in that cluster
+    #if there are any "actual" genes in that cluster (and not just other cell types
+    #which got clusterized alongside the current one)
     if(length(to_save) > 1)
     { 
-      #DAVID (which searches for reactome, wiki pathways and kegg)
+      #DAVID (which searches for reactome, wiki pathways, and kegg)
       #pathways <- list("EC_NUMBER" ,"REACTOME_PATHWAY" ,"WIKIPATHWAYS", "BBID", "BIOCARTA", "KEGG_PATHWAY")
       # pathways <- list("REACTOME_PATHWAY" ,"WIKIPATHWAYS","KEGG_PATHWAY")
       # for(pathway in pathways)
@@ -114,12 +141,12 @@ for (file in files)
       #     print(to_print)
       #   }
       # }
-      
-      
-      #saves the list
-      #lapply(to_save, write, dest, append=TRUE, ncolumns=1000)
     }
   }
   
+  #print record stopped
   sink()
 }
+
+#safety measure
+sink()
