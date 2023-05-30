@@ -52,7 +52,7 @@ datasets by Kong et al. [dataset](https://singlecell.broadinstitute.org/single_c
 * **enrichment list.txt**: the list of genes we were requested to perform gene enrichment analysis on (contained in enrichment_list.txt).
 
 ## Folders structure and files description
-The datasets structure is the same for each one, so for simplicity reasons we describe as example "TI_IMM" with one patient and their files.
+The folder structure is the same for each dataset, so for simplicity reasons we describe as example "TI_IMM" with one patient and their files.
 
 ```
 TI_IMM
@@ -72,15 +72,15 @@ TI_IMM
         ├── TI_IMM_H101694__05_GeneCountPlot_cut_n.pdf: gene size plot after n number of cuts
         ├── TI_IMM_H101694__06_MitocondrialCount_cut_n.pdf: mitochondrial cells plot after n number of cuts
         ├── TI_IMM_H101694__07_PCACells.pdf: A and B clusters
-        ├── TI_IMM_H101694__08_PCACellsBRemoval.pdf: B clusters after removal (if removed)
+        ├── TI_IMM_H101694__08_PCACellsBRemoval.pdf: PCA after B cluster removal (if removed)
         ├── TI_IMM_H101694__09_CleanPlotGenes.pdf
-        ├── TI_IMM_H101694__10_CleanPlotUDE.pdf
-        ├── TI_IMM_H101694__11_CleanPlotNu.pdf
+        ├── TI_IMM_H101694__10_CleanPlotUDE.pdf: UDE correlation plot
+        ├── TI_IMM_H101694__11_CleanPlotNu.pdf: Nu plot for cells efficiency visualization
         ├── TI_IMM_H101694__12_PCACells_cut_1.pdf
         ├── TI_IMM_H101694__13_CleanPlotGenes_cut_1.pdf
         ├── TI_IMM_H101694__14_CleanPlotUDE_cut_1.pdf
         ├── TI_IMM_H101694__15_CleanPlotNu_cut_1.pdf
-        ├── TI_IMM_H101694__16_GDIPlot.pdf
+        ├── TI_IMM_H101694__16_GDIPlot.pdf: GDI plot
         ├── TI_IMM_H101694__22_FineClustersSummary.pdf: Summary of the clusters statistics
         ├── TI_IMM_H101694__23_MergedClustersSummary.pdf: Summary of the merged clusters statistics (not realiable)
         ├── TI_IMM_H101694__26_clustersMarkersHeatmapPlot.pdf: Markers heatmap with visual clustering colors
