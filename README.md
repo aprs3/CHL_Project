@@ -56,7 +56,7 @@ The folder structure is the same for each dataset. For simplicity, we will use t
 
 ```
 TI_IMM
-├── dataset #(not featured in this repository as the datasets are too heavy)
+├── dataset #(not included in this repository as the datasets are too heavy)
 │   ├── features.scp.gz: features data
 │   ├── barcodes.scp.gz: barcodes data
 │   └── matrix.mtx.gz:   dataset matrix
