@@ -21,7 +21,7 @@ devtools::install_github("seriph78/COTAN")
 
 Download the [dataset](https://singlecell.broadinstitute.org/single_cell/study/SCP1884/human-cd-atlas-study-between-colon-and-terminal-ileum#study-download) files in the correct dataset folder. Compress with gzip the scp.barcodes.tsv, scp.features.tsv, scp.raw.mtx. Then rename them features.tsv.gz, barcodes.tsv.gz, matrix.mtx.gz.
 
-## Scripts and file description
+## Scripts and helper files description
 This is the list of R scripts with the instruction of how to use them:
 * **main.R**: Performs the data cleaning, clustering, and gene set enrichment analysis using COTAN. Outputs
 multiple cluster cuts from a given range as .csv files. It can be run by either setting the arguments by command
@@ -50,6 +50,46 @@ List of helper files:
 * **known cells genes.csv**: a copy of this file is present in each dataset. They contain the set of cells found in the
 datasets by Kong et al. [dataset](https://singlecell.broadinstitute.org/single_cell/study/SCP1884/human-cd-atlas-study-between-colon-and-terminal-ileum#study-download), as well as their gene markers.
 * **enrichment list.txt**: the list of genes we were requested to perform gene enrichment analysis on (contained in enrichment_list.txt).
+
+## Folders structure and files description
+The datasets structure is the same for each one, so for simplicity reasons we describe as example "TI_IMM" with one patient and their files.
+
+```
+TI_IMM
+├── dataset
+│   ├── features.scp.gz
+│   ├── barcodes.scp.gz
+│   ├── matrix.mtx.gz
+└── H101694
+    ├── enrichment_csv
+    │   ├── TI_IMM_H101694_EnrichmentGenesClusters_x.csv: Enrichment genes clusters with "x" number of cuts
+    └── plot
+        ├── TI_IMM_H101694__00_ECDPlot.pdf
+        ├── TI_IMM_H101694__01_CellSizePlot.pdf: original library size plot
+        ├── TI_IMM_H101694__02_GenesSizePlot.pdf: original gene size plot
+        ├── TI_IMM_H101694__03_MitocondrialPlot.pdf: original mitochondrial cells plot
+        ├── TI_IMM_H101694__04_CellSizePlot_cut_n.pdf: library size plot after n number of cuts
+        ├── TI_IMM_H101694__05_GeneCountPlot_cut_n.pdf: gene size plot after n number of cuts
+        ├── TI_IMM_H101694__06_MitocondrialCount_cut_n.pdf: mitochondrial cells plot after n number of cuts
+        ├── TI_IMM_H101694__07_PCACells.pdf: A and B clusters
+        ├── TI_IMM_H101694__08_PCACellsBRemoval.pdf: B clusters after removal (if removed)
+        ├── TI_IMM_H101694__09_CleanPlotGenes.pdf
+        ├── TI_IMM_H101694__10_CleanPlotUDE.pdf
+        ├── TI_IMM_H101694__11_CleanPlotNu.pdf
+        ├── TI_IMM_H101694__12_PCACells_cut_1.pdf
+        ├── TI_IMM_H101694__13_CleanPlotGenes_cut_1.pdf
+        ├── TI_IMM_H101694__14_CleanPlotUDE_cut_1.pdf
+        ├── TI_IMM_H101694__15_CleanPlotNu_cut_1.pdf
+        ├── TI_IMM_H101694__16_GDIPlot.pdf
+        ├── TI_IMM_H101694__22_FineClustersSummary.pdf: Summary of the clusters statistics
+        ├── TI_IMM_H101694__23_MergedClustersSummary.pdf: Summary of the merged clusters statistics (not realiable)
+        ├── TI_IMM_H101694__26_clustersMarkersHeatmapPlot.pdf: Markers heatmap with visual clustering colors
+        ├── TI_IMM_H101694__27_enrichmentHm.pdf: Enrichment heatmap clustered but not cutted
+        ├── TI_IMM_H101694__27_enrichmentHm_X.pdf: Enrichment heatmap wih x number of cuts
+        └── TI_IMM_H101694__28_enrichmentHmUnclustered.pdf: Enrichment heatmap without clustering
+```
+
+
 
 ## Resources
 - [COTAN](https://github.com/seriph78/COTAN/tree/devel)
